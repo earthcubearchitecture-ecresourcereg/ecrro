@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ecrro
+
+idspace: ECRRO
+base_url: /obo/ecrro
+
+products:
+- ecrro.owl: https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/ecrro/master/ecrro.owl
+- ecrro.obo: https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/ecrro/master/ecrro.obo
+
+term_browser: ontobee
+example_terms:
+- ecrro_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/ecrro/v
+
+- prefix: /tracker/
+  replacement: https://github.com/earthcubearchitecture-ecresourcereg/ecrro/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ECRRO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/ecrro/master/
