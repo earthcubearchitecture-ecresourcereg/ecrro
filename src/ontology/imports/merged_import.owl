@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obi.owl#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/obi.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
