@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1556909450468" name="http://purl.obolibrary.org/obo/ecrro/import/ncit_import.owl" uri="ncit_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1556909450468" name="http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl" uri="merged_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1556909450468" name="http://purl.obolibrary.org/obo/obi.owl" uri="extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1556909450468" name="http://www.w3.org/2004/02/skos/core" uri="dcat_import.owl"/>
+    </group>
+</catalog>
