@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="imports/dcat_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ecrro/import/ncit_import.owl" uri="imports/ncit_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl" uri="imports/merged_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ncit.owl" uri="imports/ncit_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi.owl" uri="imports/merged_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi.owl" uri="https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/ecrro/master/src/ontology/imports/merged_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi.owl" uri="https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/ecrro/master/src/ontology/imports/extract.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/ro_import.obo" uri="imports/ro_import.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/swo_import.owl" uri="imports/swo_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/swo_import.obo" uri="imports/swo_import.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/obi_import.obo" uri="imports/obi_import.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/ncit_import.obo" uri="imports/ncit_import.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/dcat_import.owl" uri="imports/dcat_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/dcat_import.obo" uri="imports/dcat_import.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/prov-o_import.owl" uri="imports/prov-o_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/prov-o_import.obo" uri="imports/prov-o_import.obo"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/sio_import.owl" uri="imports/sio_import.owl"/>
-    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/sio_import.obo" uri="imports/sio_import.obo"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

@@ -4,6 +4,8 @@
 # ----------------------------------------
 # <do not edit above this line>
 
+# 5/2/2019 R. Duerr - removed all imports except RO and bfo (line 62, 269-326)
+
 # ----------------------------------------
 # Standard Constants
 # ----------------------------------------
@@ -55,7 +57,9 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro bfo swo obi ncit dcat prov-o sio
+## IMPORTS =  ro bfo swo obi ncit dcat prov-o sio
+
+IMPORTS =  ro bfo
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_FILES = $(foreach n,$(IMPORT_ROOTS), $(foreach f,$(FORMATS), $(n).$(f)))
@@ -264,62 +268,62 @@ mirror/bfo.owl: mirror/bfo.trigger
 
 ## ONTOLOGY: swo
 ## Copy of swo is re-downloaded whenever source changes
-mirror/swo.trigger: $(SRC)
+## mirror/swo.trigger: $(SRC)
 
-mirror/swo.owl: mirror/swo.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/swo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+## mirror/swo.owl: mirror/swo.trigger
+##	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/swo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: mirror/%.owl
+## .PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: obi
 ## Copy of obi is re-downloaded whenever source changes
-mirror/obi.trigger: $(SRC)
+## mirror/obi.trigger: $(SRC)
 
-mirror/obi.owl: mirror/obi.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+## mirror/obi.owl: mirror/obi.trigger
+## 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: mirror/%.owl
+## .PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: ncit
 ## Copy of ncit is re-downloaded whenever source changes
-mirror/ncit.trigger: $(SRC)
+## mirror/ncit.trigger: $(SRC)
 
-mirror/ncit.owl: mirror/ncit.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ncit.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+## mirror/ncit.owl: mirror/ncit.trigger
+## 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ncit.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: mirror/%.owl
+## .PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: dcat
 ## Copy of dcat is re-downloaded whenever source changes
-mirror/dcat.trigger: $(SRC)
+## mirror/dcat.trigger: $(SRC)
 
-mirror/dcat.owl: mirror/dcat.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.w3.org/ns/dcat.rdf -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+## mirror/dcat.owl: mirror/dcat.trigger
+## 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.w3.org/ns/dcat.rdf -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: mirror/%.owl
+## .PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: prov-o
 ## Copy of prov-o is re-downloaded whenever source changes
-mirror/prov-o.trigger: $(SRC)
+## mirror/prov-o.trigger: $(SRC)
 
-mirror/prov-o.owl: mirror/prov-o.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://www.w3.org/ns/prov-o -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+## mirror/prov-o.owl: mirror/prov-o.trigger
+## 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://www.w3.org/ns/prov-o -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: mirror/%.owl
+## .PRECIOUS: mirror/%.owl
 
 
 ## ONTOLOGY: sio
 ## Copy of sio is re-downloaded whenever source changes
-mirror/sio.trigger: $(SRC)
+## mirror/sio.trigger: $(SRC)
 
-mirror/sio.owl: mirror/sio.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+## mirror/sio.owl: mirror/sio.trigger
+## 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: mirror/%.owl
+## .PRECIOUS: mirror/%.owl
 
 
 
