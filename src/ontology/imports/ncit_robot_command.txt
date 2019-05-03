@@ -1,4 +1,1 @@
- robot extract --method BOT \
->     --input ncit.owl \
->     --term-file NCITTerms.txt \
->     --output ncit_import.owl
+ robot extract --method BOT  --input ncit.owl  --term-file NCITTerms.txt --output ncit_import.owl
