@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ncit.owl#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ecrro/import/ncit_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/ncit.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
