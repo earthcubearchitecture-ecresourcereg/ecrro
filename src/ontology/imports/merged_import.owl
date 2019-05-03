@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/obi.owl"
+     xml:base="http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/"
      xmlns:edamontology="http://edamontology.org/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obi.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl"/>
     
 
 

@@ -1,49 +1,33 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/ecrro.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ecrro.owl>
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/ro_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/bfo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/swo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/obi_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/ncit_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/dcat_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/prov-o_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/sio_import.owl>)
-
-
-
+Import(<http://purl.obolibrary.org/obo/ecrro/import/ncit_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl>)
+Annotation(dce:description "None")
 Annotation(dce:title "Earth Cube Resource Registry Ontology")
 Annotation(dcterms:license "Unspecified")
-Annotation(dce:description "None")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_00000000>))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/ECRRO_00000000>
+# Class: <http://purl.obolibrary.org/obo/ECRRO_00000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_00000000> "root node"@en)
 
 
 )
-
