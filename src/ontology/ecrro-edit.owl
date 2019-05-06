@@ -15,6 +15,7 @@ Import(<http://semanticscience.org/ontology/sio.owl>)
 Import(<http://www.ebi.ac.uk/swo/swo.owl>)
 Import(<http://www.w3.org/ns/dcat>)
 Import(<http://www.w3.org/ns/prov#>)
+Annotation(dce:creator <https://orcid.org/0000-0003-4808-4736>)
 Annotation(dce:description "This ontology is intended to provide the framework for answering questions like:
 
 1. \"How can EarthCube help me?\" (Science Engagement), 
@@ -26,18 +27,49 @@ Annotation(dce:title "Earth Cube Resource Registry Ontology")
 Annotation(dcterms:license "Unspecified")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_00000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000001>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source")
+
+
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/ECRRO_00000000> (root node)
+# Class: <http://purl.obolibrary.org/obo/ECRRO_00000000> (EarthCube Resource)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_00000000> "root node"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_00000000> "An EarthCube Resource is an entity that has an entry in the EarthCube Registry.")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/ECRRO_00000000> < https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_00000000> "EarthCube Resource"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_00000000> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000001> (catalogued EarthCube resource)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000001> "A catalogued EarthCube resource is the representation of an EarthCube Resource in the EarthCube registry."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000001> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000001> "2019-05-06T21:31:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000001> "catalogued EarthCube resource"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> <http://www.w3.org/ns/dcat#Resource>)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://semanticscience.org/resource/SIO_000332> <http://purl.obolibrary.org/obo/ECRRO_00000000>))
 
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484031 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484032 <https://orcid.org/0000-0003-4808-4736>)
 )
