@@ -1,0 +1,3 @@
+http://www.w3.org/ns/dcat#Dataset
+https://www.w3.org/TR/2018/WD-vocab-dcat-2-20181016/#Class:Data_Service
+https://www.w3.org/TR/2018/WD-vocab-dcat-2-20181016/#Class:Catalog

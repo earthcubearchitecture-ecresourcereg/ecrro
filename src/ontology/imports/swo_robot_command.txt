@@ -1,1 +1,0 @@
- robot extract --method BOT  --input swo_inferred.owl  --term-file SWOTerms.txt --output swo_import.owl

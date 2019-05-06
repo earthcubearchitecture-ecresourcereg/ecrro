@@ -9,8 +9,12 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ecrro.owl>
-Import(<http://purl.obolibrary.org/obo/ecrro/import/ncit_import.owl>)
-Import(<http://purl.obolibrary.org/obo/ecrro/imports/merged_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ncit.owl>)
+Import(<http://purl.obolibrary.org/obo/obi.owl>)
+Import(<http://semanticscience.org/ontology/sio.owl>)
+Import(<http://www.ebi.ac.uk/swo/swo.owl>)
+Import(<http://www.w3.org/ns/dcat>)
+Import(<http://www.w3.org/ns/prov#>)
 Annotation(dce:description "This ontology is intended to provide the framework for answering questions like:
 
 1. \"How can EarthCube help me?\" (Science Engagement), 

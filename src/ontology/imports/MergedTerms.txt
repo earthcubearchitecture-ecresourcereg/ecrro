@@ -1,3 +1,0 @@
-http://purl.obolibrary.org/obo/OBI_0000245 # organization
-http://semanticscience.org/resource/SIO_000090 # specification
-http://semanticscience.org/resource/SIO_001241 # catalog
