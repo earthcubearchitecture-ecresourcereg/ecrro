@@ -28,6 +28,9 @@ Annotation(dcterms:license "Unspecified")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_00000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000001>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000002>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000003>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000005>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -47,6 +50,18 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "def
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source")
 
 
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000002> (ECResourceType)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000002> "An ECResourceType is a list of the type of resources in the EC Resource Registry."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000002> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000002> "2019-05-06T21:46:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000002> "ECResourceType"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/ECRRO_0000002> dcterms:type)
+
 
 
 ############################
@@ -60,14 +75,50 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/ECRRO_00000000> 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_00000000> "EarthCube Resource"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_00000000> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
-# Class: <http://purl.obolibrary.org/obo/ECRRO_0000001> (catalogued EarthCube resource)
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000001> (EarthCube Registry Item)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000001> "A catalogued EarthCube resource is the representation of an EarthCube Resource in the EarthCube registry."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000001> "An EarthCube Registry item is the representation of an EarthCube Resource in the EarthCube registry."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000001> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000001> "2019-05-06T21:31:04Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000001> "catalogued EarthCube resource"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000001> "EarthCube Registry Item"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> <http://www.w3.org/ns/dcat#Resource>)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://semanticscience.org/resource/SIO_000332> <http://purl.obolibrary.org/obo/ECRRO_00000000>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/NCIT_C19498>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/NCIT_C19498>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/NCIT_C97331>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C21270> (Ontology)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C21270> <http://purl.obolibrary.org/obo/NCIT_C19498>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C92442> (Vocabulary)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C92442> <http://purl.obolibrary.org/obo/NCIT_C19498>)
+
+# Class: <http://semanticscience.org/resource/SIO_000090> (specification)
+
+SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibrary.org/obo/NCIT_C19498>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000003> (ECResourceTypes)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000003> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000003> "2019-05-06T21:54:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000003> "ECResourceTypes"@en)
+ClassAssertion(<http://purl.org/dc/dcam/VocabularyEncodingScheme> <http://purl.obolibrary.org/obo/ECRRO_0000003>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000005> (Use Case)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000005> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000005> "2019-05-06T22:47:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000005> "Use Case"@en)
 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484031 <https://orcid.org/0000-0003-4808-4736>)
