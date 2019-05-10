@@ -1,0 +1,2 @@
+http://semanticscience.org/resource/SIO_000090 # specification
+http://semanticscience.org/resource/SIO_001241 # catalog

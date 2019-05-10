@@ -136,6 +136,106 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <obo:IAO_0000115>A set of people with some shared element. The substance of shared element varies widely, from geography to a situation to interest to lives and values. The term is widely used to evoke sense of collectivity.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C16453</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Community</obo:NCIT_P108>
+        <obo:NCIT_P207>C0009462</obo:NCIT_P207>
+        <obo:NCIT_P366>Community</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Community</oboInOwl:hasExactSynonym>
+        <rdfs:label>Community</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16453"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A set of people with some shared element. The substance of shared element varies widely, from geography to a situation to interest to lives and values. The term is widely used to evoke sense of collectivity.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16453"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Community</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43359"/>
+        <obo:IAO_0000115>A group of individuals united by a common factor (e.g., geographic location, ethnicity, disease, age, gender)</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C17005</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Population Group</obo:NCIT_P106>
+        <obo:NCIT_P108>Population Group</obo:NCIT_P108>
+        <obo:NCIT_P207>C1257890</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC-GLOSS</obo:NCIT_P322>
+        <obo:NCIT_P325>Any finite or infinite collection of subjects from which a sample is drawn for a study to obtain estimates for values that would be obtained if the entire population were sampled. [AMA style Manual]</obo:NCIT_P325>
+        <obo:NCIT_P366>Population_Group</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Group</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Population</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Population Group</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Subpopulation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>population</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C67497"/>
+        <rdfs:label>Population Group</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A group of individuals united by a common factor (e.g., geographic location, ethnicity, disease, age, gender)</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>Any finite or infinite collection of subjects from which a sample is drawn for a study to obtain estimates for values that would be obtained if the entire population were sampled. [AMA style Manual]</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC-GLOSS</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Group</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Population</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Population Group</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Subpopulation</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>population</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC-GLOSS</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C18232 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18232">
@@ -216,27 +316,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Document</owl:annotatedTarget>
-        <obo:NCIT_P383>PT</obo:NCIT_P383>
-        <obo:NCIT_P384>NCI</obo:NCIT_P384>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Document Type</owl:annotatedTarget>
-        <obo:NCIT_P383>SY</obo:NCIT_P383>
-        <obo:NCIT_P384>NCI</obo:NCIT_P384>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>documentation</owl:annotatedTarget>
-        <obo:NCIT_P383>PT</obo:NCIT_P383>
-        <obo:NCIT_P384>CDISC-GLOSS</obo:NCIT_P384>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</owl:annotatedTarget>
         <obo:NCIT_P378>NCI</obo:NCIT_P378>
@@ -259,6 +338,27 @@
         <owl:annotatedTarget>Document</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
         <obo:NCIT_P384>BRIDG</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Document</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Document Type</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19498"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>documentation</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC-GLOSS</obo:NCIT_P384>
     </owl:Axiom>
     
 
@@ -410,6 +510,43 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Terminology Entity</owl:annotatedTarget>
         <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C43359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C43359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20181"/>
+        <obo:IAO_0000115>Any number of entities (members) considered as a unit.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C43359</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Group</obo:NCIT_P106>
+        <obo:NCIT_P108>Group</obo:NCIT_P108>
+        <obo:NCIT_P207>C0441833</obo:NCIT_P207>
+        <obo:NCIT_P366>Group</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Group</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Panel</oboInOwl:hasExactSynonym>
+        <rdfs:label>Group</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43359"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any number of entities (members) considered as a unit.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43359"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Group</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43359"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Panel</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
         <obo:NCIT_P384>NCI</obo:NCIT_P384>
     </owl:Axiom>
     
