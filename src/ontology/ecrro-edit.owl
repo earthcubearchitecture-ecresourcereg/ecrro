@@ -32,11 +32,17 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000054>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000007>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000017>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000045>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000058>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000059>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000003>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000005>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000013>))
@@ -69,6 +75,14 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000041>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000042>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000043>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000044>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000049>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000050>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000051>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000052>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000053>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000055>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000056>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000057>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -120,11 +134,40 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000010> "2019-05-08T23:46:28Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000010> "has citation"@en)
 
-# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000017> (has user type)
+# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000017> (has usage)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000017> "For EC resources, has usage indicates what communities (if known) know about and potentially use the resource."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000017> "2019-05-10T22:05:21Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000017> "has user type"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000017> "has usage"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_00000000>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000047>)
+
+# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000045> (is relevent to)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000045> "An entity A is relevant to another entity B if users want to or need to know about A when addressing B."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000045> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000045> "2019-05-10T23:42:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000045> "is relevent to"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/ECRRO_0000045> <http://semanticscience.org/resource/SIO_000001>)
+
+# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000058> (has CS usage)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000058> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000058> "2019-05-13T22:55:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000058> "has CS usage"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/ECRRO_0000058> <http://purl.obolibrary.org/obo/ECRRO_0000017>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ECRRO_0000058> <http://purl.obolibrary.org/obo/ECRRO_00000000>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ECRRO_0000058> <http://purl.obolibrary.org/obo/ECRRO_0000054>)
+
+# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000059> (has geo usage)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000059> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000059> "2019-05-13T22:56:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000059> "has geo usage"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/ECRRO_0000059> <http://purl.obolibrary.org/obo/ECRRO_0000017>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ECRRO_0000059> <http://purl.obolibrary.org/obo/ECRRO_00000000>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ECRRO_0000059> <http://purl.obolibrary.org/obo/ECRRO_0000054>)
 
 
 
@@ -184,6 +227,31 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000012> "2019-05-10T21:37:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000012> "type of researcher"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000012> <http://purl.obolibrary.org/obo/NCIT_C16453>)
+
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000046> (EC resource usage)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000046> "EarthCube resource usage is data that indicates how well used the resource is by the CS and Geo branches of the EarthCube community."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000046> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000046> "2019-05-11T00:05:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000046> "EC resource usage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000046> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000047> (EC general usage)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000047> "The EC general usage field is data about EC resource usage that is not specific to a particular user category though it does indicate which categories are in use (if any)."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000047> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000047> "2019-05-13T22:09:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000047> "EC general usage"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/ECRRO_0000047> "Curation of these fields is necessary to validate the content!"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000047> <http://purl.obolibrary.org/obo/ECRRO_0000046>)
+
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000054> (EC disciplinary usage)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000054> "EC usage is data about EC resource usage within one of the two main communities within EarthCube (geoscientists and cyberinfrastructure/programmers)."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000054> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000054> "2019-05-13T22:43:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000054> "EC disciplinary usage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000054> <http://purl.obolibrary.org/obo/ECRRO_0000046>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
@@ -447,6 +515,67 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000044> "2019-05-10T22:19:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000044> "Volcanology, Geochemistry, and Petrology"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000012> <http://purl.obolibrary.org/obo/ECRRO_0000044>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000049> (unknown)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000049> "It is not known how much, if any, usage there is of this resource."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000049> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000049> "2019-05-13T22:27:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000049> "unknown"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000047> <http://purl.obolibrary.org/obo/ECRRO_0000049>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000050> (usage low)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://orcid.org/0000-0003-4808-4736") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000050> "A resource with low usage, may be new and so has not yet built up a user community, possibly not widely known (more advertising needed), or it may indicate a resource that has missed its mark."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000050> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000050> "2019-05-13T22:27:43Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000050> "usage low"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000047> <http://purl.obolibrary.org/obo/ECRRO_0000050>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000051> (used by programmers)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000051> "This EC resource is in use withint the cyberinfrastructure/programming community as characterized by EC CS usage."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000051> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000051> "2019-05-13T22:28:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000051> "used by programmers"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000047> <http://purl.obolibrary.org/obo/ECRRO_0000051>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000052> (used by geoscientists)
+
+AnnotationAssertion(Annotation(rdfs:comment <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000052> "This EC resource is in use within the geoscience community as characterized by  EC Geo usage."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000052> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000052> "2019-05-13T22:28:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000052> "used by geoscientists"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000047> <http://purl.obolibrary.org/obo/ECRRO_0000052>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000053> (used by both)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000053> "Both the geoscience and the software and cyberinfrastructure/development communities use this resource as characterized by EC CS usage and EC Geo usage."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000053> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000053> "2019-05-13T22:29:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000053> "used by both"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000047> <http://purl.obolibrary.org/obo/ECRRO_0000053>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000055> (>10 adopters)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000055> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000055> "2019-05-13T22:46:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000055> ">10 adopters"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000054> <http://purl.obolibrary.org/obo/ECRRO_0000055>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000056> (Widely used > 1 yr)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000056> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000056> "2019-05-13T22:46:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000056> "Widely used > 1 yr"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000054> <http://purl.obolibrary.org/obo/ECRRO_0000056>)
+
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000057> (Widely used > 5 yr)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000057> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000057> "2019-05-13T22:47:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000057> "Widely used > 5 yr"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000054> <http://purl.obolibrary.org/obo/ECRRO_0000057>)
 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484043 <https://orcid.org/0000-0003-4808-4736>)
