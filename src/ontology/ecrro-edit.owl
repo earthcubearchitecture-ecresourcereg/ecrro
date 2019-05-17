@@ -35,6 +35,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000060>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000007>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000008>))
@@ -252,6 +253,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000054> "2019-05-13T22:43:20Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000054> "EC disciplinary usage"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000054> <http://purl.obolibrary.org/obo/ECRRO_0000046>)
+
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000060> (stewardship role)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000060> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000060> "2019-05-14T20:50:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000060> "stewardship role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000060> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
