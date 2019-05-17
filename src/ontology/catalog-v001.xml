@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.ebi.ac.uk/swo/swo.owl" uri="imports/swo_licenses.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao.owl" uri="file:/Users/ruthduerr/src/SourceOntologies/iao_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://semanticscience.org/ontology/sio.owl" uri="imports/sio_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi.owl" uri="imports/obi_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/prov#" uri="imports/prov_import.owl"/>

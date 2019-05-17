@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo.owl#"
+<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo.owl"
      xml:base="http://www.ebi.ac.uk/swo/swo.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -7,9 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl"/>
     
 
@@ -22,18 +20,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://edamontology.org/created_in -->
-
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
@@ -55,45 +41,15 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDefinition -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
@@ -108,140 +64,16 @@
     
 
 
-    <!-- http://edamontology.org/format_1915 -->
-
-    <owl:Class rdf:about="http://edamontology.org/format_1915">
-        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
-        <oboInOwl:hasBroadSynonym>Data model</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDefinition>A defined way or layout of representing and structuring data in a computer file, blob, string, message, or elsewhere.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Data format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Exchange format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>File format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>The main focus in EDAM lies on formats as means of structuring data exchanged between different tools or resources. The serialisation, compression, or encoding of concrete data formats/models is not in scope of EDAM. Format &apos;is format of&apos; Data.</rdfs:comment>
-        <rdfs:label>Format</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000098&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>&quot;http://purl.org/dc/elements/1.1/format&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/File_format</rdfs:seeAlso>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/List_of_file_formats</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#MachineLanguage</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000612</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000618</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/compression_004</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure</rdfs:seeAlso>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/format_1915"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget>Data model</owl:annotatedTarget>
-        <rdfs:comment>A defined data format has its implicit or explicit data model, and EDAM does not distinguish the two. Some data models however do not have any standard way of serialisation into an exchange format, and those are thus not considered formats in EDAM. (Remark: even broader - or closely related - term to &apos;Data model&apos; would be an &apos;Information model&apos;.)</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/format_1915"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>File format</owl:annotatedTarget>
-        <rdfs:comment>File format denotes only formats of a computer file, but the same formats apply also to data blobs or exchanged messages.</rdfs:comment>
-    </owl:Axiom>
-    
-
-
-    <!-- http://edamontology.org/topic_0003 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_0003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <edamontology:created_in>beta12orEarlier</edamontology:created_in>
-        <oboInOwl:hasDefinition>A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other.</oboInOwl:hasDefinition>
-        <oboInOwl:hasRelatedSynonym>sumo:FieldOfStudy</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Topic</rdfs:label>
-        <rdfs:seeAlso>http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research</rdfs:seeAlso>
-        <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Category</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
-        <obo:IAO_0000112>Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
-        <obo:IAO_0000115>An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information content entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/SWO_0000001 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer&apos;s processor to perform specific operations.</obo:IAO_0000115>
-        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
-        <obo:IAO_0000119>Modified in parts from https://en.wikipedia.org/wiki/Software</obo:IAO_0000119>
-        <obo:IAO_0000119>Robert Stevens</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A license is a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the license.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified from http://en.wikipedia.org/wiki/Software_license</obo:IAO_0000119>
+        <obo:IAO_0000115>A license is a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the license.</obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/Software_license</obo:IAO_0000119>
         <dc:creator>James Malone</dc:creator>
         <rdfs:label xml:lang="en">license</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software license</rdfs:label>
+        <rdfs:label>software license</rdfs:label>
     </owl:Class>
     
-
-
-    <!-- http://www.ebi.ac.uk/swo/SWO_9000050 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>The mode of interaction with a piece of software.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software interface</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000051 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/interface/SWO_9000051">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
-        <obo:IAO_0000115>A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.</obo:IAO_0000115>
-        <obo:IAO_0000118>Web Service</obo:IAO_0000118>
-        <obo:IAO_0000119>Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013.</obo:IAO_0000119>
-        <dc:creator>Allyson Lister</dc:creator>
-        <rdfs:label>web service</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000054 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/interface/SWO_9000054">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An application programming interface is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types. An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising each other. The API specifies how software components should interact.</obo:IAO_0000115>
-        <obo:IAO_0000118>API</obo:IAO_0000118>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Application_programming_interface, accessed 25 November 2014.</obo:IAO_0000119>
-        <rdfs:label>application programming interface</rdfs:label>
-    </owl:Class>
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000001 -->
@@ -1592,6 +1424,8 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label xml:lang="en">ImmPort Conditions of Use</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000074 -->
 
@@ -1695,10 +1529,9 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
         <obo:IAO_0000118>Mozilla Public License</obo:IAO_0000118>
         <rdfs:label>MPL</rdfs:label>
     </owl:Class>
-    
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.obolibrary.org/obo/obi.owl" uri="obi_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.unep.org/sdg/sdgio.owl" uri="sdgio_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://semanticscience.org/ontology/sio.owl" uri="sio_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.ebi.ac.uk/swo/swo.owl" uri="swo_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.w3.org/ns/dcat" uri="dcat_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.w3.org/ns/prov" uri="prov_import.owl"/>
+    </group>
+</catalog>
