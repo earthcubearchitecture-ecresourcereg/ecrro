@@ -39,6 +39,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000065>))
 Declaration(Class(<http://www.ebi.ac.uk/swo/interface/SWO_9000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000007>))
@@ -288,6 +289,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000062> "2019-05-14T21:56:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000062> "EC resource citation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000062> <http://purl.obolibrary.org/obo/ECRRO_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000065> (primary publication)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000065> "A primary publication is a publication that is the primary document that people should read to understand an entity.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000065> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000065> "2019-05-17T22:16:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000065> "primary publication"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000065> <http://purl.obolibrary.org/obo/IAO_0000311>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
