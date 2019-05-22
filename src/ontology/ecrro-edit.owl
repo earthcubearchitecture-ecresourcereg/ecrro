@@ -13,6 +13,7 @@ Import(<http://purl.obolibrary.org/obo/iao.owl>)
 Import(<http://purl.obolibrary.org/obo/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/obi.owl>)
 Import(<http://semanticscience.org/ontology/sio.owl>)
+Import(<http://www.ebi.ac.uk/swo/swo.owl>)
 Import(<http://www.w3.org/ns/dcat>)
 Import(<http://www.w3.org/ns/prov-o-20130430>)
 Annotation(dce:creator <https://orcid.org/0000-0003-4808-4736>)
@@ -375,7 +376,7 @@ SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibr
 
 SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000002> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://www.w3.org/ns/dcat#Catalog> (فهرس قوائم البيانات)
+# Class: <http://www.w3.org/ns/dcat#Catalog> (カタログ)
 
 SubClassOf(<http://www.w3.org/ns/dcat#Catalog> <http://semanticscience.org/resource/SIO_001241>)
 
@@ -704,6 +705,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000097> "E
 ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000094> <http://purl.obolibrary.org/obo/ECRRO_0000097>)
 
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484091 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484092 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484139 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484140 <https://orcid.org/0000-0003-4808-4736>)
 )
