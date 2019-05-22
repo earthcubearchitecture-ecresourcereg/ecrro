@@ -222,6 +222,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://semanticscience.org/resource/SIO_000001> <http://purl.obolibrary.org/obo/ECRRO_00000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000010> <http://purl.obolibrary.org/obo/ECRRO_0000062>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://semanticscience.org/resource/SIO_000332> <http://purl.obolibrary.org/obo/ECRRO_00000000>))
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#Agent>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://purl.obolibrary.org/obo/ECRRO_0000094>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000047>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectMaxCardinality(2 <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000054>))
@@ -339,7 +340,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000094> "EC registry item activity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000094> <http://www.w3.org/ns/prov#Activity>)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000094> ObjectSomeValuesFrom(<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#Agent>))
-SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000094> ObjectExactCardinality(1 <http://semanticscience.org/resource/SIO_000332> <http://purl.obolibrary.org/obo/ECRRO_0000001>))
 
 # Class: <http://purl.obolibrary.org/obo/ECRRO_0000098> (EarthCube Resource Activity)
 
