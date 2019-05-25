@@ -491,11 +491,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000108> "Earth and Space science informatics"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000108> <http://purl.obolibrary.org/obo/ECRRO_0000102>)
 
-# Class: <http://purl.obolibrary.org/obo/ECRRO_0000109> (Education)
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000109> (Earth Science Education)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000109> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000109> "2019-05-23T20:05:52Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000109> "Education"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000109> "Earth Science Education"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000109> <http://purl.obolibrary.org/obo/ECRRO_0000102>)
 
 # Class: <http://purl.obolibrary.org/obo/ECRRO_0000110> (Geodesy)
