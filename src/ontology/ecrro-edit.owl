@@ -9,6 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ecrro.owl>
+Import(<file:/Users/ruthduerr/src/ResourceRegistry/CI_RoleCode.rdf>)
 Import(<http://purl.obolibrary.org/obo/iao.owl>)
 Import(<http://purl.obolibrary.org/obo/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/obi.owl>)
@@ -708,7 +709,7 @@ SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibr
 
 SubClassOf(<http://www.ebi.ac.uk/swo/SWO_0000002> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://www.w3.org/ns/dcat#Catalog> (カタログ)
+# Class: <http://www.w3.org/ns/dcat#Catalog> (فهرس قوائم البيانات)
 
 SubClassOf(<http://www.w3.org/ns/dcat#Catalog> <http://semanticscience.org/resource/SIO_001241>)
 
@@ -1312,6 +1313,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484139 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484140 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484636 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484637 <https://orcid.org/0000-0003-4808-4736>)
 )
