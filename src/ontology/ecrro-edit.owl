@@ -14,6 +14,7 @@ Import(<http://purl.obolibrary.org/obo/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/obi.owl>)
 Import(<http://semanticscience.org/ontology/sio.owl>)
 Import(<http://www.ebi.ac.uk/swo/swo.owl>)
+Import(<http://www.w3.org/ns/dcat>)
 Import(<http://www.w3.org/ns/prov-o-20130430>)
 Annotation(dce:creator <https://orcid.org/0000-0003-4808-4736>)
 Annotation(dce:description "This ontology is intended to provide the framework for answering questions like:
@@ -331,7 +332,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_00000000> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/ECRRO_0000001> (EarthCube Registry Item)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000001> "An EarthCube Registry item is the representation of an EarthCube Resource in the EarthCube registry."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000001> "An EarthCube Registry item is a DCAT cataloged resource which is  represented in the EarthCube registry."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000001> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000001> "2019-05-06T21:31:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000001> "EarthCube Registry Item"@en)
@@ -1311,6 +1312,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484139 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484140 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484141 <https://orcid.org/0000-0003-4808-4736>)
 )
