@@ -15,7 +15,6 @@ Import(<http://purl.obolibrary.org/obo/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/obi.owl>)
 Import(<http://semanticscience.org/ontology/sio.owl>)
 Import(<http://www.ebi.ac.uk/swo/swo.owl>)
-Import(<http://www.w3.org/ns/dcat>)
 Import(<http://www.w3.org/ns/prov-o-20130430>)
 Annotation(dce:creator <https://orcid.org/0000-0003-4808-4736>)
 Annotation(dce:description "This ontology is intended to provide the framework for answering questions like:
@@ -28,6 +27,7 @@ It extends the idea of an EarthCube Registry beyond data sets, to a generalized 
 Annotation(dce:title "Earth Cube Resource Registry Ontology")
 Annotation(dcterms:license "Unspecified")
 
+Declaration(Class(<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_RoleCode>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_00000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000006>))
@@ -71,7 +71,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000126>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000129>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000311>))
 Declaration(Class(<http://purl.org/dc/dcam/VocabularyEncodingScheme>))
 Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000002>))
@@ -319,6 +318,10 @@ DataPropertyRange(<http://purl.obolibrary.org/obo/ECRRO_0000101> xsd:string)
 ############################
 #   Classes
 ############################
+
+# Class: <http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_RoleCode> (<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_RoleCode>)
+
+SubClassOf(<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_RoleCode> <http://www.w3.org/ns/prov#Role>)
 
 # Class: <http://edamontology.org/topic_0003> (Topic)
 
@@ -666,14 +669,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000129> "2019-05-23T22:22:05Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000129> "EC resource maturity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000129> <http://purl.obolibrary.org/obo/IAO_0000030>)
-
-# Class: <http://purl.obolibrary.org/obo/ECRRO_0000140> (ISO role codes)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000140> "ISO role codes are the CI_Responsible parties as used within the ISO 19115 family of specifications."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000140> <http://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000140> "2019-05-24T22:05:41Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000140> "ISO role codes"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://www.w3.org/ns/prov#Role>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
@@ -1105,7 +1100,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000141> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000141> "2019-05-24T22:08:18Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000141> "author"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000141>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000142> (custodian)
 
@@ -1113,7 +1107,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000142> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000142> "2019-05-24T22:08:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000142> "custodian"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000142>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000143> (distributor)
 
@@ -1121,7 +1114,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000143> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000143> "2019-05-24T22:10:26Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000143> "distributor"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000143>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000145> (originator)
 
@@ -1130,7 +1122,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000145> "2019-05-24T22:17:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000145> "originator"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/ECRRO_0000145> "In the EarthCube (EC) context, data includes any and all EarthCube resources irrespective of form (e.g., software, documentation, etc. all count as does traditional numeric data)."@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000145>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000146> (owner)
 
@@ -1138,7 +1129,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000146> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000146> "2019-05-24T22:19:56Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000146> "owner"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000146>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000147> (pointOfContact)
 
@@ -1146,7 +1136,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000147> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000147> "2019-05-24T22:20:46Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000147> "pointOfContact"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000147>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000148> (principalInvestigator)
 
@@ -1154,7 +1143,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000148> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000148> "2019-05-24T22:21:42Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000148> "principalInvestigator"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000148>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000149> (processor)
 
@@ -1162,7 +1150,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000149> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000149> "2019-05-24T22:23:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000149> "processor"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000149>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000150> (publisher)
 
@@ -1170,7 +1157,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000150> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000150> "2019-05-24T22:23:57Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000150> "publisher"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000150>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000151> (resourceProvider)
 
@@ -1178,7 +1164,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000151> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000151> "2019-05-24T22:24:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000151> "resourceProvider"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000151>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000152> (sponsor)
 
@@ -1186,7 +1171,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000152> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000152> "2019-05-24T22:25:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000152> "sponsor"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000152>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000153> (user)
 
@@ -1194,7 +1178,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000153> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000153> "2019-05-24T22:26:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000153> "user"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000153>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000154> (coAuthor)
 
@@ -1202,7 +1185,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000154> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000154> "2019-05-24T22:27:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000154> "coAuthor"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000154>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000155> (collaborator)
 
@@ -1210,7 +1192,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000155> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000155> "2019-05-24T22:29:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000155> "collaborator"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000155>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000156> (contributor)
 
@@ -1218,7 +1199,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000156> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000156> "2019-05-24T22:32:06Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000156> "contributor"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000156>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000157> (editor)
 
@@ -1226,7 +1206,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000157> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000157> "2019-05-24T22:33:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000157> "editor"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000157>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000158> (funder)
 
@@ -1234,7 +1213,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000158> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000158> "2019-05-24T22:33:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000158> "funder"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000158>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000159> (mediator)
 
@@ -1242,7 +1220,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000159> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000159> "2019-05-24T22:34:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000159> "mediator"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000159>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000160> (rightsHolder)
 
@@ -1250,7 +1227,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000160> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000160> "2019-05-24T22:36:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000160> "rightsHolder"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000140> <http://purl.obolibrary.org/obo/ECRRO_0000160>)
 
 # Individual: <http://purl.obolibrary.org/obo/ECRRO_0000162> (stewardship)
 
