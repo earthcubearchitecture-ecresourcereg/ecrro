@@ -1253,10 +1253,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000162> "s
 ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000098> <http://purl.obolibrary.org/obo/ECRRO_0000162>)
 
 
-<<<<<<< HEAD
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484940 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484941 <https://orcid.org/0000-0003-4808-4736>)
-=======
+
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000179> "Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000179> "BFO OWL specification label"@en)
 AnnotationAssertion(dce:source <http://purl.obolibrary.org/obo/BFO_0000180> "definition source: Person:Alan Ruttenberg"@en)
@@ -1312,5 +1311,5 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484090 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484091 <https://orcid.org/0000-0003-4808-4736>)
->>>>>>> 0b863d25a6775a3ee9eb50e06c781dbfb1768207
+
 )
