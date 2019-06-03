@@ -15,6 +15,7 @@ Import(<http://purl.obolibrary.org/obo/ncit.owl>)
 Import(<http://purl.obolibrary.org/obo/obi.owl>)
 Import(<http://semanticscience.org/ontology/sio.owl>)
 Import(<http://www.ebi.ac.uk/swo/swo.owl>)
+Import(<http://www.w3.org/ns/dcat>)
 Import(<http://www.w3.org/ns/prov-o-20130430>)
 Annotation(dce:creator <https://orcid.org/0000-0003-4808-4736>)
 Annotation(dce:description "This ontology is intended to provide the framework for answering questions like:
@@ -71,6 +72,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000126>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000311>))
 Declaration(Class(<http://purl.org/dc/dcam/VocabularyEncodingScheme>))
 Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000002>))
@@ -78,6 +80,7 @@ Declaration(Class(<http://www.ebi.ac.uk/swo/interface/SWO_9000051>))
 Declaration(Class(<http://www.w3.org/ns/dcat#Catalog>))
 Declaration(Class(<http://www.w3.org/ns/dcat#DataService>))
 Declaration(Class(<http://www.w3.org/ns/dcat#Resource>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000007>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000008>))
@@ -88,6 +91,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000064>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000128>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000138>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000139>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000163>))
 Declaration(ObjectProperty(dcterms:type))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/ECRRO_0000063>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/ECRRO_0000100>))
@@ -167,6 +171,7 @@ Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(<http://purl.org/linked-data/registry#definition>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
@@ -178,6 +183,11 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNot
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (editor note)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000116> "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
 
@@ -288,6 +298,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <h
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000139> "2019-05-24T22:05:12Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000139> "curated by"@en)
 
+# Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000163> (hasOriginatingProject)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "http://orcid.org/0000-0003-4808-4736") <http://purl.org/linked-data/registry#definition> <http://purl.obolibrary.org/obo/ECRRO_0000163> "The originating project for an EarthCube resource is the NSF funded project (if any) that initiated its development.  Use prov-o relationships as necessary to flesh out the details of the resources derivation, especially if multiple projects and funding sources were involved."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000163> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000163> "2019-06-03T19:23:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000163> "hasOriginatingProject"@en)
+
 
 ############################
 #   Data Properties
@@ -345,6 +362,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000010> <http://purl.obolibrary.org/obo/ECRRO_0000062>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000064> <http://purl.obolibrary.org/obo/ECRRO_0000006>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000128> <http://edamontology.org/topic_0003>))
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000163> <http://purl.obolibrary.org/obo/ECRRO_0000164>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://semanticscience.org/resource/SIO_000001> <http://purl.obolibrary.org/obo/ECRRO_00000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000138> <http://purl.obolibrary.org/obo/ECRRO_0000129>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectExactCardinality(1 <http://semanticscience.org/resource/SIO_000332> <http://purl.obolibrary.org/obo/ECRRO_00000000>))
@@ -670,6 +688,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000129> "EC resource maturity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000129> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
+# Class: <http://purl.obolibrary.org/obo/ECRRO_0000164> (Project)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000116> "For EarthCube Registry Items the Project is indicated by the grant that funded it.  It should have a name, ID, and link to the NSF page about it."@en) Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.org/linked-data/registry#definition> <http://purl.obolibrary.org/obo/ECRRO_0000164> "An agent undertaking tasks, carried out individually or collaboratively and possibly involving research or design, that is carefully planned to achieve a particular aim to be executed over a fixed period and within certain cost and other limitations."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000164> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000164> "2019-06-03T19:45:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000164> "Project"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000164> <http://www.w3.org/ns/prov#Agent>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/NCIT_C19498>)
@@ -698,7 +724,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000245> <http://www.w3.or
 
 # Class: <http://semanticscience.org/resource/SIO_000090> (specification)
 
-SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibrary.org/obo/NCIT_C19498>)
+SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibrary.org/obo/ECRRO_0000001>)
 
 # Class: <http://www.ebi.ac.uk/swo/SWO_0000002> (software license)
 
@@ -711,6 +737,10 @@ SubClassOf(<http://www.w3.org/ns/dcat#Catalog> <http://semanticscience.org/resou
 # Class: <http://www.w3.org/ns/dcat#DataService> (Data service)
 
 SubClassOf(<http://www.w3.org/ns/dcat#DataService> <http://www.ebi.ac.uk/swo/interface/SWO_9000051>)
+
+# Class: <http://www.w3.org/ns/dcat#Resource> (Catalogued resource)
+
+SubClassOf(<http://www.w3.org/ns/dcat#Resource> ObjectSomeValuesFrom(<http://www.w3.org/ns/dcat#landingPage> <http://xmlns.com/foaf/0.1/Document>))
 
 # Class: <http://www.w3.org/ns/prov#Activity> (Activity)
 
@@ -1247,8 +1277,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000111> "edi
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000112> "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000114> "has curation status"@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000116> "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000117> "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000118> "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)
@@ -1289,6 +1317,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484636 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484637 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484250 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484251 <https://orcid.org/0000-0003-4808-4736>)
 )
