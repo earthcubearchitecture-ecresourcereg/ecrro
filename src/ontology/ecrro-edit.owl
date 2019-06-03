@@ -712,7 +712,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C21270> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C81930> (Use Case)
 
-SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C81930> <http://www.w3.org/ns/dcat#Resource>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C81930> <http://purl.obolibrary.org/obo/ECRRO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C92442> (Vocabulary)
 
@@ -724,7 +724,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000245> <http://www.w3.or
 
 # Class: <http://semanticscience.org/resource/SIO_000090> (specification)
 
-SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://www.w3.org/ns/dcat#Resource>)
+SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibrary.org/obo/ECRRO_0000001>)
 
 # Class: <http://www.ebi.ac.uk/swo/SWO_0000002> (software license)
 
