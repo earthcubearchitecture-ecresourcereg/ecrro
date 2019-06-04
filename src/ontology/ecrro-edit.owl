@@ -376,6 +376,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000001> "E
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> <http://www.w3.org/ns/dcat#Resource>)
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000008> <http://www.ebi.ac.uk/swo/SWO_0000002>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000010> <http://purl.obolibrary.org/obo/ECRRO_0000062>))
+SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000045> <http://purl.obolibrary.org/obo/NCIT_C81930>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000064> <http://purl.obolibrary.org/obo/ECRRO_0000006>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000128> <http://edamontology.org/topic_0003>))
 SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ECRRO_0000163> <http://purl.obolibrary.org/obo/ECRRO_0000164>))
