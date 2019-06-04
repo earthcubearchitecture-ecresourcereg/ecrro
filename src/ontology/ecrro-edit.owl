@@ -340,6 +340,22 @@ DataPropertyRange(<http://purl.obolibrary.org/obo/ECRRO_0000101> xsd:string)
 
 SubClassOf(<http://def.isotc211.org/iso19115/-1/2014/CitationAndResponsiblePartyInformation#CI_RoleCode> <http://www.w3.org/ns/prov#Role>)
 
+# Class: <http://edamontology.org/format_2330> (Textual format)
+
+SubClassOf(<http://edamontology.org/format_2330> <http://edamontology.org/format_1915>)
+
+# Class: <http://edamontology.org/format_2332> (XML)
+
+SubClassOf(<http://edamontology.org/format_2332> <http://edamontology.org/format_1915>)
+
+# Class: <http://edamontology.org/format_2333> (Binary format)
+
+SubClassOf(<http://edamontology.org/format_2333> <http://edamontology.org/format_1915>)
+
+# Class: <http://edamontology.org/format_3750> (YAML)
+
+SubClassOf(<http://edamontology.org/format_3750> <http://edamontology.org/format_1915>)
+
 # Class: <http://edamontology.org/topic_0003> (Topic)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://edamontology.org/topic_0003> "Subtopics for Earth and Space Sciences were taken from the AGU list of sections."@en)
@@ -1173,6 +1189,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484376 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484377 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147484378 <https://orcid.org/0000-0003-4808-4736>)
 )
