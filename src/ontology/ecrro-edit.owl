@@ -1131,11 +1131,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000136> "in production"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000129> <http://purl.obolibrary.org/obo/ECRRO_0000136>)
 
-# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000137> (used in multiple places)
+# Individual: <http://purl.obolibrary.org/obo/ECRRO_0000137> (used in multiple applications)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ECRRO_0000137> <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ECRRO_0000137> "2019-05-23T22:27:12Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000137> "used in multiple places"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000137> "used in multiple applications"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/ECRRO_0000129> <http://purl.obolibrary.org/obo/ECRRO_0000137>)
 
 
