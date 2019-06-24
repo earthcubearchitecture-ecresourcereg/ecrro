@@ -7,7 +7,6 @@
         <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.unep.org/sdg/sdgio.owl" uri="sdgio_import.owl"/>
         <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://semanticscience.org/ontology/sio.owl" uri="sio_import.owl"/>
         <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.ebi.ac.uk/swo/swo.owl" uri="swo_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.w3.org/ns/dcat" uri="dcat_import.rdf"/>
         <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.w3.org/ns/prov-o" uri="http://www.w3.org/ns/prov-o"/>
     </group>
 </catalog>

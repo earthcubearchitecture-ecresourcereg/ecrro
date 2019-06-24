@@ -1,3 +1,0 @@
-http://www.w3.org/ns/dcat#Dataset
-http://www.w3.org/ns/dcat#DataService
-http://www.w3.org/ns/dcat#Catalog
