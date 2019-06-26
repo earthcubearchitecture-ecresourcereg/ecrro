@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://schema.org/" uri="https://schema.org/docs/schemaorg.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="https://raw.githubusercontent.com/w3c/dxwg/gh-pages/dcat/rdf/dcat.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="https://w3c.github.io/dxwg/dcat/rdf/dcat.ttl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="https://www.w3.org/ns/dcat.ttl"/>
     <uri id="Imports Wizard Entry" name="http://www.ebi.ac.uk/swo/swo.owl" uri="imports/swo_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/prov-o-20130430" uri="http://www.w3.org/ns/prov-o"/>
