@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="imports/ro_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://schema.org/" uri="https://schema.org/docs/schemaorg.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="https://raw.githubusercontent.com/w3c/dxwg/gh-pages/dcat/rdf/dcat.ttl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="https://w3c.github.io/dxwg/dcat/rdf/dcat.ttl"/>
