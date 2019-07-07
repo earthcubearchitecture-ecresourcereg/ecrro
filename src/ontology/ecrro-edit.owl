@@ -15,9 +15,10 @@ Import(<http://purl.obolibrary.org/obo/ro/ro-base.owl>)
 Import(<http://schema.org/>)
 Import(<http://www.w3.org/ns/dcat>)
 Import(<http://www.w3.org/ns/prov-o-20130430>)
+Import(<http://xmlns.com/foaf/0.1/>)
 Import(<https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/Utility-Ontologies/master/CClicenses.rdf>)
 Annotation(dce:creator <https://orcid.org/0000-0003-4808-4736>)
-Annotation(dce:description "This ontology is intended to provide the framework for answering questions like:
+Annotation(dce:description "This application level ontology is intended to provide the framework for answering questions like:
 
 1. \"How can EarthCube help me?\" (Science Engagement), 
 2. \"If I had an EarthCube Workbench, what capabilities could I access through it?\" (Workbench) and 
@@ -25,10 +26,9 @@ Annotation(dce:description "This ontology is intended to provide the framework f
 
 It extends the idea of an EarthCube Registry beyond data sets, to a generalized Registry of software components, semantic resources, tools, etc., with descriptive information to facilitate evaluation for reuse."@en)
 Annotation(dce:title "Earth Cube Resource Registry Ontology")
-Annotation(dcterms:license "Unspecified")
+Annotation(dcterms:license <https://creativecommons.org/share-your-work/public-domain/cc0/>)
 
 Declaration(Class(<http://edamontology.org/topic_0003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_00000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000011>))
@@ -69,7 +69,20 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000126>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000129>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ECRRO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213>))
 Declaration(Class(<http://purl.org/dc/dcam/VocabularyEncodingScheme>))
+Declaration(Class(<http://purl.org/dc/dcmitype/Service>))
 Declaration(Class(<http://semanticscience.org/resource/SIO_000090>))
 Declaration(Class(<http://www.ebi.ac.uk/swo/SWO_0000002>))
 Declaration(Class(<http://www.w3.org/ns/dcat#Catalog>))
@@ -83,8 +96,16 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000138>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000139>))
 Declaration(ObjectProperty(dcterms:title))
 Declaration(ObjectProperty(dcterms:type))
+Declaration(ObjectProperty(<http://schema.org/dateCreated>))
+Declaration(ObjectProperty(<http://schema.org/dateModified>))
+Declaration(ObjectProperty(<http://schema.org/datePublished>))
+Declaration(ObjectProperty(<http://schema.org/expires>))
 Declaration(ObjectProperty(<http://semanticscience.org/resource/SIO_000001>))
 Declaration(ObjectProperty(<http://semanticscience.org/resource/SIO_000557>))
+Declaration(ObjectProperty(rdfs:Literal))
+Declaration(DataProperty(dcterms:bibliographicCitation))
+Declaration(DataProperty(dcterms:issued))
+Declaration(DataProperty(dcterms:modified))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000003>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000005>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ECRRO_0000013>))
@@ -258,6 +279,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ECRRO_0000139> "stewardship")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000139> "curated by"@en)
 
+# Object Property: dcterms:license (License)
+
+AsymmetricObjectProperty(dcterms:license)
+
+# Object Property: <http://schema.org/license> (license)
+
+AsymmetricObjectProperty(<http://schema.org/license>)
+
+# Object Property: <http://schema.org/name> (name)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://schema.org/name> dcterms:title)
+
+
 
 
 ############################
@@ -267,13 +301,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_0000139> "c
 # Class: <http://edamontology.org/topic_0003> (<http://edamontology.org/topic_0003>)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://edamontology.org/topic_0003> "Subtopics for Earth and Space Sciences were taken from the AGU list of sections."@en)
-
-# Class: <http://purl.obolibrary.org/obo/ECRRO_00000000> (EarthCube Resource)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_00000000> "An EarthCube Resource is an entity that has an entry in the EarthCube Registry.")
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/ECRRO_00000000> <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECRRO_00000000> "EarthCube Resource"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/ECRRO_00000000> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/ECRRO_0000006> (funding agency)
 
@@ -585,10 +612,145 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C21270> <http://purl.obolibrary.
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C92442> <http://purl.obolibrary.org/obo/NCIT_C19498>)
 
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> (ECResource)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> "A catalogued resource that is in the EarthCube Registry."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> "2019-07-06T21:32:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> "ECResource"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> <http://schema.org/CreativeWork>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> <http://schema.org/Intangible>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> <http://www.w3.org/ns/dcat#Resource>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002502> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/contributor> ObjectUnionOf(<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#Person>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/creator> ObjectUnionOf(<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#Person>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/dateModified> ObjectUnionOf(<http://schema.org/Date> <http://schema.org/DateTime>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/datePublished> ObjectUnionOf(<http://schema.org/Date> <http://schema.org/DateTime>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/description> <http://schema.org/Text>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/editor> ObjectUnionOf(<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#Person>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/expires> ObjectUnionOf(<http://schema.org/Date> <http://schema.org/DateTime>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/funder> <http://schema.org/URL>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/isRelatedTo> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/keywords> <http://schema.org/Text>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/license> dcterms:LicenseDocument))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/name> <http://schema.org/Text>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectSomeValuesFrom(<http://schema.org/publisher> ObjectUnionOf(<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#Person>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000138> <http://purl.obolibrary.org/obo/ECRRO_0000129>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000047>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectMaxCardinality(2 <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000054>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ObjectMaxCardinality(1 <http://schema.org/dateCreated> ObjectUnionOf(<http://schema.org/Date> <http://schema.org/DateTime>)))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> DataMaxCardinality(1 dcterms:bibliographicCitation))
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> (EC Data Service)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> "A Data Service that is represented in the Earth Cube registry."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> "2019-07-06T21:33:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> "EC Data Service"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> <http://www.w3.org/ns/dcat#DataService>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> (EC Specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> "A TechArticle that is represented in the EC Registry."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> "2019-07-06T21:37:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> "EC Specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> <http://schema.org/TechArticle>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> (EC Use Case)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> "A use case resource represented within the EC registry"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> "2019-07-06T21:52:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> "EC Use Case"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> <http://purl.obolibrary.org/obo/NCIT_C81930>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> (EC Software)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> "Software represented in the EC registry"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> "2019-07-06T22:00:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> "EC Software"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> <http://schema.org/SoftwareApplication>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> (EC Interface_API)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> "2019-07-06T22:12:26Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> "EC Interface_API"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> <http://purl.org/dc/dcmitype/Service>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> (EC Interchange Format)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> "2019-07-06T22:15:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> "EC Interchange Format"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> (EC Repository)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> "An ECResource record for a repository."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> "2019-07-06T22:16:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> "EC Repository"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> <http://schema.org/ResearchProject>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> <http://schema.org/Service>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> (EC Information Model)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> "An Earthcube Resource that is an ontology, vocabulary, or other form of information artifact."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> "2019-07-06T22:37:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> "EC Information Model"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> (EC Platform)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> "An entry in the EC Resource Registry representing a composite software entity that enables execution of a variety of tools e.g. MatLab, ArcGIS."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> "2019-07-06T22:41:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> "The key defining feature is extensibility - with plugin architecture and API-based interaction between components to enable reconfiguration/extension for new problems."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> "EC Platform"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> (EC CatalogRegistry)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> "2019-07-06T22:46:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> "EC CatalogRegistry"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> <http://schema.org/Dataset>)
+
+# Class: <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> (EC Catalog Record)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> "2019-07-07T02:23:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> "EC Catalog Record"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> <http://www.w3.org/ns/dcat#CatalogRecord>)
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> ObjectSomeValuesFrom(<http://schema.org/description> <http://schema.org/Text>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> ObjectExactCardinality(1 <http://xmlns.com/foaf/0.1/primaryTopic> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> DataExactCardinality(1 dcterms:issued dcterms:W3CDTF))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> DataExactCardinality(1 dcterms:title))
+SubClassOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> DataMaxCardinality(1 dcterms:modified dcterms:W3CDTF))
+
+# Class: <http://schema.org/CreativeWork> (CreativeWork)
+
+SubClassOf(<http://schema.org/CreativeWork> <http://schema.org/CreativeWork>)
+SubClassOf(<http://schema.org/CreativeWork> <http://schema.org/Intangible>)
+
+# Class: <http://schema.org/Dataset> (Dataset)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://schema.org/Dataset> "An ECResource that is a catalog of other resources.  By definition catalogs are datasets."@en)
+
 # Class: <http://semanticscience.org/resource/SIO_000090> (specification)
 
 AnnotationAssertion(rdfs:label <http://semanticscience.org/resource/SIO_000090> "specification")
-SubClassOf(<http://semanticscience.org/resource/SIO_000090> <http://purl.obolibrary.org/obo/NCIT_C19498>)
 
 # Class: <http://www.ebi.ac.uk/swo/SWO_0000002> (<http://www.ebi.ac.uk/swo/SWO_0000002>)
 
@@ -601,9 +763,6 @@ AnnotationAssertion(<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/ns
 AnnotationAssertion(<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/ns/dcat#Resource> "dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional sub-classes may be defined in a DCAT profile or other DCAT application for catalogs of other kinds of resources")
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/dcat#Resource> <https://www.w3.org/TR/vocab-dcat-2/#Class:Resource>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Resource> "Cataloged Resource")
-SubClassOf(<http://www.w3.org/ns/dcat#Resource> ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000047>))
-SubClassOf(<http://www.w3.org/ns/dcat#Resource> ObjectMaxCardinality(2 <http://purl.obolibrary.org/obo/ECRRO_0000017> <http://purl.obolibrary.org/obo/ECRRO_0000054>))
-SubClassOf(<http://www.w3.org/ns/dcat#Resource> ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/ECRRO_0000138> <http://purl.obolibrary.org/obo/ECRRO_0000129>))
 
 
 ############################
@@ -1191,7 +1350,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_P384> "ncit:
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://schema.org/name> dcterms:title)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493199 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493200 <https://orcid.org/0000-0003-4808-4736>)
