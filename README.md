@@ -3,9 +3,16 @@
 
 # Earth Cube Resource Registry Ontology
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology defines classes for description of information resources documented in the EarthCube Resource Registry.
 
-More information can be found at http://obofoundry.org/ontology/ecrro
+See https://www.earthcube.org/resource_registry for project information
+
+TBD More information can be found (in the future...) at http://obofoundry.org/ontology/ecrro
+
+## Example instances
+Test instances are in the 
+[Information Model GitHub repository Examples folder](https://github.com/earthcubearchitecture-ecresourcereg/infomodel/tree/master/examples)
+
 
 ## Versions
 
