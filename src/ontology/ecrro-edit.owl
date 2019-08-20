@@ -96,12 +96,9 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000045>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000128>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000138>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000139>))
-<<<<<<< HEAD
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000218>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219>))
-=======
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
->>>>>>> 372a66198f1cae9bc027daf975ed664671bde1b6
 Declaration(ObjectProperty(dcterms:title))
 Declaration(ObjectProperty(dcterms:type))
 Declaration(ObjectProperty(<http://schema.org/dateCreated>))
@@ -1383,15 +1380,12 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
-<<<<<<< HEAD
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493427 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493428 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493429 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493430 <https://orcid.org/0000-0003-4808-4736>)
-=======
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493239 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493240 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493241 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493242 <https://orcid.org/0000-0003-4808-4736>)
->>>>>>> 372a66198f1cae9bc027daf975ed664671bde1b6
 )
