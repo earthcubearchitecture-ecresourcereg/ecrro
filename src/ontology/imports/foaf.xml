@@ -1188,8 +1188,8 @@
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/mbox_sha1sum">
         <vs:term_status>testing</vs:term_status>
         <rdfs:label>sha1sum of a personal mailbox URI name</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:comment>The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/msnChatID">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
@@ -1206,8 +1206,8 @@
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/yahooChatID">
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:comment>A Yahoo chat ID</rdfs:comment>
-        <vs:term_status>testing</vs:term_status>
         <rdfs:label>Yahoo chat ID</rdfs:label>
+        <vs:term_status>testing</vs:term_status>
     </rdf:Description>
 </rdf:RDF>
 

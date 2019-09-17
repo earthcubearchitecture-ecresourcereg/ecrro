@@ -21,46 +21,12 @@
      xmlns:w3cgeo="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="http://www.w3.org/ns/dcat">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <dct:contributor>
             <rdf:Description>
                 <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
                 <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
                 <foaf:name>Simon J D Cox</foaf:name>
                 <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Rufus Pollock</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Vassilios Peristeras</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Marios Meimaris</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-                <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-                <foaf:name>Makx Dekkers</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Martin Alvarez-Espinar</foaf:name>
             </rdf:Description>
         </dct:contributor>
         <dct:contributor>
@@ -72,14 +38,8 @@
         </dct:contributor>
         <dct:contributor>
             <rdf:Description>
-                <foaf:name>David Browning</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
-                <foaf:homepage rdf:resource="https://jakubklimek.com"/>
-                <foaf:name>Jakub Klímek</foaf:name>
+                <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+                <foaf:name>Shuji Kamitsuna</foaf:name>
             </rdf:Description>
         </dct:contributor>
         <dct:contributor>
@@ -89,15 +49,8 @@
         </dct:contributor>
         <dct:contributor>
             <rdf:Description>
-                <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-                <foaf:name>Shuji Kamitsuna</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-                <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
             </rdf:Description>
         </dct:contributor>
         <dct:contributor>
@@ -110,9 +63,19 @@
         </dct:contributor>
         <dct:contributor>
             <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-                <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-                <foaf:name>Andrea Perego</foaf:name>
+                <foaf:name>Rufus Pollock</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+                <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
+                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Marios Meimaris</foaf:name>
             </rdf:Description>
         </dct:contributor>
         <dct:contributor>
@@ -120,27 +83,57 @@
                 <foaf:name>Boris Villazón-Terrazas</foaf:name>
             </rdf:Description>
         </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Vassilios Peristeras</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+                <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
+                <foaf:name>Andrea Perego</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Martin Alvarez-Espinar</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+                <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+                <foaf:name>Makx Dekkers</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
+                <foaf:homepage rdf:resource="https://jakubklimek.com"/>
+                <foaf:name>Jakub Klímek</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>David Browning</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:creator>
+            <rdf:Description>
+                <foaf:name>John Erickson</foaf:name>
+            </rdf:Description>
+        </dct:creator>
         <dct:creator>
             <rdf:Description>
                 <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
                 <foaf:name>Fadi Maali</foaf:name>
             </rdf:Description>
         </dct:creator>
-        <dct:creator>
-            <rdf:Description>
-                <foaf:name>John Erickson</foaf:name>
-            </rdf:Description>
-        </dct:creator>
-        <dct:license rdf:resource="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-20</dct:modified>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-28</dct:modified>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-19</dct:modified>
         <dct:modified>2019</dct:modified>
-        <rdfs:comment xml:lang="fr">DCAT est un vocabulaire développé pour faciliter l&apos;interopérabilité entre les jeux de données publiées sur le Web.
-				En utilisant DCAT pour décrire les jeux de données dans les catalogues de données, les fournisseurs de données augmentent leur découverte et permettent
-				que les applications facilement les métadonnées de plusieurs catalogues. Il permet en plus la publication décentralisée des catalogues et facilitent
-				la recherche fédérée des données entre plusieurs sites. Les métadonnées DCAT aggrégées peuvent servir comme un manifeste pour faciliter la préservation digitale des ressources.
-				DCAT est définie à l&apos;adresse http://www.w3.org/TR/vocab-dcat/. Une quelconque version de ce document normatif et ce vocabulaire est une erreur dans ce vocabulaire</rdfs:comment>
         <rdfs:comment xml:lang="en">DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web.
           By using DCAT to describe datasets in data catalogs, publishers increase discoverability and enable
           applications easily to consume metadata from multiple catalogs. It further enables decentralized
@@ -708,6 +701,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#catalog">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
     </owl:AnnotationProperty>
     
 
@@ -716,6 +710,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#dataset">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     </owl:AnnotationProperty>
     
 
@@ -724,6 +719,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#distribution">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     </owl:AnnotationProperty>
     
 
@@ -732,6 +728,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:AnnotationProperty>
     
 
@@ -740,6 +737,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#service">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
     </owl:AnnotationProperty>
     
 
@@ -1181,7 +1179,6 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#catalog">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
     </owl:ObjectProperty>
     
 
@@ -1238,7 +1235,6 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#dataset">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     </owl:ObjectProperty>
     
 
@@ -1247,7 +1243,6 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
     </owl:ObjectProperty>
     
 
@@ -1519,7 +1514,6 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#service">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
     </owl:ObjectProperty>
     
 
@@ -1769,9 +1763,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <!-- http://www.w3.org/ns/dcat#keyword -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
     
 
 
@@ -2322,6 +2314,12 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <skos:scopeNote xml:lang="it">Utilizzato in un&apos;attribuzione qualificata per specificare il ruolo di un agente rispetto a un&apos;entità. Si consiglia di attribuire i valori considerando un vocabolario controllato dei ruoli dell&apos;agente, ad esempio http://registry.it.csiro.au/def/isotc211/CI_RoleCode</skos:scopeNote>
         <skos:scopeNote xml:lang="it">Utilizzato in una relazione qualificata per specificare il ruolo di un&apos;entità rispetto a un&apos;altra entità. Si raccomanda che il valore sia preso da un vocabolario controllato di ruoli di entità come ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode, IANA Registry of Link Relations https://www.iana.org/assignments/link-relation, DataCite metadata schema, o MARC relators https://id.loc.gov/vocabulary/relators</skos:scopeNote>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Attribution -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Attribution"/>
     
 
 
@@ -3060,7 +3058,9 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <!-- http://www.w3.org/ns/dcat -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/dcat"/>
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/dcat">
+        <dct:license rdf:resource="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"/>
+    </owl:NamedIndividual>
     
 
 
@@ -3084,50 +3084,20 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Rufus Pollock</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Vassilios Peristeras</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Marios Meimaris</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-        <foaf:name>Makx Dekkers</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Martin Alvarez-Espinar</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
         <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
         <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
         <foaf:name>Phil Archer</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>David Browning</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
-        <foaf:homepage rdf:resource="https://jakubklimek.com"/>
-        <foaf:name>Jakub Klímek</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Richard Cyganiak</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
         <foaf:name>Shuji Kamitsuna</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+        <foaf:name>Richard Cyganiak</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
@@ -3136,23 +3106,55 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <foaf:name>Riccardo Albertoni</foaf:name>
     </rdf:Description>
     <rdf:Description>
+        <foaf:name>Rufus Pollock</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
+        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Marios Meimaris</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Boris Villazón-Terrazas</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Vassilios Peristeras</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
         <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
         <foaf:name>Andrea Perego</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Boris Villazón-Terrazas</foaf:name>
+        <foaf:name>Martin Alvarez-Espinar</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+        <foaf:name>Makx Dekkers</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
+        <foaf:homepage rdf:resource="https://jakubklimek.com"/>
+        <foaf:name>Jakub Klímek</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>David Browning</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>John Erickson</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
         <foaf:name>Fadi Maali</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>John Erickson</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
-        <foaf:name>Government Linked Data WG</foaf:name>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
+        <foaf:name>Simon J D Cox</foaf:name>
+        <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -3166,6 +3168,23 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         </sdo:affiliation>
     </rdf:Description>
     <rdf:Description>
+        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
+        <foaf:name>Government Linked Data WG</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
+        <foaf:homepage rdf:resource="https://jakubklimek.com"/>
+        <foaf:name>Jakub Klímek</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
+        <foaf:name>Fadi Maali</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
+        <foaf:name>Government Linked Data WG</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
         <sdo:affiliation>
             <rdf:Description/>
         </sdo:affiliation>
@@ -3174,12 +3193,16 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <sdo:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
     </rdf:Description>
     <rdf:Description>
+        <foaf:homepage rdf:resource="https://csiro.au"/>
+        <foaf:name>Commonwealth Scientific and Industrial Research Organisation</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
         <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
         <foaf:name>European Commission, DG DIGIT</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:homepage rdf:resource="https://csiro.au"/>
-        <foaf:name>Commonwealth Scientific and Industrial Research Organisation</foaf:name>
+        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
+        <foaf:name>Government Linked Data WG</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -3187,43 +3210,9 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         </sdo:affiliation>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
-        <foaf:homepage rdf:resource="https://jakubklimek.com"/>
-        <foaf:name>Jakub Klímek</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
-        <foaf:name>Government Linked Data WG</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
-        <foaf:name>Fadi Maali</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:homepage rdf:resource="http://okfn.org"/>
-        <foaf:name>Open Knowledge Foundation</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
-        <foaf:name>Refinitiv</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
-        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
-        <foaf:name>Phil Archer</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-        <foaf:name>Shuji Kamitsuna</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-        <foaf:name>Makx Dekkers</foaf:name>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
+        <foaf:name>Andrea Perego</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
@@ -3232,14 +3221,47 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <foaf:name>Riccardo Albertoni</foaf:name>
     </rdf:Description>
     <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
+        <foaf:name>Fadi Maali</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
+        <foaf:name>Phil Archer</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
+        <foaf:homepage rdf:resource="https://jakubklimek.com"/>
+        <foaf:name>Jakub Klímek</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+        <foaf:name>Shuji Kamitsuna</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
         <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
         <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-        <foaf:name>Andrea Perego</foaf:name>
+        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+        <foaf:name>Makx Dekkers</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
+        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
+        <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
+        <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
+        <foaf:name>Riccardo Albertoni</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -3247,19 +3269,71 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         </sdo:affiliation>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>David Browning</foaf:name>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
+        <foaf:name>Andrea Perego</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Rufus Pollock</foaf:name>
+        <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
+        <foaf:name>Refinitiv</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="http://okfn.org"/>
+        <foaf:name>Open Knowledge Foundation</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
+        <foaf:name>Phil Archer</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+        <foaf:name>Makx Dekkers</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+        <foaf:name>Shuji Kamitsuna</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>John Erickson</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <foaf:name>Boris Villazón-Terrazas</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Vassilios Peristeras</foaf:name>
+        <foaf:name>John Erickson</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <foaf:name>Martin Alvarez-Espinar</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Marios Meimaris</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>David Browning</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Richard Cyganiak</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Rufus Pollock</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>David Browning</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Vassilios Peristeras</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Vassilios Peristeras</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>Boris Villazón-Terrazas</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <foaf:name>Richard Cyganiak</foaf:name>
@@ -3268,13 +3342,16 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <foaf:name>Marios Meimaris</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>John Erickson</foaf:name>
+        <foaf:name>Martin Alvarez-Espinar</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+        <foaf:name>Rufus Pollock</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     </rdf:Description>
     
 
@@ -3289,8 +3366,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
         <rdfs:label xml:lang="en">Agent</rdfs:label>
-        <rdfs:comment xml:lang="en">A resource that acts or has the power to act.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">A resource that acts or has the power to act.</rdfs:comment>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <dct:description xml:lang="en">Examples of Agent include person, organization, and software agent.</dct:description>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Agent-001"/>
@@ -3301,8 +3378,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:label xml:lang="en">Agent Class</rdfs:label>
         <rdfs:comment xml:lang="en">A group of agents.</rdfs:comment>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dct:modified>
-        <dct:description xml:lang="en">Examples of Agent Class include groups seen as classes, such as students, women, charities, lecturers.</dct:description>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#AgentClass-003"/>
+        <dct:description xml:lang="en">Examples of Agent Class include groups seen as classes, such as students, women, charities, lecturers.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/BibliographicResource">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -3315,16 +3392,16 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <rdfs:comment xml:lang="en">The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">DCMI Box</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-box/"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
+        <rdfs:label xml:lang="en">DCMI Box</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Box-003"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/FileFormat">
         <dct:description xml:lang="en">Examples include the formats defined by the list of Internet Media Types.</dct:description>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#FileFormat-001"/>
-        <rdfs:comment xml:lang="en">A digital resource format.</rdfs:comment>
         <rdfs:label xml:lang="en">File Format</rdfs:label>
+        <rdfs:comment xml:lang="en">A digital resource format.</rdfs:comment>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
@@ -3347,8 +3424,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <rdf:Description rdf:about="http://purl.org/dc/terms/ISO639-2">
         <rdfs:seeAlso rdf:resource="http://lcweb.loc.gov/standards/iso639-2/langhome.html"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
-        <rdfs:comment xml:lang="en">The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.</rdfs:comment>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
+        <rdfs:comment xml:lang="en">The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">ISO 639-2</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO639-2-003"/>
@@ -3364,9 +3441,9 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Jurisdiction-001"/>
         <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
-        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
         <rdfs:label xml:lang="en">License Document</rdfs:label>
@@ -3390,8 +3467,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:label xml:lang="en">Location</rdfs:label>
         <skos:scopeNote xml:lang="en">For the geographic center of a spatial area, or another characteristic point, the property dcat:centroid or, alternatively w3cgeo:lat and w3cgeo:long SHOULD be used.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [[LOCN]] SHOULD be used.</skos:scopeNote>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <skos:definition xml:lang="en">A spatial region or named place.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
         <skos:changeNote xml:lang="en">Class added in this context in this revision of DCAT.</skos:changeNote>
     </rdf:Description>
@@ -3453,8 +3530,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#PhysicalMedium-001"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <dct:description xml:lang="en">Examples include paper, canvas, or DVD.</dct:description>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Physical Medium</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A physical material or carrier.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/PhysicalResource">
@@ -3492,8 +3569,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC1766-003"/>
-        <rdfs:comment xml:lang="en">The set of tags, constructed according to RFC 1766, for the identification of languages.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc1766.txt"/>
+        <rdfs:comment xml:lang="en">The set of tags, constructed according to RFC 1766, for the identification of languages.</rdfs:comment>
         <rdfs:label xml:lang="en">RFC 1766</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/RFC3066">
@@ -3512,8 +3589,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC4646-001"/>
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</rdfs:comment>
         <rdfs:label xml:lang="en">RFC 4646</rdfs:label>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/RFC5646">
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-11</dct:issued>
@@ -3547,8 +3624,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Standard-001"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/URI">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc3986.txt"/>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#URI-003"/>
@@ -3561,8 +3638,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#W3CDTF-003"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/NOTE-datetime"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/NOTE-datetime"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
         <rdfs:label xml:lang="en">Abstract</rdfs:label>
@@ -3597,10 +3674,10 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <rdf:Description rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
         <skos:scopeNote xml:lang="en">The value of dct:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series.</skos:scopeNote>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-11</dct:modified>
-        <rdfs:label xml:lang="en">Accrual Periodicity</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPeriodicity-003"/>
-        <skos:definition xml:lang="en">The frequency at which dataset is published.</skos:definition>
+        <rdfs:label xml:lang="en">Accrual Periodicity</rdfs:label>
         <rdfs:comment xml:lang="en">The frequency with which items are added to a collection.</rdfs:comment>
+        <skos:definition xml:lang="en">The frequency at which dataset is published.</skos:definition>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dct:issued>
     </rdf:Description>
@@ -3631,8 +3708,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/available">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Available</rdfs:label>
+        <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#available-003"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
@@ -3651,8 +3728,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <skos:scopeNote xml:lang="en">This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalogued resource content conforms to.</skos:scopeNote>
         <rdfs:label xml:lang="en">Conforms To</rdfs:label>
         <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <skos:definition xml:lang="en">An established standard to which the described catalogued resource conforms.</skos:definition>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <skos:scopeNote xml:lang="en">This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format.</skos:scopeNote>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#conformsTo-003"/>
         <skos:definition xml:lang="en">An established standard to which the distribution conforms.</skos:definition>
@@ -3681,8 +3758,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#created-003"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
@@ -3699,8 +3776,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/date">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateT-001"/>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
         <dct:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</dct:description>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <rdfs:label xml:lang="en">Date</rdfs:label>
@@ -3711,8 +3788,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateAccepted-002"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dct:issued>
         <dct:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dct:description>
-        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
         <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateCopyrighted">
@@ -3728,8 +3805,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
         <dct:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</dct:description>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</dct:issued>
-        <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateSubmitted-002"/>
+        <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/description">
@@ -3737,9 +3814,9 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:label xml:lang="en">Description</rdfs:label>
         <skos:definition xml:lang="en">A free-text account of the item.</skos:definition>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#descriptionT-001"/>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <dct:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/educationLevel">
@@ -3755,8 +3832,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">The size or duration of the resource.</rdfs:comment>
-        <rdfs:label xml:lang="en">Extent</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#extent-003"/>
+        <rdfs:label xml:lang="en">Extent</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/format">
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
@@ -3804,15 +3881,15 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </dct:description>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
-        <skos:scopeNote xml:lang="en">The identifier might be used as part of the URI of the item, but still having it represented explicitly is useful.</skos:scopeNote>
         <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <skos:scopeNote xml:lang="en">The identifier might be used as part of the URI of the item, but still having it represented explicitly is useful.</skos:scopeNote>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
         <skos:definition xml:lang="en">A unique identifier of the item.</skos:definition>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/instructionalMethod">
-        <dct:description xml:lang="en">Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.</dct:description>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</dct:issued>
+        <dct:description xml:lang="en">Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.</dct:description>
         <rdfs:label xml:lang="en">Instructional Method</rdfs:label>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <rdfs:comment xml:lang="en">A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.</rdfs:comment>
@@ -3832,8 +3909,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isPartOf-003"/>
-        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
     </rdf:Description>
@@ -3849,8 +3926,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:comment xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</rdfs:comment>
         <skos:definition xml:lang="es">Un recurso relacionado, como por ejemplo una publicación, que referencia, cita, o apunta al recurso del catálogo.</skos:definition>
         <skos:scopeNote xml:lang="en">In relation to the use case of data citation, when the catalogued resource is a dataset, the dct:isReferencedBy property allows to relate the dataset to the resources (such as scholarly publications) that cite or point to the dataset. Multiple dct:isReferencedBy properties can be used to indicate the dataset has been referenced by multiple publications, or other resources.</skos:scopeNote>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isReferencedBy-003"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/isReplacedBy">
@@ -3863,8 +3940,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isReplacedBy-003"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/isRequiredBy">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <rdfs:label xml:lang="en">Is Required By</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isRequiredBy-003"/>
@@ -3873,8 +3950,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
         <rdfs:label xml:lang="en">Is Version Of</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A related resource of which the described resource is a version, edition, or adaptation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isVersionOf-003"/>
@@ -3885,13 +3962,13 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <skos:definition xml:lang="en">Date of formal issuance (e.g., publication) of the item.</skos:definition>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <skos:scopeNote xml:lang="en">This property SHOULD be set using the first known date of issuance.</skos:scopeNote>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <skos:scopeNote xml:lang="en">This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself.</skos:scopeNote>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
-        <skos:definition xml:lang="en">The date of listing (i.e. formal recording) of the corresponding dataset or service in the catalog.</skos:definition>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <skos:definition xml:lang="en">The date of listing (i.e. formal recording) of the corresponding dataset or service in the catalog.</skos:definition>
         <skos:definition xml:lang="en">Date of formal issuance (e.g., publication) of the distribution.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/language">
@@ -3899,8 +3976,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:label xml:lang="en">Language</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#languageT-001"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
-        <skos:scopeNote xml:lang="en">Repeat this property if the resource is available in multiple languages.</skos:scopeNote>
         <skos:definition xml:lang="en">	A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a catalogued resource (i.e. dataset or service) or the textual values of a dataset distribution.</skos:definition>
+        <skos:scopeNote xml:lang="en">Repeat this property if the resource is available in multiple languages.</skos:scopeNote>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <skos:scopeNote xml:lang="en">The value(s) provided for members of a catalog (i.e. dataset or service) override the value(s) provided for the catalog if they conflict.</skos:scopeNote>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -3915,8 +3992,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <skos:scopeNote xml:lang="en">Information about licenses and rights MAY be provided for the Resource. See also guidance at § 10. License and rights statements.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at § 10. License and rights statements.</skos:scopeNote>
         <skos:definition xml:lang="en">A legal document under which the resource is made available.</skos:definition>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#license-002"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <skos:definition xml:lang="en">A legal document under which the distribution is made available.</skos:definition>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
@@ -3946,8 +4023,8 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
         <skos:scopeNote xml:lang="en">The value of this property indicates a change to the actual item, not a change to the catalog record. An absent value MAY indicate that the item has never changed after its initial publication, or that the date of last modification is not known, or that the item is continuously updated.</skos:scopeNote>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <skos:definition xml:lang="en">Most recent date on which the catalog entry was changed, updated or modified.</skos:definition>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <skos:scopeNote xml:lang="en">This indicates the date of last change of a catalog entry, i.e. the catalog metadata description of the dataset, and not the date of the dataset itself.</skos:scopeNote>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/provenance">
@@ -3956,23 +4033,23 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-09-20</dct:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:description xml:lang="en">The statement may include a description of any changes successive custodians made to the resource.</dct:description>
-        <rdfs:label xml:lang="en">Provenance</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#provenance-002"/>
+        <rdfs:label xml:lang="en">Provenance</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-11</dct:modified>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <rdfs:label xml:lang="en">Publisher</rdfs:label>
-        <skos:scopeNote xml:lang="en">Resources of type foaf:Agent are recommended as values for this property.</skos:scopeNote>
         <dct:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service.</dct:description>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisherT-001"/>
+        <skos:scopeNote xml:lang="en">Resources of type foaf:Agent are recommended as values for this property.</skos:scopeNote>
         <skos:definition xml:lang="en">	The entity responsible for making the item available.</skos:definition>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/references">
-        <rdfs:comment xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</rdfs:comment>
         <rdfs:label xml:lang="en">References</rdfs:label>
+        <rdfs:comment xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</rdfs:comment>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#references-003"/>
@@ -3982,14 +4059,14 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <skos:scopeNote xml:lang="en">In the context of a dcat:Relationship this is expected to point to another dcat:Dataset or other catalogued resource</skos:scopeNote>
         <dct:description xml:lang="en">Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. </dct:description>
+        <skos:scopeNote xml:lang="en">In the context of a dcat:Relationship this is expected to point to another dcat:Dataset or other catalogued resource</skos:scopeNote>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
         <skos:scopeNote xml:lang="en">dct:relation SHOULD be used where the nature of the relationship between a catalogued item and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution</skos:scopeNote>
         <skos:scopeNote xml:lang="en">See also: Sub-properties of dct:relation in particular dcat:distribution, dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy</skos:scopeNote>
         <skos:changeNote xml:lang="en">Property added in this context in this revision of DCAT</skos:changeNote>
-        <skos:definition xml:lang="en">A resource with an unspecified relationship to the catalogued item.</skos:definition>
         <skos:definition xml:lang="en">The resource related to the source resource.</skos:definition>
+        <skos:definition xml:lang="en">A resource with an unspecified relationship to the catalogued item.</skos:definition>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#relationT-001"/>
         <rdfs:label xml:lang="en">Relation</rdfs:label>
         <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
@@ -4010,17 +4087,17 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:label xml:lang="en">Requires</rdfs:label>
         <rdfs:comment xml:lang="en">A related resource that is required by the described resource to support its function, delivery, or coherence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <skos:definition xml:lang="en">Information about rights held in and over the distribution.</skos:definition>
         <skos:scopeNote xml:lang="en">dct:license, which is a sub-property of dct:rights, can be used to link a distribution to a license document. However, dct:rights allows linking to a rights statement that can include licensing information as well as other information that supplements the license such as attribution.
 
 Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at § 10. License and rights statements.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">Information about licenses and rights MAY be provided for the Resource. See also guidance at § 10. License and rights statements.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:issued>
-        <skos:definition xml:lang="en">Information about rights held in and over the distribution.</skos:definition>
         <rdfs:label xml:lang="en">Rights</rdfs:label>
         <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
         <skos:definition xml:lang="en">A statement that concerns all rights not addressed with dct:license or dct:accessRights, such as copyright statements.</skos:definition>
@@ -4047,10 +4124,10 @@ Information about licenses and rights SHOULD be provided on the level of Distrib
         <dct:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</dct:description>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/spatial">
-        <skos:scopeNote xml:lang="en">The spatial coverage of a dataset may be encoded as an instance of dct:Location, or may be indicated using a URI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</skos:scopeNote>
-        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <skos:definition xml:lang="en">The geographical area covered by the dataset.</skos:definition>
+        <skos:scopeNote xml:lang="en">The spatial coverage of a dataset may be encoded as an instance of dct:Location, or may be indicated using a URI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</skos:scopeNote>
+        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
@@ -4080,8 +4157,8 @@ Information about licenses and rights SHOULD be provided on the level of Distrib
         <rdfs:label xml:lang="en">Temporal Coverage</rdfs:label>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#temporal-003"/>
         <rdfs:comment xml:lang="en">Temporal characteristics of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <skos:scopeNote xml:lang="en">The temporal coverage of a dataset may be encoded as an instance of dct:PeriodOfTime, or may be indicated using a URI reference (link) to a resource describing a time period or interval.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <skos:definition xml:lang="en">The temporal period that the dataset covers.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/title">
@@ -4099,7 +4176,7 @@ Information about licenses and rights SHOULD be provided on the level of Distrib
         <dct:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</dct:description>
         <skos:definition xml:lang="en">The nature or genre of the resource.</skos:definition>
         <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
         <skos:scopeNote xml:lang="en">The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:
 1. DCMI Type vocabulary [DCTERMS]
 2. ISO 19115 scope codes [ISO-19115-1]
@@ -4107,7 +4184,7 @@ Information about licenses and rights SHOULD be provided on the level of Distrib
 4. PARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (see item 15 contentType)
 5. MARC intellectual resource types
 Some members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g. DCMI Type Event, PhysicalObject; ISO 19115 CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.</skos:scopeNote>
-        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <skos:scopeNote xml:lang="en">To describe the file format, physical medium, or dimensions of the resource, use the dct:format element.</skos:scopeNote>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#typeT-001"/>
         <skos:changeNote xml:lang="en">Property added in this context in this revision of DCAT</skos:changeNote>
@@ -4118,8 +4195,8 @@ Some members of these controlled vocabularies are not strictly suitable for data
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dct:modified>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <rdfs:label xml:lang="en">Date Valid</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#valid-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2006/time#hasBeginning">
         <skos:changeNote xml:lang="en">Property added in this context in this revision of DCAT</skos:changeNote>
@@ -4138,8 +4215,8 @@ Some members of these controlled vocabularies are not strictly suitable for data
         <rdfs:label xml:lang="en">catalog</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#dataset">
-        <rdfs:comment xml:lang="en">A collection of data that is listed in the catalog.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Relie un catalogue à un jeu de données faisant partie de ce catalogue</rdfs:comment>
+        <rdfs:comment xml:lang="en">A collection of data that is listed in the catalog.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
         <rdfs:comment xml:lang="it">Una raccolta di dati che è elencata nel catalogo.</rdfs:comment>
         <rdfs:label xml:lang="it">dataset</rdfs:label>
@@ -4154,14 +4231,14 @@ Some members of these controlled vocabularies are not strictly suitable for data
         <rdfs:comment xml:lang="ar">تربط الفهرس بقائمة بيانات ضمنه</rdfs:comment>
         <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, Italian translation provided, other translations pending.</skos:editorialNote>
         <rdfs:label xml:lang="en">dataset</rdfs:label>
-        <rdfs:comment xml:lang="el">Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.</rdfs:comment>
         <rdfs:label xml:lang="el">σύνολο δεδομένων</rdfs:label>
+        <rdfs:comment xml:lang="el">Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#distribution">
         <rdfs:label xml:lang="it">distribuzione</rdfs:label>
         <rdfs:label xml:lang="el">διανομή</rdfs:label>
-        <rdfs:comment xml:lang="es">Conecta un conjunto de datos a una de sus distribuciones disponibles</rdfs:comment>
         <rdfs:label xml:lang="ja">データセット配信</rdfs:label>
+        <rdfs:comment xml:lang="es">Conecta un conjunto de datos a una de sus distribuciones disponibles</rdfs:comment>
         <rdfs:comment xml:lang="cs">Propojuje datovou sadu a jednu z jejích dostupných distribucí.</rdfs:comment>
         <rdfs:comment xml:lang="ja">データセットを、その利用可能な配信に接続します。</rdfs:comment>
         <rdfs:comment xml:lang="ar">تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات</rdfs:comment>
@@ -4180,26 +4257,26 @@ Some members of these controlled vocabularies are not strictly suitable for data
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#keyword">
         <rdfs:comment xml:lang="it">Una parola chiave o un&apos;etichetta per descrivere la risorsa.</rdfs:comment>
         <rdfs:label xml:lang="cs">klíčové slovo</rdfs:label>
-        <rdfs:label xml:lang="it">parola chiave</rdfs:label>
         <rdfs:comment xml:lang="el">Μία λέξη-κλειδί ή μία ετικέτα που περιγράφει το σύνολο δεδομένων.</rdfs:comment>
+        <rdfs:label xml:lang="it">parola chiave</rdfs:label>
         <rdfs:comment xml:lang="cs">Klíčové slovo nebo značka popisující zdroj.</rdfs:comment>
         <rdfs:comment xml:lang="en">A keyword or tag describing a resource.</rdfs:comment>
         <rdfs:comment xml:lang="ar">كلمة  مفتاحيه توصف قائمة البيانات</rdfs:comment>
-        <rdfs:label xml:lang="en">keyword</rdfs:label>
-        <rdfs:label xml:lang="ja">キーワード/タグ</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="ja">キーワード/タグ</rdfs:label>
+        <rdfs:label xml:lang="en">keyword</rdfs:label>
         <rdfs:label xml:lang="el">λέξη-κλειδί</rdfs:label>
-        <rdfs:comment xml:lang="es">Una palabra clave o etiqueta que describe un recurso.</rdfs:comment>
         <rdfs:comment xml:lang="ja">データセットを記述しているキーワードまたはタグ。</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una palabra clave o etiqueta que describe un recurso.</rdfs:comment>
         <rdfs:label xml:lang="fr">mot-clés </rdfs:label>
         <rdfs:comment xml:lang="fr">Un mot-clé ou étiquette décrivant une ressource.</rdfs:comment>
         <rdfs:label xml:lang="es">palabra clave</rdfs:label>
         <rdfs:label xml:lang="ar">كلمة  مفتاحية </rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#service">
-        <rdfs:comment xml:lang="it">Un sito o endpoint elencato nel catalogo.</rdfs:comment>
         <rdfs:label xml:lang="en">service</rdfs:label>
         <rdfs:comment xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un sito o endpoint elencato nel catalogo.</rdfs:comment>
         <rdfs:label xml:lang="es">servicio</rdfs:label>
         <skos:changeNote xml:lang="en">New property added in this revision of DCAT</skos:changeNote>
         <skos:changeNote xml:lang="it">Nuova proprietà in questa revisione di DCAT</skos:changeNote>
@@ -4209,23 +4286,23 @@ Some members of these controlled vocabularies are not strictly suitable for data
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#theme">
         <rdfs:label xml:lang="it">tema</rdfs:label>
-        <rdfs:comment xml:lang="cs">Hlavní kategorie zdroje. Zdroj může mít více kategorií.</rdfs:comment>
         <rdfs:comment xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Hlavní kategorie zdroje. Zdroj může mít více kategorií.</rdfs:comment>
         <rdfs:comment xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</rdfs:comment>
         <rdfs:comment xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</rdfs:comment>
-        <skos:scopeNote xml:lang="el">Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός
-          ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο.</skos:scopeNote>
-        <skos:scopeNote xml:lang="fr">Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en
-						un skos:ConceptScheme décrivqnt toutes les catégories et ses relations dans le catalogue.</skos:scopeNote>
         <skos:scopeNote xml:lang="es">El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en
           un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo</skos:scopeNote>
+        <skos:scopeNote xml:lang="fr">Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en
+						un skos:ConceptScheme décrivqnt toutes les catégories et ses relations dans le catalogue.</skos:scopeNote>
+        <skos:scopeNote xml:lang="el">Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός
+          ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο.</skos:scopeNote>
         <rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>
         <skos:scopeNote xml:lang="it">Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.</skos:scopeNote>
         <rdfs:comment xml:lang="ja">データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。</rdfs:comment>
         <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, all except for Italian translations are pending.</skos:editorialNote>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
-        <rdfs:label xml:lang="el">Θέμα</rdfs:label>
         <rdfs:label xml:lang="es">tema</rdfs:label>
+        <rdfs:label xml:lang="el">Θέμα</rdfs:label>
         <rdfs:label xml:lang="fr">thème</rdfs:label>
         <skos:scopeNote xml:lang="en">The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.</skos:scopeNote>
         <rdfs:label xml:lang="en">theme</rdfs:label>
@@ -4238,8 +4315,8 @@ Some members of these controlled vocabularies are not strictly suitable for data
         <rdfs:label xml:lang="cs">téma</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#themeTaxonomy">
-        <rdfs:label xml:lang="it">tassonomia dei temi</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="it">tassonomia dei temi</rdfs:label>
         <rdfs:label xml:lang="fr">taxonomie de thèmes</rdfs:label>
         <rdfs:comment xml:lang="ar">لائحة التصنيفات المستخدمه لتصنيف قوائم البيانات ضمن الفهرس</rdfs:comment>
         <rdfs:label xml:lang="el">Ταξινομία θεματικών κατηγοριών.</rdfs:label>
@@ -4260,8 +4337,8 @@ Some members of these controlled vocabularies are not strictly suitable for data
     <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/hasPolicy">
         <skos:definition xml:lang="en">	A policy expressing the rights associated with the distribution if using the ODRL vocabulary [ODRL-VOCAB].</skos:definition>
         <skos:scopeNote xml:lang="en">Information about rights expressed as ODRL [ODRL-VOCAB] policies MAY be provided for the Distribution. See also guidance at § 10. License and rights statements.</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">Information about rights expressed as ODRL [ODRL-VOCAB] policies MAY be provided for the Resource. See also guidance at § 10. License and rights statements.</skos:scopeNote>
         <skos:definition xml:lang="en">	A policy expressing the rights associated with the resource if using the ODRL vocabulary [ODRL-VOCAB].</skos:definition>
+        <skos:scopeNote xml:lang="en">Information about rights expressed as ODRL [ODRL-VOCAB] policies MAY be provided for the Resource. See also guidance at § 10. License and rights statements.</skos:scopeNote>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution">
         <skos:scopeNote xml:lang="it">Utilizzato per collegarsi a un agente in cui la natura della relazione è nota ma non corrisponde a una delle proprietà Dublin Core standard (dct: creatore, dct: editore). Si usi dcat:hadRole su prov:Attribution per rappresentare la responsabilità dell&apos;Agente in relazione alla Risorsa. Si veda https://w3c.github.io/dxwg/dcat/#qualified-attribution per gli esempi di utilizzo.</skos:scopeNote>

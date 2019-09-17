@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.ebi.ac.uk/swo/swo.owl" uri="ADO.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.obolibrary.org/obo/obi.owl" uri="obi_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://purl.unep.org/sdg/sdgio.owl" uri="sdgio_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://semanticscience.org/ontology/sio.owl" uri="sio_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.ebi.ac.uk/swo/swo.owl" uri="swo_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558125729574" name="http://www.w3.org/ns/prov-o" uri="http://www.w3.org/ns/prov-o"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="ro_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://semanticscience.org/ontology/sio.owl" uri="sio_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="duplicate:http://www.ebi.ac.uk/swo/swo.owl" uri="swo_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="duplicate:http://www.ebi.ac.uk/swo/swo.owl" uri="swoTopicsOnly.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://www.semanticweb.org/ruthduerr/ontologies/2019/7/untitled-ontology-125" uri="ADO.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://www.w3.org/ns/dcat" uri="dcat_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1568334480561" name="http://xmlns.com/foaf/0.1/" uri="foaf.xml"/>
     </group>
 </catalog>
