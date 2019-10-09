@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2002/07/owl" uri="file:/Users/ruthduerr/src/ResourceRegistry/target/Utility-Ontologies/DataLicenses.rdf"/>
     <uri id="Imports Wizard Entry" name="http://cor.esipfed.org/ont/~rduerr/ADO/" uri="file:/Users/ruthduerr/src/ResourceRegistry/target/Utility-Ontologies/ADO.ttl"/>
     <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec/index.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="imports/dcat_import.owl"/>

@@ -1,0 +1,2029 @@
+@prefix : <http://purl.obolibrary.org/obo/ecrro.owl#> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://purl.obolibrary.org/obo/ecrro.owl> .
+
+<http://purl.obolibrary.org/obo/ecrro.owl> rdf:type owl:Ontology ;
+                                            owl:imports <http://cor.esipfed.org/ont/earthcube/ADO> ,
+                                                        <http://cor.esipfed.org/ont/earthcube/cclo> ,
+                                                        <http://cor.esipfed.org/ont/earthcube/dlo> ,
+                                                        <http://cor.esipfed.org/ont/earthcube/sfo> ,
+                                                        <http://cor.esipfed.org/ont/earthcube/swl> ,
+                                                        <http://purl.obolibrary.org/obo/iao.owl> ,
+                                                        <http://purl.obolibrary.org/obo/ncit.owl> ,
+                                                        <http://purl.obolibrary.org/obo/ro/ro-base.owl> ,
+                                                        <http://schema.org/> ,
+                                                        <http://www.w3.org/2002/07/owl> ,
+                                                        <http://www.w3.org/ns/prov-o-20130430> ,
+                                                        <http://xmlns.com/foaf/0.1/> ,
+                                                        <https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/Utility-Ontologies/master/CClicenses.rdf> ;
+                                            dce:creator <https://orcid.org/0000-0003-4808-4736> ;
+                                            dce:description """This application level ontology is intended to provide the framework for answering questions like:
+
+1. \"How can EarthCube help me?\" (Science Engagement), 
+2. \"If I had an EarthCube Workbench, what capabilities could I access through it?\" (Workbench) and 
+3. “What EarthCube software components can I use to get my application working?” (Developers). 
+
+It extends the idea of an EarthCube Registry beyond data sets, to a generalized Registry of software components, semantic resources, tools, etc., with descriptive information to facilitate evaluation for reuse."""@en ;
+                                            dce:title "Earth Cube Resource Registry Ontology" ;
+                                            dcterms:license <https://creativecommons.org/share-your-work/public-domain/cc0/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdfs:label "definition source" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P108
+<http://purl.obolibrary.org/obo/NCIT_P108> rdfs:comment "The word or phrase that NCI uses by preference to refer to the concept. [def-source: NCI]"@en ;
+                                           rdfs:label "Preferred_Name"@en ;
+                                           rdfs:range xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P207
+<http://purl.obolibrary.org/obo/NCIT_P207> rdfs:comment "Concept Unique Identifiers, or CUIs, are concept numbers assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept. [def-source: NCI]"@en ;
+                                           rdfs:label "UMLS:Concept Unique Identifiers (CUI)"@en ;
+                                           rdfs:range xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P385
+<http://purl.obolibrary.org/obo/NCIT_P385> rdfs:label "ncit:source-code"@en ;
+                                           rdfs:range xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P386
+<http://purl.obolibrary.org/obo/NCIT_P386> rdfs:label "ncit:subsource-name"@en ;
+                                           rdfs:range xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P98
+<http://purl.obolibrary.org/obo/NCIT_P98> rdfs:comment "Design notes are notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept. [def-source: NCI]"@en ;
+                                          rdfs:label "ncit:DesignNote"@en ;
+                                          rdfs:range xsd:string .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dce:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dce:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dce:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://semanticscience.org/resource/example
+<http://semanticscience.org/resource/example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+<http://www.geneontology.org/formats/oboInOwl#created_by> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+<http://www.geneontology.org/formats/oboInOwl#creation_date> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000002
+<http://purl.obolibrary.org/obo/ECRRO_0000002> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf dcterms:type ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "An ECResourceType is a list of the type of resources in the EC Resource Registry."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-06T21:46:03Z"^^xsd:dateTime ;
+                                               rdfs:label "ECResourceType"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000002> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An ECResourceType is a list of the type of resources in the EC Resource Registry."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000017
+<http://purl.obolibrary.org/obo/ECRRO_0000017> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <http://purl.obolibrary.org/obo/ECRRO_0000047> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "For EC resources, has usage indicates what communities (if known) know about and potentially use the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:05:21Z"^^xsd:dateTime ;
+                                               rdfs:label "has usage"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000045
+<http://purl.obolibrary.org/obo/ECRRO_0000045> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000001> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "An entity A is relevant to another entity B if users want to or need to know about A when addressing B."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T23:42:17Z"^^xsd:dateTime ;
+                                               rdfs:label "is relevent to"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000045> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An entity A is relevant to another entity B if users want to or need to know about A when addressing B."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000128
+<http://purl.obolibrary.org/obo/ECRRO_0000128> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Relates a field of study (i.e., domain or discipline) to an entity."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T20:12:03Z"^^xsd:dateTime ;
+                                               <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has topic" ;
+                                               rdfs:label "has domain"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000138
+<http://purl.obolibrary.org/obo/ECRRO_0000138> rdf:type owl:ObjectProperty ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T21:30:57Z"^^xsd:dateTime ;
+                                               rdfs:label "has maturity state"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000139
+<http://purl.obolibrary.org/obo/ECRRO_0000139> rdf:type owl:ObjectProperty ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The name of the agent that is maintaining this resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:05:12Z"^^xsd:dateTime ;
+                                               <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "stewardship" ;
+                                               rdfs:label "curated by"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002502
+<http://purl.obolibrary.org/obo/RO_0002502> rdfs:domain <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                            rdfs:range [ rdf:type owl:Class ;
+                                                         owl:unionOf ( <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>
+                                                                       <http://schema.org/Text>
+                                                                       <http://schema.org/URL>
+                                                                     )
+                                                       ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000218
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000218> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                         rdfs:range [ rdf:type owl:Class ;
+                                                                      owl:unionOf ( <http://www.w3.org/2000/10/swap/pim/contact#Person>
+                                                                                    <http://xmlns.com/foaf/0.1/Organization>
+                                                                                  )
+                                                                    ] ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Agent (i.e., individual, individuals, organization, or a position/role) that is responsible for operation, availability, and maintainence of the resource"@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-19T19:23:26Z"^^xsd:dateTime ;
+                                                         rdfs:label "stewarded by"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000218> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Agent (i.e., individual, individuals, organization, or a position/role) that is responsible for operation, availability, and maintainence of the resource"@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                         rdfs:range <http://schema.org/Text> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Qualitative specification of how long the resource is expected to remain accessible, valid and usable for intended function"@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-19T19:59:31Z"^^xsd:dateTime ;
+                                                         rdfs:label "expectedLifetime"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Qualitative specification of how long the resource is expected to remain accessible, valid and usable for intended function"@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>
+                                              <http://schema.org/Text>
+                                              <http://schema.org/URL>
+                                            )
+                              ] .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/type
+dcterms:type rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/dateCreated
+<http://schema.org/dateCreated> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/dateModified
+<http://schema.org/dateModified> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/datePublished
+<http://schema.org/datePublished> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/expires
+<http://schema.org/expires> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/license
+<http://schema.org/license> rdf:type owl:AsymmetricProperty .
+
+
+###  http://schema.org/name
+<http://schema.org/name> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> dcterms:title .
+
+
+###  http://semanticscience.org/resource/SIO_000001
+<http://semanticscience.org/resource/SIO_000001> rdf:type owl:ObjectProperty .
+
+
+###  http://semanticscience.org/resource/SIO_000557
+<http://semanticscience.org/resource/SIO_000557> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Literal
+rdfs:Literal rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://edamontology.org/topic_0003
+<http://edamontology.org/topic_0003> rdf:type owl:Class ;
+                                     <http://www.w3.org/2004/02/skos/core#editorialNote> "Subtopics for Earth and Space Sciences were taken from the AGU list of sections."@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000006
+<http://purl.obolibrary.org/obo/ECRRO_0000006> rdf:type owl:Class ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-08T22:34:42Z"^^xsd:dateTime ;
+                                               rdfs:label "funding agency"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000009
+<http://purl.obolibrary.org/obo/ECRRO_0000009> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A statement of how an entity should be referenced in a reference list."@en ;
+                                               <http://semanticscience.org/resource/example> """Data set citation: 
+
+Meier, W., F. Fetterer, M. Savoie, S. Mallory, R. Duerr, and J. Stroeve. \"NOAA/NSIDC Climate Data Record of passive microwave sea ice concentration, version 2. National Snow and Ice Data Center, Boulder, Colorado, USA.\" (2013)."""@en ,
+                                                                                             """Software citation:
+
+Xu, C., & Christoffersen, B. (2017). The Functionally-Assembled Terrestrial Ecosystem Simulator. Version 1. Los Alamos National Laboratory (LANL), Los Alamos, NM (United States).  https://doi.org/10.11578/dc.20171025.1962 Accessed 2018-07-01."""@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-08T23:32:13Z"^^xsd:dateTime ;
+                                               rdfs:label "citation"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000009> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A statement of how an entity should be referenced in a reference list."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000011
+<http://purl.obolibrary.org/obo/ECRRO_0000011> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C16453> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Type of user is a kind of community distinguished by how its members interact with a system."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T21:37:33Z"^^xsd:dateTime ;
+                                               rdfs:label "user community"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000011> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Type of user is a kind of community distinguished by how its members interact with a system."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000012
+<http://purl.obolibrary.org/obo/ECRRO_0000012> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C16453> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A community distinguished by the field/discipline of research persued.  For the ECResource Registry user types are currently based on AGU section membership."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T21:37:33Z"^^xsd:dateTime ;
+                                               rdfs:label "research community"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A community distinguished by the field/discipline of research persued.  For the ECResource Registry user types are currently based on AGU section membership."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000046
+<http://purl.obolibrary.org/obo/ECRRO_0000046> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "EarthCube resource usage is data that indicates how well used the resource is by the CS and Geo branches of the EarthCube community."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-11T00:05:40Z"^^xsd:dateTime ;
+                                               rdfs:label "EC resource usage"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000046> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "EarthCube resource usage is data that indicates how well used the resource is by the CS and Geo branches of the EarthCube community."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000047
+<http://purl.obolibrary.org/obo/ECRRO_0000047> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ECRRO_0000046> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The EC general usage field is data about EC resource usage that is not specific to a particular user category though it does indicate which categories are in use (if any)."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:09:39Z"^^xsd:dateTime ;
+                                               rdfs:label "EC general usage"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "Curation of these fields is necessary to validate the content!"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000047> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The EC general usage field is data about EC resource usage that is not specific to a particular user category though it does indicate which categories are in use (if any)."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000054
+<http://purl.obolibrary.org/obo/ECRRO_0000054> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ECRRO_0000046> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "EC usage is data about EC resource usage within one of the two main communities within EarthCube (geoscientists and cyberinfrastructure/programmers)."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:43:20Z"^^xsd:dateTime ;
+                                               rdfs:label "EC disciplinary usage"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000054> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "EC usage is data about EC resource usage within one of the two main communities within EarthCube (geoscientists and cyberinfrastructure/programmers)."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000060
+<http://purl.obolibrary.org/obo/ECRRO_0000060> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-14T20:50:10Z"^^xsd:dateTime ;
+                                               rdfs:label "stewardship role"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000061
+<http://purl.obolibrary.org/obo/ECRRO_0000061> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Funder role is a role which inheres in a person or organization and which is realized by the process of financing something."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-14T21:05:49Z"^^xsd:dateTime ;
+                                               rdfs:label "funder role"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000061> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Funder role is a role which inheres in a person or organization and which is realized by the process of financing something."@en ;
+   rdfs:comment <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000062
+<http://purl.obolibrary.org/obo/ECRRO_0000062> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ECRRO_0000009> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "An EC resource citation is the reference that should be used in papers about an EarthCube resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-14T21:56:27Z"^^xsd:dateTime ;
+                                               rdfs:label "EC resource citation"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000062> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An EC resource citation is the reference that should be used in papers about an EarthCube resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000093
+<http://purl.obolibrary.org/obo/ECRRO_0000093> rdf:type owl:Class ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A research organization is an organization whose main role is to support researcher's activities."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-22T19:19:14Z"^^xsd:dateTime ;
+                                               rdfs:label "Research Organization"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "The Research Organization Registry (https://ror.org/) assigns unique IDs to research organizations.  It should be noted that more than 10,000 entries are Universities, and that many National Centers, etc are also included. If the organization has an ROR it should be used."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000093> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A research organization is an organization whose main role is to support researcher's activities."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <http://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000129
+<http://purl.obolibrary.org/obo/ECRRO_0000129> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "EC resource maturity is information about the maturity of an EC resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:22:05Z"^^xsd:dateTime ;
+                                               rdfs:label "EC resource maturity"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "EC resource maturity is information about the maturity of an EC resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000140
+<http://purl.obolibrary.org/obo/ECRRO_0000140> rdf:type owl:Class ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "ISO role codes are the CI_Responsible parties as used within the ISO 19115 family of specifications."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:05:41Z"^^xsd:dateTime ;
+                                               rdfs:label "ISO role codes"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "ISO role codes are the CI_Responsible parties as used within the ISO 19115 family of specifications."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000027
+<http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C21270
+<http://purl.obolibrary.org/obo/NCIT_C21270> rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C19498> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C92442
+<http://purl.obolibrary.org/obo/NCIT_C92442> rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C19498> .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://schema.org/CreativeWork> ,
+                                                                         <http://schema.org/Intangible> ,
+                                                                         <http://www.w3.org/ns/dcat#Resource> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/datePublished> ;
+                                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                owl:unionOf ( <http://schema.org/Date>
+                                                                                                              <http://schema.org/DateTime>
+                                                                                                            )
+                                                                                              ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/ECRRO_0000138> ;
+                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass <http://purl.obolibrary.org/obo/ECRRO_0000129>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/ECRRO_0000017> ;
+                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass <http://purl.obolibrary.org/obo/ECRRO_0000047>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/ECRRO_0000017> ;
+                                                                           owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass <http://purl.obolibrary.org/obo/ECRRO_0000054>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/dateCreated> ;
+                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://schema.org/Date>
+                                                                                                       <http://schema.org/DateTime>
+                                                                                                     )
+                                                                                       ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/publication> ;
+                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://schema.org/CreativeWork>
+                                                                                                       <http://schema.org/URL>
+                                                                                                     )
+                                                                                       ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty dcterms:bibliographicCitation ;
+                                                                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                         ] ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A catalogued resource that is in the EarthCube Registry."@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T21:32:12Z"^^xsd:dateTime ;
+                                                         rdfs:label "ECResource"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://schema.org/publication> ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass [ rdf:type owl:Class ;
+                                       owl:unionOf ( <http://schema.org/CreativeWork>
+                                                     <http://schema.org/URL>
+                                                   )
+                                     ]
+                       ] ;
+   rdfs:comment "This should only be used for the primary publication associated with the resource."@en
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000202> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ,
+                                                                         <http://www.w3.org/ns/dcat#DataService> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A software entity on one side of an interface that executes some kind of processing  in response to a request made by an agent on the other side of the interface."@en ;
+                                                         <http://purl.org/vocab/vann/usageNote> """The service presents a set of offerings, each of which entails a resource and one or more operations on that resource. 
+
+Each offering also specifies the interchange format for input and output, and the syntax for invoking the operations, including any parameters in the operation signature."""@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T21:33:16Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Service Instance"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ,
+                                                                         <http://schema.org/TechArticle> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A document that describes the technical characteristics of an artifact or practice, possibly including a description of what it should do, or an explicit set of requirements that it must satisfy."@en ;
+                                                         <http://purl.org/vocab/vann/usageNote> """All resources may have a conformsTo property that should be a link to a specification.  
+
+Specifications may be hierarchical, e.g. a profile specification might inherit provisions from a parent specification, and add additional constraints to further restrict usage of the artifact or practice."""@en ;
+                                                         <http://semanticscience.org/resource/example> "interoperability agreement, identifier scheme"@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T21:37:35Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Specification"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000204> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A document that describes the technical characteristics of an artifact or practice, possibly including a description of what it should do, or an explicit set of requirements that it must satisfy."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <http://en.wikipedia.org/wiki/Specification>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C81930> ,
+                                                                         <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A specification of a scenario for a work item with some specific context and goal."@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T21:52:54Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Use Case"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000205> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A specification of a scenario for a work item with some specific context and goal."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ,
+                                                                         <http://schema.org/SoftwareApplication> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Software represented in the EC registry"@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:00:30Z"^^xsd:dateTime ;
+                                                         rdfs:comment "A packaged set of instructions that can be executed by a machine to perform one or more functions. Distribution might be as source code, an executable file, an installer package, or as a web application that can be invoked via URL." ;
+                                                         rdfs:label "EC Software"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000206> ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "A packaged set of instructions that can be executed by a machine to perform one or more functions. Distribution might be as source code, an executable file, an installer package, or as a web application that can be invoked via URL." ;
+   dcterms:creator <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ,
+                                                                         <http://schema.org/Service> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A set of operations, messages used to invoke the operations, and inputs necessary to execute the operations, along with an expected output content and format."@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:12:26Z"^^xsd:dateTime ;
+                                                         rdfs:comment "An Interface/API should have an associated specification document."@en ;
+                                                         rdfs:label "EC Interface_API"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000207> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A set of operations, messages used to invoke the operations, and inputs necessary to execute the operations, along with an expected output content and format."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A serialization scheme (data format) for communication between agents."@en ;
+                                                         <http://purl.org/vocab/vann/usageNote> """Most general types are generic formats specified by typical MIME types, but this resource type includes much more granular identification of schemes/Data Types/Data Specification that are specific to particular applications. These generally implement some underlying information model (schema and vocabulary) that enables semantic as well as syntactic interoperability.  
+
+An Interchange Format SHOULD have an associated specification that documents its provisions and usage. 
+
+Registered interchange formats are intended to provide identifiers for data serialization formats that work with specific applications. Links to registered formats would be via URI values for the inputFormat and outputFormat properties on an Interface/API, Software, or Service resource.
+
+In situations where no specification resource is available to document the format, it is sufficient to simply identify the format as an application specific format. This is the case for various commercial applications that use proprietary formats, as well as for scientific model input and output formats. 
+
+The interchange format can be linked to an information model that defines the entities and properties represented using the format."""@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:15:19Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Interchange Format"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000208> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A serialization scheme (data format) for communication between agents."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ,
+                                                                         <http://schema.org/ResearchProject> ,
+                                                                         <http://schema.org/Service> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "An ECResource record for a repository - a place where things may be put for safekeeping."@en ;
+                                                         <http://purl.org/vocab/vann/usageNote> "In EarthCube, a repository is often a storage system in which objects may be stored for subsequent access or retrieval."@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:16:27Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Repository"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000209> ;
+   owl:annotatedProperty <http://purl.org/vocab/vann/usageNote> ;
+   owl:annotatedTarget "In EarthCube, a repository is often a storage system in which objects may be stored for subsequent access or retrieval."@en ;
+   dce:source "Kahn and Wilensky, 1995, http://www.cnri.reston.va.us/k-w.html"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A specification of concepts, and optionally relationships representing a conceptualization of some domain of discourse."@en ;
+                                                         <http://purl.org/vocab/vann/usageNote> """Includes a spectrum of resources including controlled vocabulary, thesaurus, information model, taxonomy, glossary, vocabulary....). 
+
+For linked data purposes, it is useful to specify the entities and properties of the entities represented by the model using URI references to widely used ontologies. 
+
+For discovery purposes in the registry, the entities and properties should be described in English language terms."""@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:37:55Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Semantic Resource"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000210> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A specification of concepts, and optionally relationships representing a conceptualization of some domain of discourse."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000211> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "An entry in the EC Resource Registry representing a composite software entity that enables execution of a variety of tools e.g. MatLab, ArcGIS."@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:41:39Z"^^xsd:dateTime ;
+                                                         rdfs:comment "The key defining feature is extensibility - with plugin architecture and API-based interaction between components to enable reconfiguration/extension for new problems."@en ;
+                                                         rdfs:label "EC Platform"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ,
+                                                                         <http://schema.org/Dataset> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "A curated collection of descriptions of resources, accessible through one or more interfaces."@en ;
+                                                         <http://purl.org/vocab/vann/usageNote> """Technically a catalog should be a dcat bundled dataset (the metadata collection) and one or more sdo:Services (i.e., the access interfaces). 
+
+Implicitly there is also a stewardship/policy component determining management of the catalog."""@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T22:46:23Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC CatalogRegistry"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000212> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A curated collection of descriptions of resources, accessible through one or more interfaces."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000213> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/ns/dcat#CatalogRecord> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/creator> ;
+                                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                owl:unionOf ( <http://xmlns.com/foaf/0.1/Organization>
+                                                                                                              <http://xmlns.com/foaf/0.1/Person>
+                                                                                                            )
+                                                                                              ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/dateModified> ;
+                                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                owl:unionOf ( <http://schema.org/Date>
+                                                                                                              <http://schema.org/DateTime>
+                                                                                                            )
+                                                                                              ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/description> ;
+                                                                           owl:someValuesFrom <http://schema.org/Text>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://xmlns.com/foaf/0.1/primaryTopic> ;
+                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/dateCreated> ;
+                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://schema.org/Date>
+                                                                                                       <http://schema.org/DateTime>
+                                                                                                     )
+                                                                                       ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty dcterms:title ;
+                                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                         ] ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-07T02:23:55Z"^^xsd:dateTime ;
+                                                         rdfs:label "EC Catalog Record"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000222
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000222> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://schema.org/Project> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/name> ;
+                                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                owl:unionOf ( <http://schema.org/Text>
+                                                                                                              <http://schema.org/URL>
+                                                                                                            )
+                                                                                              ]
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://schema.org/roleName> ;
+                                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                owl:unionOf ( <http://schema.org/Text>
+                                                                                                              <http://schema.org/URL>
+                                                                                                            )
+                                                                                              ]
+                                                                         ] ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-19T21:58:01Z"^^xsd:dateTime ;
+                                                         rdfs:label "originatingProject"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300> rdf:type owl:Class ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Qualitative speculation about how long the resource is expected to remain accessible, valid and usable for intended function."@en ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-09-26T21:43:05Z"^^xsd:dateTime ;
+                                                         rdfs:label "expected lifetime"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://schema.org/Audience> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:37:43Z"^^xsd:dateTime ;
+                                                          rdfs:label "ECAudience"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/SFO_0000075
+<http://purl.obolibrary.org/obo/ecrro.owl/SFO_0000075> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A composite resource that is a collection of other resources assembled into a package for some purpose, and accessible as a single Unit."@en ;
+                                                       <http://semanticscience.org/resource/example> "Docker containers; Bagit, Data on the Web, or ORE packages with heterogeneous content."@en ;
+                                                       <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-09-23T23:32:21Z"^^xsd:dateTime ;
+                                                       rdfs:label "EC Bundled Object"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ecrro.owl/SFO_0000075> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A composite resource that is a collection of other resources assembled into a package for some purpose, and accessible as a single Unit."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.org/dc/dcam/VocabularyEncodingScheme
+<http://purl.org/dc/dcam/VocabularyEncodingScheme> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/dcmitype/Service
+<http://purl.org/dc/dcmitype/Service> rdf:type owl:Class .
+
+
+###  http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> rdfs:subClassOf <http://schema.org/CreativeWork> ,
+                                                 <http://schema.org/Intangible> .
+
+
+###  http://schema.org/Dataset
+<http://schema.org/Dataset> <http://purl.obolibrary.org/obo/IAO_0000115> "An ECResource that is a catalog of other resources.  By definition catalogs are datasets."@en .
+
+
+###  http://semanticscience.org/resource/SIO_000090
+<http://semanticscience.org/resource/SIO_000090> rdf:type owl:Class ;
+                                                 rdfs:label "specification" .
+
+
+###  http://www.ebi.ac.uk/swo/SWO_0000002
+<http://www.ebi.ac.uk/swo/SWO_0000002> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> .
+
+
+###  http://www.w3.org/2000/10/swap/pim/contact#Person
+<http://www.w3.org/2000/10/swap/pim/contact#Person> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#CatalogRecord
+<http://www.w3.org/ns/dcat#CatalogRecord> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> rdf:type owl:Class ;
+                                     <http://purl.obolibrary.org/obo/IAO_0000115> "Resource published or curated by a single agent." ;
+                                     <http://purl.org/vocab/vann/usageNote> "The class of all cataloged resources, the super-class of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all cataloged resources, including datasets and data services. It is strongly recommended to use a more specific sub-class when available." ,
+                                                                            "dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional sub-classes may be defined in a DCAT profile or other DCAT application for catalogs of other kinds of resources" ;
+                                     rdfs:isDefinedBy <https://www.w3.org/TR/vocab-dcat-2/#Class:Resource> ;
+                                     rdfs:label "Cataloged Resource" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000003
+<http://purl.obolibrary.org/obo/ECRRO_0000003> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.org/dc/dcam/VocabularyEncodingScheme> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-06T21:54:33Z"^^xsd:dateTime ;
+                                               rdfs:label "ECResourceTypes"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000005
+<http://purl.obolibrary.org/obo/ECRRO_0000005> rdf:type owl:NamedIndividual ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-06T22:47:07Z"^^xsd:dateTime ;
+                                               rdfs:label "Use Case"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000013
+<http://purl.obolibrary.org/obo/ECRRO_0000013> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000011> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A researcher is a user who is interested in discovering items in the EarthCube Resource Registry (e.g., tools, data sets, etc.) that they can use in persuing their research."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T21:43:59Z"^^xsd:dateTime ;
+                                               rdfs:label "researcher"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000013> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A researcher is a user who is interested in discovering items in the EarthCube Resource Registry (e.g., tools, data sets, etc.) that they can use in persuing their research."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000014
+<http://purl.obolibrary.org/obo/ECRRO_0000014> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000011> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "In the context of the EarthCube Registry developers are users who wish to find software components that they can integrate into software they are building."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T21:44:25Z"^^xsd:dateTime ;
+                                               rdfs:label "developer"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000015
+<http://purl.obolibrary.org/obo/ECRRO_0000015> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000011> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A funder is a type of user interested in understanding what elements of the EarthCube Registry they have funded."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T21:44:37Z"^^xsd:dateTime ;
+                                               rdfs:label "funder"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000015> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A funder is a type of user interested in understanding what elements of the EarthCube Registry they have funded."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000016
+<http://purl.obolibrary.org/obo/ECRRO_0000016> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000011> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A repository user is one who is interested in what components in the EarthCube Registry may be relevant to integrate or use in serving their user community."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T21:45:14Z"^^xsd:dateTime ;
+                                               rdfs:label "repository"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000016> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A repository user is one who is interested in what components in the EarthCube Registry may be relevant to integrate or use in serving their user community."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000018
+<http://purl.obolibrary.org/obo/ECRRO_0000018> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:10:02Z"^^xsd:dateTime ;
+                                               rdfs:label "all sections"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000020
+<http://purl.obolibrary.org/obo/ECRRO_0000020> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:11:50Z"^^xsd:dateTime ;
+                                               rdfs:label "Atmospheric & Space Electricity"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000021
+<http://purl.obolibrary.org/obo/ECRRO_0000021> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:12:16Z"^^xsd:dateTime ;
+                                               rdfs:label "Atmospheric Sciences"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000022
+<http://purl.obolibrary.org/obo/ECRRO_0000022> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:12:30Z"^^xsd:dateTime ;
+                                               rdfs:label "Biogeosciences"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000023
+<http://purl.obolibrary.org/obo/ECRRO_0000023> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:12:49Z"^^xsd:dateTime ;
+                                               rdfs:label "Cyrosphere Sciences"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000024
+<http://purl.obolibrary.org/obo/ECRRO_0000024> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:13:15Z"^^xsd:dateTime ;
+                                               rdfs:label "Earth and Planetary Surface Processes"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000025
+<http://purl.obolibrary.org/obo/ECRRO_0000025> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:13:55Z"^^xsd:dateTime ;
+                                               rdfs:label "Earth and Space Science Informatics"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000026
+<http://purl.obolibrary.org/obo/ECRRO_0000026> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:14:04Z"^^xsd:dateTime ;
+                                               rdfs:label "Education"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000027
+<http://purl.obolibrary.org/obo/ECRRO_0000027> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:14:18Z"^^xsd:dateTime ;
+                                               rdfs:label "Geodesy"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000028
+<http://purl.obolibrary.org/obo/ECRRO_0000028> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:14:31Z"^^xsd:dateTime ;
+                                               rdfs:label "Geohealth"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000029
+<http://purl.obolibrary.org/obo/ECRRO_0000029> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:14:59Z"^^xsd:dateTime ;
+                                               rdfs:label "Geomagnetism, Paleomagnetism and Electromagnetism"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000030
+<http://purl.obolibrary.org/obo/ECRRO_0000030> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:15:14Z"^^xsd:dateTime ;
+                                               rdfs:label "Global Environmental Change"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000031
+<http://purl.obolibrary.org/obo/ECRRO_0000031> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:15:27Z"^^xsd:dateTime ;
+                                               rdfs:label "Hydrology"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000032
+<http://purl.obolibrary.org/obo/ECRRO_0000032> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:15:45Z"^^xsd:dateTime ;
+                                               rdfs:label "Mineral and Rock Physics"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000033
+<http://purl.obolibrary.org/obo/ECRRO_0000033> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:15:58Z"^^xsd:dateTime ;
+                                               rdfs:label "Natural Hazards"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000034
+<http://purl.obolibrary.org/obo/ECRRO_0000034> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:16:12Z"^^xsd:dateTime ;
+                                               rdfs:label "Near-Surface Geophysics"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000035
+<http://purl.obolibrary.org/obo/ECRRO_0000035> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:16:25Z"^^xsd:dateTime ;
+                                               rdfs:label "Nonlinear Geophysics"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000036
+<http://purl.obolibrary.org/obo/ECRRO_0000036> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:16:38Z"^^xsd:dateTime ;
+                                               rdfs:label "Ocean Sciences"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000037
+<http://purl.obolibrary.org/obo/ECRRO_0000037> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:17:02Z"^^xsd:dateTime ;
+                                               rdfs:label "Paleoceanography and Paleoclimatology"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000038
+<http://purl.obolibrary.org/obo/ECRRO_0000038> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:17:31Z"^^xsd:dateTime ;
+                                               rdfs:label "Planetary Sciences"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000039
+<http://purl.obolibrary.org/obo/ECRRO_0000039> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:17:42Z"^^xsd:dateTime ;
+                                               rdfs:label "Seismology"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000040
+<http://purl.obolibrary.org/obo/ECRRO_0000040> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:17:57Z"^^xsd:dateTime ;
+                                               rdfs:label "Social Impacts and Policy Sciences"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000041
+<http://purl.obolibrary.org/obo/ECRRO_0000041> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:18:12Z"^^xsd:dateTime ;
+                                               rdfs:label "Space Physics and Aeronomy"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000042
+<http://purl.obolibrary.org/obo/ECRRO_0000042> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:18:30Z"^^xsd:dateTime ;
+                                               rdfs:label "Study of the Earth's Deep Interior"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000043
+<http://purl.obolibrary.org/obo/ECRRO_0000043> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:18:43Z"^^xsd:dateTime ;
+                                               rdfs:label "Tectonophysics"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000044
+<http://purl.obolibrary.org/obo/ECRRO_0000044> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-10T22:19:03Z"^^xsd:dateTime ;
+                                               rdfs:label "Volcanology, Geochemistry, and Petrology"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000049
+<http://purl.obolibrary.org/obo/ECRRO_0000049> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000047> ,
+                                                        <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "It is not known how much, if any, usage there is of this resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:27:21Z"^^xsd:dateTime ;
+                                               rdfs:label "unknown"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000049> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "It is not known how much, if any, usage there is of this resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000050
+<http://purl.obolibrary.org/obo/ECRRO_0000050> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000047> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A resource with low usage, may be new and so has not yet built up a user community, possibly not widely known (more advertising needed), or it may indicate a resource that has missed its mark."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:27:43Z"^^xsd:dateTime ;
+                                               rdfs:label "usage low"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000050> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A resource with low usage, may be new and so has not yet built up a user community, possibly not widely known (more advertising needed), or it may indicate a resource that has missed its mark."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> "https://orcid.org/0000-0003-4808-4736"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000051
+<http://purl.obolibrary.org/obo/ECRRO_0000051> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000047> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "This EC resource is in use withint the cyberinfrastructure/programming community as characterized by EC CS usage."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:28:12Z"^^xsd:dateTime ;
+                                               rdfs:label "used by programmers"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000051> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "This EC resource is in use withint the cyberinfrastructure/programming community as characterized by EC CS usage."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000052
+<http://purl.obolibrary.org/obo/ECRRO_0000052> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000047> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "This EC resource is in use within the geoscience community as characterized by  EC Geo usage."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:28:41Z"^^xsd:dateTime ;
+                                               rdfs:label "used by geoscientists"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000052> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "This EC resource is in use within the geoscience community as characterized by  EC Geo usage."@en ;
+   rdfs:comment <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000053
+<http://purl.obolibrary.org/obo/ECRRO_0000053> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000047> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Both the geoscience and the software and cyberinfrastructure/development communities use this resource as characterized by EC CS usage and EC Geo usage."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:29:01Z"^^xsd:dateTime ;
+                                               rdfs:label "used by both"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000053> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Both the geoscience and the software and cyberinfrastructure/development communities use this resource as characterized by EC CS usage and EC Geo usage."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000055
+<http://purl.obolibrary.org/obo/ECRRO_0000055> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000054> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:46:02Z"^^xsd:dateTime ;
+                                               rdfs:label ">10 adopters"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000056
+<http://purl.obolibrary.org/obo/ECRRO_0000056> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000054> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:46:50Z"^^xsd:dateTime ;
+                                               rdfs:label "Widely used > 1 yr"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000057
+<http://purl.obolibrary.org/obo/ECRRO_0000057> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000054> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-13T22:47:09Z"^^xsd:dateTime ;
+                                               rdfs:label "Widely used > 5 yr"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000095
+<http://purl.obolibrary.org/obo/ECRRO_0000095> rdf:type owl:NamedIndividual ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-22T19:44:12Z"^^xsd:dateTime ;
+                                               rdfs:label "EC record created"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000096
+<http://purl.obolibrary.org/obo/ECRRO_0000096> rdf:type owl:NamedIndividual ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-22T19:44:29Z"^^xsd:dateTime ;
+                                               rdfs:label "EC record updated"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000097
+<http://purl.obolibrary.org/obo/ECRRO_0000097> rdf:type owl:NamedIndividual ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-22T19:44:44Z"^^xsd:dateTime ;
+                                               rdfs:label "EC record retired"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000130
+<http://purl.obolibrary.org/obo/ECRRO_0000130> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Information about the maturity of an entity for which development is planned but is not yet underway (e.g., book contract not yet signed, development project not yet started)."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:23:24Z"^^xsd:dateTime ;
+                                               rdfs:label "planning"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000131
+<http://purl.obolibrary.org/obo/ECRRO_0000131> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Maturity information about an entity that is currently being developed but which is not expected to be available for more than another year."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:23:56Z"^^xsd:dateTime ;
+                                               rdfs:label "in development >1 year out"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000131> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Maturity information about an entity that is currently being developed but which is not expected to be available for more than another year."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000132
+<http://purl.obolibrary.org/obo/ECRRO_0000132> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Maturity information about an entity that is in development and is expected to be complete in less than another year."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:24:10Z"^^xsd:dateTime ;
+                                               rdfs:label "in development <1 yr out"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000132> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Maturity information about an entity that is in development and is expected to be complete in less than another year."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> "https://orcid.org/0000-0003-4808-4736"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000133
+<http://purl.obolibrary.org/obo/ECRRO_0000133> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Maturity information about an entity that is available but only in draft form or as an alpha release. The entity may not be complete (e.g. specifications, documentation) or thoroughly tested (e.g., software)."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:24:58Z"^^xsd:dateTime ;
+                                               rdfs:label "alpha or rough draft"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000133> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Maturity information about an entity that is available but only in draft form or as an alpha release. The entity may not be complete (e.g. specifications, documentation) or thoroughly tested (e.g., software)."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> "https://orcid.org/0000-0003-4808-4736"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000134
+<http://purl.obolibrary.org/obo/ECRRO_0000134> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Maturity information about an entity that is complete and available but has not yet been fully vetted (e.g., may contain bugs if software or has not completed editorial or other review if documentation, etc.)."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:25:35Z"^^xsd:dateTime ;
+                                               rdfs:label "beta or complete draft"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000135
+<http://purl.obolibrary.org/obo/ECRRO_0000135> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:26:05Z"^^xsd:dateTime ;
+                                               rdfs:label "production ready"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000136
+<http://purl.obolibrary.org/obo/ECRRO_0000136> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Maturity information about an entity that fully developed, tested, etc. and in production (e.g., a major version or edition has been released)."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:26:18Z"^^xsd:dateTime ;
+                                               rdfs:label "in production"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000136> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Maturity information about an entity that fully developed, tested, etc. and in production (e.g., a major version or edition has been released)."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000137
+<http://purl.obolibrary.org/obo/ECRRO_0000137> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000129> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-23T22:27:12Z"^^xsd:dateTime ;
+                                               rdfs:label "used in multiple places"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000141
+<http://purl.obolibrary.org/obo/ECRRO_0000141> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization whose name should appear first in the citation for the resource (for names that come after the first use co-author). While it is possible to have an author and principle investigator be the same individual or organization, author is not the same as nor synonymous with principle investigator.  Applicable mainly to documents, reports, memos, etc."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:08:18Z"^^xsd:dateTime ;
+                                               rdfs:label "author"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000141> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization whose name should appear first in the citation for the resource (for names that come after the first use co-author). While it is possible to have an author and principle investigator be the same individual or organization, author is not the same as nor synonymous with principle investigator.  Applicable mainly to documents, reports, memos, etc."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000142
+<http://purl.obolibrary.org/obo/ECRRO_0000142> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization that has accountability and responsibility for the data and ensures appropriate care and maintenance of the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:08:49Z"^^xsd:dateTime ;
+                                               rdfs:label "custodian"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000142> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization that has accountability and responsibility for the data and ensures appropriate care and maintenance of the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000143
+<http://purl.obolibrary.org/obo/ECRRO_0000143> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The organization that is responsible for providing the PARR required access to the data."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:10:26Z"^^xsd:dateTime ;
+                                               rdfs:label "distributor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000143> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The organization that is responsible for providing the PARR required access to the data."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000145
+<http://purl.obolibrary.org/obo/ECRRO_0000145> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The name of the individual or organization who is responsible for the data at the point when the data was first created. Applicable for data sets that are an aggregation of two or more data sets or if the data set is the first instance of the signal having been converted into data."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:17:27Z"^^xsd:dateTime ;
+                                               rdfs:label "originator"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "In the EarthCube (EC) context, data includes any and all EarthCube resources irrespective of form (e.g., software, documentation, etc. all count as does traditional numeric data)."@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000145> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The name of the individual or organization who is responsible for the data at the point when the data was first created. Applicable for data sets that are an aggregation of two or more data sets or if the data set is the first instance of the signal having been converted into data."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000146
+<http://purl.obolibrary.org/obo/ECRRO_0000146> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization that has ownership of the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:19:56Z"^^xsd:dateTime ;
+                                               rdfs:label "owner"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000146> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization that has ownership of the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000147
+<http://purl.obolibrary.org/obo/ECRRO_0000147> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization who is responsible for the initial triage of and answering questions related to the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:20:46Z"^^xsd:dateTime ;
+                                               rdfs:label "pointOfContact"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000147> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization who is responsible for the initial triage of and answering questions related to the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000148
+<http://purl.obolibrary.org/obo/ECRRO_0000148> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or individuals who are the lead researchers for a grant (i.e. head of the laboratory, research group leader, etc.). If there are co-principal investigators then this field will repeat for each principle investigator. While it is possible to have a principal investigator and author be the same individual or organization, principal investigator is not the same nor synonymous with author."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:21:42Z"^^xsd:dateTime ;
+                                               rdfs:label "principalInvestigator"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000148> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or individuals who are the lead researchers for a grant (i.e. head of the laboratory, research group leader, etc.). If there are co-principal investigators then this field will repeat for each principle investigator. While it is possible to have a principal investigator and author be the same individual or organization, principal investigator is not the same nor synonymous with author."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000149
+<http://purl.obolibrary.org/obo/ECRRO_0000149> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The name of the individual or organization who has processed the data in a manner such that the resource has been modified."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:23:15Z"^^xsd:dateTime ;
+                                               rdfs:label "processor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000149> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The name of the individual or organization who has processed the data in a manner such that the resource has been modified."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000150
+<http://purl.obolibrary.org/obo/ECRRO_0000150> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization who prepares and issues the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:23:57Z"^^xsd:dateTime ;
+                                               rdfs:label "publisher"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000150> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization who prepares and issues the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> "https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000151
+<http://purl.obolibrary.org/obo/ECRRO_0000151> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization that supplies or allocates the resource for another entity."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:24:45Z"^^xsd:dateTime ;
+                                               rdfs:label "resourceProvider"@en .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000152
+<http://purl.obolibrary.org/obo/ECRRO_0000152> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization who is providing sponsorship for the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:25:27Z"^^xsd:dateTime ;
+                                               rdfs:label "sponsor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000152> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization who is providing sponsorship for the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000153
+<http://purl.obolibrary.org/obo/ECRRO_0000153> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individuals or organizations who are the intended consumers of the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:26:51Z"^^xsd:dateTime ;
+                                               rdfs:label "user"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000153> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individuals or organizations who are the intended consumers of the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000154
+<http://purl.obolibrary.org/obo/ECRRO_0000154> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual(s) or organization(s) who name(s) should appear after the first name in a citation for the resource (use author to denote the first name in the citation). While it is possible to have a co-author and principal investigator/collaborator be the same individual or organization, co-author is no the same as nor synonymous with principle investigator or collaborator"@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:27:31Z"^^xsd:dateTime ;
+                                               rdfs:label "coAuthor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000154> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual(s) or organization(s) who name(s) should appear after the first name in a citation for the resource (use author to denote the first name in the citation). While it is possible to have a co-author and principal investigator/collaborator be the same individual or organization, co-author is no the same as nor synonymous with principle investigator or collaborator"@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000155
+<http://purl.obolibrary.org/obo/ECRRO_0000155> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Party who assists with the generation of the resource other than the principal investigator"@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:29:40Z"^^xsd:dateTime ;
+                                               rdfs:label "collaborator"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000155> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Party who assists with the generation of the resource other than the principal investigator"@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000156
+<http://purl.obolibrary.org/obo/ECRRO_0000156> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individuals or organizations whose contributions deserve recognition in the citation. Contributor is mutually exclusive from author, co-author, principal investigator, and collaborator. Use ISO MD_Identification credit field to identify individual or organizations that should be given acknowledgement only."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:32:06Z"^^xsd:dateTime ;
+                                               rdfs:label "contributor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000156> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individuals or organizations whose contributions deserve recognition in the citation. Contributor is mutually exclusive from author, co-author, principal investigator, and collaborator. Use ISO MD_Identification credit field to identify individual or organizations that should be given acknowledgement only."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000157
+<http://purl.obolibrary.org/obo/ECRRO_0000157> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual who has made a corrective or editorial change to the resource as part of a systematic revision process."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:33:04Z"^^xsd:dateTime ;
+                                               rdfs:label "editor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000157> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual who has made a corrective or editorial change to the resource as part of a systematic revision process."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000158
+<http://purl.obolibrary.org/obo/ECRRO_0000158> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization which has provided all or part of the finances associated with the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:33:58Z"^^xsd:dateTime ;
+                                               rdfs:label "funder"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000158> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization which has provided all or part of the finances associated with the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000159
+<http://purl.obolibrary.org/obo/ECRRO_0000159> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A class of entity that mediates access to the resource and for whom the resource is intended or useful."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:34:45Z"^^xsd:dateTime ;
+                                               rdfs:label "mediator"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000159> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A class of entity that mediates access to the resource and for whom the resource is intended or useful."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000160
+<http://purl.obolibrary.org/obo/ECRRO_0000160> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000140> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The individual or organization who has ownership of the legal right to the resource."@en ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T22:36:03Z"^^xsd:dateTime ;
+                                               rdfs:label "rightsHolder"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ECRRO_0000160> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "The individual or organization who has ownership of the legal right to the resource."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ECRRO_0000162
+<http://purl.obolibrary.org/obo/ECRRO_0000162> rdf:type owl:NamedIndividual ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-24T23:01:12Z"^^xsd:dateTime ;
+                                               rdfs:label "stewardship"@en .
+
+
+###  http://purl.obolibrary.org/obo/eccro_0000300
+<http://purl.obolibrary.org/obo/eccro_0000300> rdf:type owl:NamedIndividual ,
+                                                        <http://purl.obolibrary.org/obo/ECRRO_0000047> ,
+                                                        <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Resource is not available for use, typically because it is still in development."@en ;
+                                               rdfs:label "not applicable"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/eccro_0000300> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Resource is not available for use, typically because it is still in development."@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0001-6041-5302>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000301
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000301> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-09-26T21:43:26Z"^^xsd:dateTime ;
+                                                         rdfs:label ">5 years"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000302
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000302> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-09-26T21:43:42Z"^^xsd:dateTime ;
+                                                         rdfs:label ">1 year"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000303
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000303> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000300> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-09-26T21:44:39Z"^^xsd:dateTime ;
+                                                         rdfs:label "long term"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000305
+<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000305> rdf:type owl:NamedIndividual ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                         <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-09-26T22:02:19Z"^^xsd:dateTime ;
+                                                         rdfs:label "data intermediary"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000165
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000165> rdf:type owl:NamedIndividual ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:38:19Z"^^xsd:dateTime ;
+                                                          rdfs:label "data producers"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000166
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000166> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:38:35Z"^^xsd:dateTime ;
+                                                          rdfs:label "data users"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000167
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000167> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:39:00Z"^^xsd:dateTime ;
+                                                          rdfs:label "data producers"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000168
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000168> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:39:32Z"^^xsd:dateTime ;
+                                                          rdfs:label "data facilities & repositories"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000169
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000169> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:39:48Z"^^xsd:dateTime ;
+                                                          rdfs:label "technologists"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000170
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000170> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:39:58Z"^^xsd:dateTime ;
+                                                          rdfs:label "developers"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000171
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000171> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:40:06Z"^^xsd:dateTime ;
+                                                          rdfs:label "scientists"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000172
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000172> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:40:17Z"^^xsd:dateTime ;
+                                                          rdfs:label "informaticists"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000173
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000173> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:40:40Z"^^xsd:dateTime ;
+                                                          rdfs:label "members of the public"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000174
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000174> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:40:47Z"^^xsd:dateTime ;
+                                                          rdfs:label "all"@en .
+
+
+###  http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000175
+<http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000175> rdf:type owl:NamedIndividual ,
+                                                                   <http://purl.obolibrary.org/obo/ecrro.owl/ECRRO__0000164> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                          <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-08-30T22:41:01Z"^^xsd:dateTime ;
+                                                          rdfs:label "data managers"@en .
+
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.obolibrary.org/obo/BFO_0000179> rdfs:comment "Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification."@en ;
+                                              rdfs:label "BFO OWL specification label"@en .
+
+
+<http://purl.obolibrary.org/obo/BFO_0000180> rdfs:label "BFO CLIF specification label"@en ;
+                                             rdfs:comment "Relates an entity in the ontology to the term that is used to represent it in the the Common Logic Interchange Format (CLIF) specification of BFO2"@en ,
+                                                          "curator note: Really of interest to developers only"@en ;
+                                             dce:source "definition source: Person:Alan Ruttenberg"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000111> rdfs:label "editor preferred term"@en ;
+                                             rdfs:comment "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000112> rdfs:label "example of usage"@en ;
+                                             rdfs:comment "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000114> rdfs:label "has curation status"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000116> rdfs:comment "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en ;
+                                             rdfs:label "editor note"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000117> rdfs:comment "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en ;
+                                             rdfs:label "term editor"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000118> rdfs:comment """An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)
+Annotations"""@en ;
+                                             rdfs:label "alternative term"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "Use skos:altLabel"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000232> rdfs:comment "An administrative note of use for a curator but of no use for a user"@en ;
+                                             rdfs:label "curator note"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000234> rdfs:comment "The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition."@en ;
+                                             rdfs:label "ontology term requester"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000412> rdfs:label "imported from"@en ;
+                                             rdfs:comment "For external terms/classes, the ontology from which the term was imported"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000600> rdfs:label "elucidation"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000601> rdfs:label "has associated axiom(nl)"@en ;
+                                             rdfs:comment "An axiom associated with a term expressed using natural language"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000602> rdfs:label "has associated axiom(fol)"@en ;
+                                             rdfs:comment "An axiom expressed in first order logic using CLIF syntax"@en .
+
+
+<http://purl.obolibrary.org/obo/IAO_0010000> rdfs:label "has axiom label"@en ;
+                                             rdfs:comment "A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_NHC0> rdfs:label "ncit:code"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P106> rdfs:comment "The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network. [def-source: NCI]"@en ;
+                                           rdfs:label "ncit:Semantic_Type"@en ;
+                                           rdfs:comment "In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned. We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS."@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P208> rdfs:comment "Contains a Concept Unique Identifier for those concepts that appear in NCI Metathesaurus but not in the NLM UMLS. [def-source: NCI]"@en ;
+                                           rdfs:label "NCI_META_CUI"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P322> rdfs:comment "This property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake. [def-source: NCI]"@en ;
+                                           rdfs:label "ncit:Contributing_Source"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P325> rdfs:label "ncit:ALT_DEFINITION"@en ;
+                                           rdfs:comment "English language definitions of what a source other than NCI means by the concept. These are limited to 1024 characters. They include information about the definition's source in a form that can easily be interpreted by software. [def-source: NCI]"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P366> rdfs:comment "A retired unique concept identifier created and stored as Concept Name by legacy EVS software. Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired. Legacy values are intended solely to help resolve and update earlier coding. [def-source: NCI]"@en ;
+                                           rdfs:label "ncit:Legacy_Concept_Name"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P378> rdfs:label "ncit:def-source"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "range is specified to be http://purl.obolibrary.org/obo/NCIT_def-source-enum, but this resolves to some Amazon S2 bucket..."@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P383> rdfs:label "ncit:term-group"@en ;
+                                           <http://www.w3.org/2004/02/skos/core#editorialNote> "range is asserted to be http://purl.obolibrary.org/obo/NCIT_term-group-enum, but this points to an Amazon S2 bucket directory."@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_P384> rdfs:label "ncit:term-source"@en .
+
+
+<http://purl.obolibrary.org/obo/RO_0001900> rdfs:comment "An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context."@en ;
+                                            rdfs:label "temporal interpretation"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en .
+
+
+<http://www.geneontology.org/formats/oboInOwl#consider> rdfs:label "consider"@en .
+
+
+###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi
