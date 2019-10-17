@@ -74,6 +74,8 @@ Declaration(Class(<http://www.w3.org/ns/dcat#Catalog>))
 Declaration(Class(<http://www.w3.org/ns/dcat#CatalogRecord>))
 Declaration(Class(<http://www.w3.org/ns/dcat#DataService>))
 Declaration(Class(<http://www.w3.org/ns/dcat#Resource>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECCRO_000166>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECCRO_000167>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000017>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000045>))
@@ -83,6 +85,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ECRRO_0000139>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000218>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ecrro.owl/000168>))
 Declaration(ObjectProperty(dcterms:conformsTo))
 Declaration(ObjectProperty(dcterms:title))
 Declaration(ObjectProperty(dcterms:type))
@@ -239,6 +242,16 @@ AnnotationPropertyRange(<http://purl.obolibrary.org/obo/NCIT_P98> xsd:string)
 #   Object Properties
 ############################
 
+# Object Property: <http://purl.obolibrary.org/obo/ECCRO_000166> (profile of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECCRO_000166> "profile of"@en)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ECCRO_000166> ObjectUnionOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> <http://schema.org/Text> <http://schema.org/URL>))
+
+# Object Property: <http://purl.obolibrary.org/obo/ECCRO_000167> (communication protocol)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ECCRO_000167> "communication protocol"@en)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ECCRO_000167> ObjectUnionOf(<http://schema.org/Text> <http://schema.org/URL>))
+
 # Object Property: <http://purl.obolibrary.org/obo/ECRRO_0000002> (ECResourceType)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ECRRO_0000002> "An ECResourceType is a list of the type of resources in the EC Resource Registry."@en)
@@ -308,6 +321,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219> "expectedLifetime"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219> <http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000219> <http://schema.org/Text>)
+
+# Object Property: <http://purl.obolibrary.org/obo/ecrro.owl/000168> (applicationInterface)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ecrro.owl/000168> "applicationInterface"@en)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/ecrro.owl/000168> ObjectUnionOf(<http://purl.obolibrary.org/obo/ecrro.owl/ECCRO_0000201> <http://schema.org/Text> <http://schema.org/URL>))
 
 # Object Property: dcterms:conformsTo (dcterms:conformsTo)
 
@@ -1353,12 +1371,12 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001900> "An
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <http://purl.obolibrary.org/obo/RO_0001900> "from OBO Relation Ontology (RO). Looks like range should be an object property instance."@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#consider> "consider"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493272 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493273 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493274 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493275 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493276 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493277 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493278 <https://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493279 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493312 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493313 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493314 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493315 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493316 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493317 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493318 <https://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> _:genid2147493319 <https://orcid.org/0000-0003-4808-4736>)
 )
