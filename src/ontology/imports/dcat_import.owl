@@ -20,116 +20,7 @@
      xmlns:dctype="http://purl.org/dc/dcmitype/"
      xmlns:w3cgeo="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="http://www.w3.org/ns/dcat">
-        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <dct:contributor>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
-                <foaf:name>Simon J D Cox</foaf:name>
-                <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
-                <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
-                <foaf:name>Phil Archer</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-                <foaf:name>Shuji Kamitsuna</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Richard Cyganiak</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
-                <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
-                <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
-                <foaf:name>Riccardo Albertoni</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Rufus Pollock</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-                <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Marios Meimaris</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Boris Villazón-Terrazas</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Vassilios Peristeras</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-                <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-                <foaf:name>Andrea Perego</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Martin Alvarez-Espinar</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-                <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-                <foaf:name>Makx Dekkers</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="https://jakubklimek.com/#me"/>
-                <foaf:homepage rdf:resource="https://jakubklimek.com"/>
-                <foaf:name>Jakub Klímek</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>David Browning</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
-        <dct:creator>
-            <rdf:Description>
-                <foaf:name>John Erickson</foaf:name>
-            </rdf:Description>
-        </dct:creator>
-        <dct:creator>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
-                <foaf:name>Fadi Maali</foaf:name>
-            </rdf:Description>
-        </dct:creator>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-20</dct:modified>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-28</dct:modified>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-19</dct:modified>
@@ -141,23 +32,7 @@
           serve as a manifest file to facilitate digital preservation.
           DCAT is defined at http://www.w3.org/TR/vocab-dcat/. Any variance between that normative
           document and this schema is an error in this schema.</rdfs:comment>
-        <rdfs:comment xml:lang="cs">DCAT je RDF slovník navržený pro zprostředkování interoperability mezi datovými katalogy publikovanými na Webu. Poskytovatelé dat používáním slovníku DCAT pro popis datových sad v datových katalozích zvyšují jejich dohledatelnost a umožňují aplikacím konzumovat metadata z více katalogů. Dále je umožňena decentralizovaná publikace katalogů a federované dotazování na datové sady napříč katalogy. Agregovaná DCAT metadata mohou také sloužit jako průvodka umožňující digitální uchování informace. DCAT je definován na http://www.w3.org/TR/vocab-dcat/. Jakýkoliv nesoulad mezi odkazovaným dokumentem a tímto schématem je chybou v tomto schématu.</rdfs:comment>
-        <rdfs:comment xml:lang="it">DCAT è un vocabolario RDF progettato per facilitare l&apos;interoperabilità tra i cataloghi di dati pubblicati nel Web. Utilizzando DCAT per descrivere i dataset nei cataloghi di dati, i fornitori migliorano la capacità di individuazione dei dati e abilitano le  applicazioni al consumo di dati provenienti da cataloghi differenti. DCAT permette di decentralizzare la pubblicazione di cataloghi e facilita la ricerca federata dei dataset. L&apos;aggregazione dei metadati federati può fungere da file manifesto per facilitare la conservazione digitale. DCAT è definito all&apos;indirizzo http://www.w3.org/TR/vocab-dcat/. Qualsiasi scostamento tra tale definizione normativa e questo schema è da considerarsi un errore di questo schema.</rdfs:comment>
-        <rdfs:comment xml:lang="ja">DCATは、ウェブ上で公開されたデータ・カタログ間の相互運用性の促進を目的とするRDFの語彙です。このドキュメントでは、その利用のために、スキーマを定義し、例を提供します。
-データ・カタログ内のデータセットを記述するためにDCATを用いると、公開者が、発見可能性を増加させ、アプリケーションが複数のカタログのメタデータを容易に利用できるようになります。さらに、カタログの分散公開を可能にし、複数のサイトにまたがるデータセットの統合検索を促進します。集約されたDCATメタデータは、ディジタル保存を促進するためのマニフェスト・ファイルとして使用できます。</rdfs:comment>
-        <rdfs:comment xml:lang="el">Το DCAT είναι ένα RDF λεξιλόγιο που σχεδιάσθηκε για να κάνει εφικτή τη διαλειτουργικότητα μεταξύ καταλόγων δεδομένων στον Παγκόσμιο Ιστό.
-          Χρησιμοποιώντας το DCAT για την περιγραφή συνόλων δεδομένων, οι εκδότες αυτών αυξάνουν την ανακαλυψιμότητα και επιτρέπουν στις εφαρμογές την εύκολη κατανάλωση μεταδεδομένων από πολλαπλούς καταλόγους.
-          Επιπλέον, δίνει τη δυνατότητα για αποκεντρωμένη έκδοση και διάθεση καταλόγων και επιτρέπει δυνατότητες ενοποιημένης αναζήτησης μεταξύ διαφορετικών πηγών.
-          Συγκεντρωτικά μεταδεδομένα που έχουν περιγραφεί με το DCAT μπορούν να χρησιμοποιηθούν σαν ένα δηλωτικό αρχείο (manifest file) ώστε να διευκολύνουν την ψηφιακή συντήρηση.</rdfs:comment>
-        <rdfs:comment xml:lang="ar">هي أنطولوجية تسهل تبادل البيانات بين مختلف الفهارس على الوب. استخدام هذه الأنطولوجية يساعد على اكتشاف قوائم  البيانات المنشورة على الوب و يمكن التطبيقات المختلفة من الاستفادة أتوماتيكيا من البيانات المتاحة من مختلف الفهارس.</rdfs:comment>
-        <rdfs:label xml:lang="es">El vocabulario de catálogo de datos</rdfs:label>
-        <rdfs:label xml:lang="it">Il vocabolario del catalogo dei dati</rdfs:label>
-        <rdfs:label xml:lang="fr">Le vocabulaire des jeux de données </rdfs:label>
-        <rdfs:label xml:lang="cs">Slovník pro datové katalogy</rdfs:label>
         <rdfs:label xml:lang="en">The data catalog vocabulary</rdfs:label>
-        <rdfs:label xml:lang="el">Το λεξιλόγιο των καταλόγων δεδομένων</rdfs:label>
-        <rdfs:label xml:lang="ar">أنطولوجية فهارس قوائم البيانات</rdfs:label>
-        <rdfs:label xml:lang="ja">データ・カタログ語彙（DCAT）</rdfs:label>
         <owl:versionInfo xml:lang="en">This is an updated copy of v1.0 of the DCAT vocabulary, taken from https://www.w3.org/ns/dcat.ttl and will replace that file when DCAT2 is published
 Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1.* or v2.0 by W3C Data Exchange Working Group</owl:versionInfo>
         <skos:editorialNote xml:lang="en">English language definitions updated in this revision in line with ED. Multilingual text unevenly updated.</skos:editorialNote>
@@ -685,7 +560,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+   <!-- http://www.w3.org/2002/07/owl#cardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
     
@@ -1702,35 +1577,10 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#byteSize">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="es">El tamaño de una distribución en bytes</rdfs:comment>
-        <rdfs:comment xml:lang="it">La dimensione di una distribuzione in byte.</rdfs:comment>
-        <rdfs:comment xml:lang="fr">La taille de la distribution en octects</rdfs:comment>
-        <rdfs:comment xml:lang="en">The size of a distribution in bytes.</rdfs:comment>
-        <rdfs:comment xml:lang="cs">Velikost distribuce v bajtech.</rdfs:comment>
-        <rdfs:comment xml:lang="el">Το μέγεθος μιας διανομής σε bytes.</rdfs:comment>
-        <rdfs:comment xml:lang="ar">الحجم بالبايتات </rdfs:comment>
-        <rdfs:comment xml:lang="ja">バイトによる配信のサイズ。</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
         <rdfs:label xml:lang="en">byte size</rdfs:label>
-        <rdfs:label xml:lang="it">dimensione in byte</rdfs:label>
-        <rdfs:label xml:lang="fr">taille en octects</rdfs:label>
-        <rdfs:label xml:lang="es">tamaño en bytes</rdfs:label>
-        <rdfs:label xml:lang="cs">velikost v bajtech</rdfs:label>
-        <rdfs:label xml:lang="el">μέγεθος σε bytes</rdfs:label>
-        <rdfs:label xml:lang="ar">الحجم بالبايت</rdfs:label>
-        <rdfs:label xml:lang="ja">バイト・サイズ</rdfs:label>
-        <skos:scopeNote xml:lang="es">El tamaño en bytes puede ser aproximado cuando se desconoce el tamaño exacto.
-          El valor literal de dcat:byteSize debe tener tipo &apos;xsd:decimal&apos;</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">La dimensione in byte può essere approssimata quando non si conosce la dimensione precisa. Il valore di dcat:byteSize dovrebbe essere espresso come un xsd:decimal</skos:scopeNote>
-        <skos:scopeNote xml:lang="fr">La taille en octects peut être approximative lorsque l&apos;on ignore la taille réelle.
-					La valeur littérale de dcat:byteSize doit être de type xsd:decimal</skos:scopeNote>
-        <skos:scopeNote xml:lang="en">The size in bytes can be approximated when the precise size is not known.
+         <skos:scopeNote xml:lang="en">The size in bytes can be approximated when the precise size is not known.
           The literal value of dcat:byteSize should by typed as xsd:decimal</skos:scopeNote>
-        <skos:scopeNote xml:lang="cs">Velikost v bajtech může být přibližná, pokud její přesná hodnota není známa. Literál s hodnotou dcat:byteSize by měl mít datový typ xsd:decimal</skos:scopeNote>
-        <skos:scopeNote xml:lang="el">Το μέγεθος σε bytes μπορεί να προσεγγιστεί όταν η ακριβής τιμή δεν είναι γνωστή.
-          Η τιμή της dcat:byteSize θα πρέπει να δίνεται με τύπο δεδομένων xsd:decimal</skos:scopeNote>
-        <skos:scopeNote xml:lang="ar">الحجم يمكن أن يكون تقريبي إذا كان الحجم الدقيق غير معروف</skos:scopeNote>
-        <skos:scopeNote xml:lang="ja">正確なサイズが不明である場合、サイズは、バイトによる近似値を示すことができます。</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -2165,40 +2015,16 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
-        <rdfs:comment xml:lang="ja">1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。</rdfs:comment>
         <rdfs:comment xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more represenations</rdfs:comment>
-        <rdfs:comment xml:lang="cs">Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech</rdfs:comment>
-        <rdfs:comment xml:lang="it">Raccolta di dati, pubblicati o curati da un&apos;unica fonte, disponibili per l&apos;accesso o il download in uno o più formati.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats</rdfs:comment>
-        <rdfs:comment xml:lang="el">Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές</rdfs:comment>
-        <rdfs:comment xml:lang="ar">قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
-        <rdfs:label xml:lang="es">Conjunto de datos</rdfs:label>
         <rdfs:label xml:lang="en">Dataset</rdfs:label>
-        <rdfs:label xml:lang="it">Dataset</rdfs:label>
-        <rdfs:label xml:lang="cs">Datová sada</rdfs:label>
-        <rdfs:label xml:lang="fr">Jeu de données</rdfs:label>
-        <rdfs:label xml:lang="el">Σύνολο Δεδομένων</rdfs:label>
-        <rdfs:label xml:lang="ar">قائمة بيانات</rdfs:label>
-        <rdfs:label xml:lang="ja">データセット</rdfs:label>
-        <skos:changeNote xml:lang="en">2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary.</skos:changeNote>
-        <skos:scopeNote xml:lang="fr">Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son
-					  entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier. </skos:scopeNote>
-        <skos:scopeNote xml:lang="es">Esta clase representa el conjunto de datos publicados. En los casos donde es necesario distinguir entre el
-					conjunto de datos y su entrada en el catálogo de datos, se debe utilizar la clase &apos;registro del catálogo&apos;.</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Questa classe rappresenta il dataset come pubblicato dall’editore. Nel caso in cui sia necessario operare  una distinzione fra i metadati originali del dataset e il record dei metadati ad esso associato nel catalogo (ad esempio, per distinguere la data di modifica del dataset da quella del dataset nel catalogo) si può impiegare la classe catalog record.</skos:scopeNote>
-        <skos:scopeNote xml:lang="cs">Tato třída reprezentuje datovou sadu tak, jak je publikována poskytovatelem dat. V případě potřeby rozlišení datové sady a jejího záznamu v katalogu (jelikož metadata jako datum modifikace se mohou lišit) pro něj může být použita třída &quot;záznam v katalogu&quot;.</skos:scopeNote>
+         <skos:changeNote xml:lang="en">2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary.</skos:changeNote>
         <skos:scopeNote xml:lang="en">This class describes the conceptual dataset. One or more representations might be available, with differing schematic layouts and formats or serializations.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">This class represents the actual dataset as published by the dataset provider. In
           cases where a distinction between the actual dataset and its entry in the catalog is
           necessary (because metadata such as modification date and maintainer might differ), the
           catalog record class can be used for the latter.</skos:scopeNote>
-        <skos:scopeNote xml:lang="el">Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ&apos;εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.
-          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν)
-          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.</skos:scopeNote>
-        <skos:scopeNote xml:lang="ja">このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。</skos:scopeNote>
-    </owl:Class>
+     </owl:Class>
     
 
 
@@ -2208,39 +2034,11 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:comment xml:lang="en">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways,
                   including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or
                   profiles (which might specify any or all of the above).</rdfs:comment>
-        <rdfs:comment xml:lang="it">Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.</rdfs:comment>
-        <rdfs:comment xml:lang="cs">Reprezentuje konkrétní dostupnou formu datové sady. Každá datová sada může být dostupná v různých podobách, které mohou být reprezentovány různým formátem nebo různými přístupovými body. Příklady distribucí zahrnují CSV soubor ke stažení, API nebo RSS kanál</rdfs:comment>
-        <rdfs:comment xml:lang="fr">Représente une forme spécifique d&apos;un jeu de données. Caque jeu de données peut être disponible
-					sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution
-					sont des fichirs CSV, des API ou des flux RSS.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una representación específica de los datos. Cada conjunto de datos puede estar disponible en
-                  formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma,
-                  &apos;media-type&apos; o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).</rdfs:comment>
-        <rdfs:comment xml:lang="el">Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε
-					διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης.
-					Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.</rdfs:comment>
-        <rdfs:comment xml:lang="ar">شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.</rdfs:comment>
-        <rdfs:comment xml:lang="ja">データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
-        <rdfs:label xml:lang="cs">Distribuce</rdfs:label>
-        <rdfs:label xml:lang="es">Distribución</rdfs:label>
         <rdfs:label xml:lang="en">Distribution</rdfs:label>
-        <rdfs:label xml:lang="fr">Distribution</rdfs:label>
-        <rdfs:label xml:lang="it">Distribuzione</rdfs:label>
-        <rdfs:label xml:lang="el">Διανομή</rdfs:label>
-        <rdfs:label xml:lang="ar">التوزيع</rdfs:label>
-        <rdfs:label xml:lang="ja">配信</rdfs:label>
-        <skos:scopeNote xml:lang="fr">Ceci représente une disponibilité générale du jeu de données, et implique qu&apos;il n&apos;existe pas d&apos;information
-					sur la méthode d&apos;accès réelle des données, par exple, si c&apos;est un lien de téléchargement direct ou à travers une page Web. </skos:scopeNote>
-        <skos:scopeNote xml:lang="es">Esto representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca
-          del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L&apos;utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">This represents a general availability of a dataset it implies no information about the
           actual access method of the data, i.e. whether by direct download, API, or through a Web page.
           The use of dcat:downloadURL property indicates directly downloadable distributions.</skos:scopeNote>
-        <skos:scopeNote xml:lang="el">Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα,
-					  μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.</skos:scopeNote>
-        <skos:scopeNote xml:lang="ja">これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。</skos:scopeNote>
     </owl:Class>
     
 
@@ -2249,17 +2047,9 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Relationship">
         <rdfs:comment xml:lang="en">An association class for attaching additional information to a relationship between DCAT Resources.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una clase de asociación para adjuntar información adicional a una relación entre recursos DCAT.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Una classe di associazione per il collegamento di informazioni aggiuntive a una relazione tra le risorse DCAT.</rdfs:comment>
-        <rdfs:label xml:lang="es">Relación</rdfs:label>
         <rdfs:label xml:lang="en">Relationship</rdfs:label>
-        <rdfs:label xml:lang="it">Relazione</rdfs:label>
         <skos:changeNote xml:lang="en">New class added in this revision of DCAT</skos:changeNote>
-        <skos:changeNote xml:lang="es">Nueva clase en esta revisión de DCAT</skos:changeNote>
-        <skos:changeNote xml:lang="it">Nuova classe in questa revisione DCAT</skos:changeNote>
-        <skos:scopeNote xml:lang="es">Se usa para caracterizar la relación entre conjuntos de datos, y potencialmente otros recursos, donde la naturaleza de la relación se conoce pero no está caracterizada adecuadamente con propiedades del estándar &apos;Dublin Core&apos; (dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy) or PROV-O properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)</skos:scopeNote>
         <skos:scopeNote xml:lang="en">Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard Dublin Core properties (dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy) or PROV-O properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Viene utilizzato per caratterizzare la relazione tra insiemi di dati, e potenzialmente altri tipi di risorse, nei casi in cui la natura della relazione è nota ma non adeguatamente caratterizzata dalle proprietà dello standard &apos;Dublin Core&apos; (dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:require, dct:isRequiredBy) o dalle propietà fornite da PROV-O  (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov: hadPrimarySource, prov:alternateOf, prov:specializationOf)</skos:scopeNote>
     </owl:Class>
     
 
@@ -2274,19 +2064,13 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Resource published or curated by a single agent</rdfs:comment>
-        <rdfs:comment xml:lang="it">Risorsa pubblicata o curata da un singolo agente</rdfs:comment>
-        <rdfs:label xml:lang="en">Catalogued resource</rdfs:label>
-        <rdfs:label xml:lang="it">Risorsa catalogata</rdfs:label>
         <skos:changeNote xml:lang="en">New class added in this revision of DCAT</skos:changeNote>
-        <skos:changeNote xml:lang="it">Nuova classe in questa revisione</skos:changeNote>
         <skos:editorialNote xml:lang="en">Status: Class accepted by DCAT revision team, but details of definition and constraints not yet resolved.</skos:editorialNote>
-        <skos:scopeNote xml:lang="it">La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si consiglia vivamente di utilizzare una sottoclasse più specifica quando disponibile.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">The class of all catalogued resources, the Superclass of
     dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog.
     This class carries properties common to all catalogued resources, including datasets and data services.
     It is strongly recommended to use a more specific sub-class when available.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional subclasses may be defined in a DCAT profile or application for catalogs of other kinds of resources</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un&apos;applicazione per cataloghi di altri tipi di risorse</skos:scopeNote>
     </owl:Class>
     
 
@@ -2296,14 +2080,10 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Role">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Un ruolo è la funzione di una risorsa o di un agente rispetto ad un&apos;altra risorsa, nel contesto dell&apos;attribuzione delle risorse o delle relazioni tra risorse.</rdfs:comment>
-        <rdfs:label xml:lang="en">Role</rdfs:label>
-        <rdfs:label xml:lang="it">Ruolo</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#hadRole"/>
+         <rdfs:label xml:lang="en">Role</rdfs:label>
+         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/dcat#hadRole"/>
         <skos:changeNote xml:lang="en">New class added in this revision of DCAT</skos:changeNote>
-        <skos:changeNote xml:lang="it">Nuova classe in questa revisione di DCAT</skos:changeNote>
-        <skos:editorialNote xml:lang="it">Introdotta in DCAT per completare prov:Role (il cui uso è limitato ai ruoli nel contesto di un&apos;attività, in conseguenza alla definizione del codominio di prov:hadRole)</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">Introduced into DCAT to complement prov:Role (whose use is limited to roles in the context of an activity, as the range of prov:hadRole)</skos:editorialNote>
+         <skos:editorialNote xml:lang="en">Introduced into DCAT to complement prov:Role (whose use is limited to roles in the context of an activity, as the range of prov:hadRole)</skos:editorialNote>
         <skos:scopeNote xml:lang="en">Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as http://registry.it.csiro.au/def/isotc211/CI_RoleCode</skos:scopeNote>
         <skos:scopeNote xml:lang="en">Used in a qualified-relation to specify the role of an Entity with respect to another Entity.
   It is recommended that the values be managed as a controlled vocabulary of entity roles such as
@@ -2311,8 +2091,6 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
   - IANA Registry of Link Relations https://www.iana.org/assignments/link-relation
   - DataCite metadata schema
   - MARC relators https://id.loc.gov/vocabulary/relators</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Utilizzato in un&apos;attribuzione qualificata per specificare il ruolo di un agente rispetto a un&apos;entità. Si consiglia di attribuire i valori considerando un vocabolario controllato dei ruoli dell&apos;agente, ad esempio http://registry.it.csiro.au/def/isotc211/CI_RoleCode</skos:scopeNote>
-        <skos:scopeNote xml:lang="it">Utilizzato in una relazione qualificata per specificare il ruolo di un&apos;entità rispetto a un&apos;altra entità. Si raccomanda che il valore sia preso da un vocabolario controllato di ruoli di entità come ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode, IANA Registry of Link Relations https://www.iana.org/assignments/link-relation, DataCite metadata schema, o MARC relators https://id.loc.gov/vocabulary/relators</skos:scopeNote>
     </owl:Class>
     
 
@@ -3071,7 +2849,6 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <sdo:rangeIncludes rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
         <sdo:rangeIncludes rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document -->
@@ -3213,7 +2990,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
         <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
         <foaf:name>Andrea Perego</foaf:name>
-    </rdf:Description>
+   </rdf:Description>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
         <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
@@ -4087,7 +3864,7 @@ Temporarily added imports for DCTerms, SKOS, FOAF to assist in development of v1
         <rdfs:label xml:lang="en">Requires</rdfs:label>
         <rdfs:comment xml:lang="en">A related resource that is required by the described resource to support its function, delivery, or coherence.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
+       <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dct:issued>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/rights">

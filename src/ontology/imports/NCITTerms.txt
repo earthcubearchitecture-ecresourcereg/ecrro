@@ -3,3 +3,4 @@ http://purl.obolibrary.org/obo/NCIT_C92442	# Vocabulary
 http://purl.obolibrary.org/obo/NCIT_C18232	# Glossary
 http://purl.obolibrary.org/obo/NCIT_C81930	# Use Case
 http://purl.obolibrary.org/obo/NCIT_C16453      # Community
+http://purl.obolibrary.org/obo/NCIT_C97050  # Audience
