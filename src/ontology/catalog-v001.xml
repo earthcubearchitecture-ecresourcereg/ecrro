@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+    <uri id="User Entered Import Resolution" name="http://cor.esipfed.org/ont/earthcube/cclo" uri="http://cor.esipfed.org/ont/earthcube/cclo"/>
+    <uri id="Imports Wizard Entry" name="http://cor.esipfed.org/ont/earthcube/dlo" uri="http://cor.esipfed.org/ont/earthcube/dlo"/>
+    <uri id="Imports Wizard Entry" name="http://cor.esipfed.org/ont/earthcube/ADO" uri="http://cor.esipfed.org/ont/earthcube/ADO"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/dcat" uri="imports/dcat_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="imports/ro_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://schema.org/" uri="https://schema.org/docs/schemaorg.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.ebi.ac.uk/swo/swo.owl" uri="imports/swo_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/prov-o-20130430" uri="http://www.w3.org/ns/prov-o"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao.owl" uri="file:/Users/ruthduerr/src/SourceOntologies/iao_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao.owl" uri="imports/iao_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://semanticscience.org/ontology/sio.owl" uri="imports/sio_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi.owl" uri="imports/obi_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ncit.owl" uri="imports/ncit_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/ro_import.obo" uri="imports/ro_import.obo"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ecrro/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
