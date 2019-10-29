@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:edamontology="http://edamontology.org/">
+     xmlns:edamontology="http://edamontology.org#"
+     xmlns:edamontology1="http://edamontology.org/">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl"/>
     
 
@@ -130,6 +131,79 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://edamontology.org#def -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#def"/>
+    
+
+
+    <!-- http://edamontology.org#namespace -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#namespace"/>
+    
+
+
+    <!-- http://edamontology.org#subset -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#subset"/>
+    
+
+
+    <!-- http://edamontology.org/citation -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/citation"/>
+    
+
+
+    <!-- http://edamontology.org/documentation -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/documentation"/>
+    
+
+
+    <!-- http://edamontology.org/example -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/example"/>
+    
+
+
+    <!-- http://edamontology.org/file_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/file_extension"/>
+    
+
+
+    <!-- http://edamontology.org/media_type -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/media_type"/>
+    
+
+
+    <!-- http://edamontology.org/ontology_used -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/ontology_used"/>
+    
+
+
+    <!-- http://edamontology.org/organisation -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/organisation"/>
+    
+
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000144 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000144"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#comment"/>
     
 
 
@@ -6017,6 +6091,7 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
         <obo:IAO_0000118>Mozilla Public License</obo:IAO_0000118>
         <rdfs:label>MPL</rdfs:label>
     </owl:Class>
+
 </rdf:RDF>
 
 
