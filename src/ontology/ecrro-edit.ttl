@@ -306,6 +306,20 @@ dcterms:relation rdf:type owl:AnnotationProperty .
                                                      rdfs:label "applicationInterface"@en .
 
 
+###  http://cor.esipfed.org/ont/earthcube/ECRRO__0000600
+<http://cor.esipfed.org/ont/earthcube/ECRRO__0000600> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.w3.org/ns/dcat#Resource> ;
+                                                      rdfs:range [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C19498>
+                                                                                 <http://schema.org/CreativeWork>
+                                                                               )
+                                                                 ] ;
+                                                      <http://purl.obolibrary.org/obo/IAO_0000115> "Identifier for publication that specifies the component, e.g. DOI or a standard academic citation." ;
+                                                      <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
+                                                      <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-10-29T19:48:50Z"^^xsd:dateTime ;
+                                                      rdfs:label "primaryPublication"@en .
+
+
 ###  http://creativecommons.org/ns#deprecatedOn
 <http://creativecommons.org/ns#deprecatedOn> rdf:type owl:ObjectProperty ;
                                              rdfs:domain <http://creativecommons.org/ns#License> ;
@@ -731,15 +745,6 @@ Xu, C., & Christoffersen, B. (2017). The Functionally-Assembled Terrestrial Ecos
                                                                        owl:onClass <http://cor.esipfed.org/ont/earthcube/ECRRO_0000129>
                                                                      ] ,
                                                                      [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://schema.org/publication> ;
-                                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass [ rdf:type owl:Class ;
-                                                                                     owl:unionOf ( <http://schema.org/CreativeWork>
-                                                                                                   <http://schema.org/URL>
-                                                                                                 )
-                                                                                   ]
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
                                                                        owl:onProperty dcterms:bibliographicCitation ;
                                                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                                      ] ;
@@ -747,21 +752,6 @@ Xu, C., & Christoffersen, B. (2017). The Functionally-Assembled Terrestrial Ecos
                                                      <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
                                                      <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-07-06T21:32:12Z"^^xsd:dateTime ;
                                                      rdfs:label "ECResource"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty <http://schema.org/publication> ;
-                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass [ rdf:type owl:Class ;
-                                       owl:unionOf ( <http://schema.org/CreativeWork>
-                                                     <http://schema.org/URL>
-                                                   )
-                                     ]
-                       ] ;
-   rdfs:comment "This should only be used for the primary publication associated with the resource."@en
- ] .
 
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000202
@@ -781,15 +771,6 @@ Each offering also specifies the interchange format for input and output, and th
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000204> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ,
                                                                      <http://schema.org/TechArticle> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://cor.esipfed.org/ont/earthcube/ECRRO_0000501> ;
-                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                            owl:unionOf ( <http://cor.esipfed.org/ont/earthcube/ECRRO_0000204>
-                                                                                                          <http://schema.org/Text>
-                                                                                                          <http://schema.org/URL>
-                                                                                                        )
-                                                                                          ]
-                                                                     ] ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://schema.org/additionalType> ;
                                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -861,15 +842,6 @@ Specifications may be hierarchical, e.g. a profile specification might inherit p
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000207> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ,
                                                                      <http://schema.org/Service> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty dcterms:conformsTo ;
-                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                            owl:unionOf ( <http://cor.esipfed.org/ont/earthcube/ECRRO_0000204>
-                                                                                                          <http://schema.org/Text>
-                                                                                                          <http://schema.org/URL>
-                                                                                                        )
-                                                                                          ]
-                                                                     ] ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://schema.org/applicationCategory> ;
                                                                        owl:someValuesFrom <http://cor.esipfed.org/ont/earthcube/SFO_0000001>
@@ -2456,6 +2428,15 @@ dcterms:LicenseDocument rdf:type owl:Class .
 [ owl:unionOf [ ]
 ] .
 
+[ owl:unionOf [ ]
+] .
+
+[ owl:unionOf [ ]
+] .
+
+[ owl:unionOf [ ]
+] .
+
 #################################################################
 #    Annotations
 #################################################################
@@ -2538,8 +2519,8 @@ dcterms:LicenseDocument rdf:type owl:Class .
 
 
 <http://purl.obolibrary.org/obo/BFO_0000180> rdfs:label "BFO CLIF specification label"@en ;
-                                             rdfs:comment "Relates an entity in the ontology to the term that is used to represent it in the the Common Logic Interchange Format (CLIF) specification of BFO2"@en ,
-                                                          "curator note: Really of interest to developers only"@en ;
+                                             rdfs:comment "curator note: Really of interest to developers only"@en ,
+                                                          "Relates an entity in the ontology to the term that is used to represent it in the the Common Logic Interchange Format (CLIF) specification of BFO2"@en ;
                                              dc:source "definition source: Person:Alan Ruttenberg"@en .
 
 
@@ -2598,9 +2579,9 @@ Annotations"""@en ;
 <http://purl.obolibrary.org/obo/NCIT_NHC0> rdfs:label "ncit:code"@en .
 
 
-<http://purl.obolibrary.org/obo/NCIT_P106> rdfs:comment "The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network. [def-source: NCI]"@en ,
-                                                        "In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned. We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS."@en ;
-                                           rdfs:label "ncit:Semantic_Type"@en .
+<http://purl.obolibrary.org/obo/NCIT_P106> rdfs:comment "The semantic type describes the sort of thing or category to which a concept belongs in the context of the UMLS semantic network. [def-source: NCI]"@en ;
+                                           rdfs:label "ncit:Semantic_Type"@en ;
+                                           rdfs:comment "In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned. We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS."@en .
 
 
 <http://purl.obolibrary.org/obo/NCIT_P208> rdfs:comment "Contains a Concept Unique Identifier for those concepts that appear in NCI Metathesaurus but not in the NLM UMLS. [def-source: NCI]"@en ;
