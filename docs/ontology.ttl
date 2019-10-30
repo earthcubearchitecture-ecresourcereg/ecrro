@@ -1,11 +1,9 @@
-@prefix : <http://cor.esipfed.org/ont/earthcube/ecrro> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix : <http://cor.esipfed.org/ont/earthcube/ecrro#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://cor.esipfed.org/ont/earthcube/ecrro> .
 
 <http://cor.esipfed.org/ont/earthcube/ecrro> rdf:type owl:Ontology ;
@@ -26,16 +24,16 @@
                                                           <http://cor.esipfed.org/ont/earthcube/swl> ,
                                                           <http://schema.org/> ,
                                                           <http://www.w3.org/ns/prov-o-20130430> ;
-                                              dc:creator <https://orcid.org/0000-0003-4808-4736> ;
-                                              dc:description """This application level ontology is intended to provide the framework for answering questions like:
+                                              <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0003-4808-4736> ;
+                                              <http://purl.org/dc/elements/1.1/description> """This application level ontology is intended to provide the framework for answering questions like:
 
 1. \"How can EarthCube help me?\" (Science Engagement), 
 2. \"If I had an EarthCube Workbench, what capabilities could I access through it?\" (Workbench) and 
 3. “What EarthCube software components can I use to get my application working?” (Developers). 
 
 It extends the idea of an EarthCube Registry beyond data sets, to a generalized Registry of software components, semantic resources, tools, etc., with descriptive information to facilitate evaluation for reuse."""@en ;
-                                              dc:title "Earth Cube Resource Registry Ontology" ;
-                                              dcterms:license <https://creativecommons.org/share-your-work/public-domain/cc0/> ;
+                                              <http://purl.org/dc/elements/1.1/title> "Earth Cube Resource Registry Ontology" ;
+                                              <http://purl.org/dc/terms/license> <https://creativecommons.org/share-your-work/public-domain/cc0/> ;
                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <https://orcid.org/0000-0003-4808-4736> ;
                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-03-06T00:50:17Z"@en ;
                                               rdfs:comment "This mini-ontology contains instances for each version of the licenses and public domain entities maintained by the Creative Commons (creativecommons.org)."@en ;
@@ -52,12 +50,12 @@ It extends the idea of an EarthCube Registry beyond data sets, to a generalized 
 
 ###  http://creativecommons.org/ns#morePermissions
 <http://creativecommons.org/ns#morePermissions> rdf:type owl:AnnotationProperty ;
-                                                rdfs:subPropertyOf dcterms:relation .
+                                                rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
 
 
 ###  http://creativecommons.org/ns#useGuidelines
 <http://creativecommons.org/ns#useGuidelines> rdf:type owl:AnnotationProperty ;
-                                              rdfs:subPropertyOf dcterms:relation .
+                                              rdfs:subPropertyOf <http://purl.org/dc/terms/relation> .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000115
@@ -69,31 +67,31 @@ It extends the idea of an EarthCube Registry beyond data sets, to a generalized 
 
 
 ###  http://purl.org/dc/elements/1.1/creator
-dc:creator rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/description
-dc:description rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/source
-dc:source rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-dc:title rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/relation
-dcterms:relation rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/relation> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/usageNote
@@ -116,6 +114,14 @@ dcterms:relation rdf:type owl:AnnotationProperty .
 <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
 <http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
 
@@ -126,7 +132,7 @@ dcterms:relation rdf:type owl:AnnotationProperty .
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000002
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000002> rdf:type owl:ObjectProperty ;
-                                                     rdfs:subPropertyOf dcterms:type ;
+                                                     rdfs:subPropertyOf <http://purl.org/dc/terms/type> ;
                                                      <http://purl.obolibrary.org/obo/IAO_0000115> "An ECResourceType is a list of the type of resources in the EC Resource Registry."@en ;
                                                      <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
                                                      <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-05-06T21:46:03Z"^^xsd:dateTime ;
@@ -294,7 +300,7 @@ dcterms:relation rdf:type owl:AnnotationProperty .
 
 ###  http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf dcterms:license .
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/license> .
 
 
 ###  http://creativecommons.org/ns#permits
@@ -333,27 +339,39 @@ dcterms:relation rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:ObjectProperty ;
-                   rdfs:domain <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ;
-                   rdfs:range [ rdf:type owl:Class ;
-                                owl:unionOf ( <http://cor.esipfed.org/ont/earthcube/ECRRO_0000204>
-                                              <http://schema.org/Text>
-                                              <http://schema.org/URL>
-                                            )
-                              ] .
+<http://purl.org/dc/terms/conformsTo> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ;
+                                      rdfs:range [ rdf:type owl:Class ;
+                                                   owl:unionOf ( <http://cor.esipfed.org/ont/earthcube/ECRRO_0000204>
+                                                                 <http://schema.org/Text>
+                                                                 <http://schema.org/URL>
+                                                               )
+                                                 ] .
 
 
 ###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:ObjectProperty ,
-                         owl:AsymmetricProperty .
+<http://purl.org/dc/terms/license> rdf:type owl:ObjectProperty ,
+                                            owl:AsymmetricProperty .
 
 
 ###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:ObjectProperty .
+<http://purl.org/dc/terms/title> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/dc/terms/type
-dcterms:type rdf:type owl:ObjectProperty .
+<http://purl.org/dc/terms/type> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/about
+<http://schema.org/about> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/applicationCategory
+<http://schema.org/applicationCategory> rdf:type owl:ObjectProperty .
+
+
+###  http://schema.org/audience
+<http://schema.org/audience> rdf:type owl:ObjectProperty .
 
 
 ###  http://schema.org/dateCreated
@@ -368,16 +386,17 @@ dcterms:type rdf:type owl:ObjectProperty .
 <http://schema.org/datePublished> rdf:type owl:ObjectProperty .
 
 
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:ObjectProperty .
+
+
 ###  http://schema.org/expires
 <http://schema.org/expires> rdf:type owl:ObjectProperty .
 
 
 ###  http://schema.org/license
-<http://schema.org/license> rdf:type owl:AsymmetricProperty .
-
-
-###  http://schema.org/name
-<http://schema.org/name> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> dcterms:title .
+<http://schema.org/license> rdf:type owl:ObjectProperty ,
+                                     owl:AsymmetricProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#Literal
@@ -402,15 +421,15 @@ owl:unionOf rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/dc/terms/bibliographicCitation
-dcterms:bibliographicCitation rdf:type owl:DatatypeProperty .
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:DatatypeProperty .
+<http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:DatatypeProperty .
+<http://purl.org/dc/terms/modified> rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -572,7 +591,8 @@ dcterms:modified rdf:type owl:DatatypeProperty .
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000201
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://schema.org/CreativeWork> ,
+                                                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
+                                                                     <http://schema.org/CreativeWork> ,
                                                                      <http://schema.org/Intangible> ,
                                                                      <http://www.w3.org/ns/dcat#Resource> ,
                                                                      [ rdf:type owl:Restriction ;
@@ -586,11 +606,6 @@ dcterms:modified rdf:type owl:DatatypeProperty .
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://schema.org/description> ;
                                                                        owl:someValuesFrom <http://schema.org/Text>
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://schema.org/name> ;
-                                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <http://schema.org/Text>
                                                                      ] ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://cor.esipfed.org/ont/earthcube/ECRRO_0000017> ;
@@ -608,7 +623,7 @@ dcterms:modified rdf:type owl:DatatypeProperty .
                                                                        owl:onClass <http://cor.esipfed.org/ont/earthcube/MTU_0000012>
                                                                      ] ,
                                                                      [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty dcterms:bibliographicCitation ;
+                                                                       owl:onProperty <http://purl.org/dc/terms/bibliographicCitation> ;
                                                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                                      ] ;
                                                      <http://purl.obolibrary.org/obo/IAO_0000115> "A catalogued resource that is in the EarthCube Registry."@en ;
@@ -633,12 +648,8 @@ Each offering also specifies the interchange format for input and output, and th
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000204
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000204> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ,
-                                                                     <http://schema.org/TechArticle> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://schema.org/additionalType> ;
-                                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <http://cor.esipfed.org/ont/earthcube/SPKT_0000014>
-                                                                     ] ;
+                                                                     <http://org.semanticweb.owlapi/error#Error2> ,
+                                                                     <http://schema.org/TechArticle> ;
                                                      <http://purl.obolibrary.org/obo/IAO_0000115> "A document that describes the technical characteristics of an artifact or practice, possibly including a description of what it should do, or an explicit set of requirements that it must satisfy."@en ;
                                                      <http://purl.org/vocab/vann/usageNote> """All resources may have a conformsTo property that should be a link to a specification.  
 
@@ -675,16 +686,12 @@ Specifications may be hierarchical, e.g. a profile specification might inherit p
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000206
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000206> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ,
+                                                                     <http://org.semanticweb.owlapi/error#Error1> ,
                                                                      <http://schema.org/SoftwareApplication> ,
                                                                      <http://schema.org/SoftwareSourceCode> ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://schema.org/applicationCategory> ;
                                                                        owl:someValuesFrom <http://cor.esipfed.org/ont/earthcube/SFO_0000001>
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://schema.org/runtimePlatform> ;
-                                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <http://cor.esipfed.org/ont/earthcube/RTE_000100>
                                                                      ] ;
                                                      <http://purl.obolibrary.org/obo/IAO_0000115> "Software represented in the EC registry"@en ;
                                                      <http://www.geneontology.org/formats/oboInOwl#created_by> <http://orcid.org/0000-0003-4808-4736> ;
@@ -696,7 +703,7 @@ Specifications may be hierarchical, e.g. a profile specification might inherit p
    owl:annotatedSource <http://cor.esipfed.org/ont/earthcube/ECRRO_0000206> ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "A packaged set of instructions that can be executed by a machine to perform one or more functions. Distribution might be as source code, an executable file, an installer package, or as a web application that can be invoked via URL." ;
-   dcterms:creator <https://orcid.org/0000-0001-6041-5302>
+   <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6041-5302>
  ] .
 
 
@@ -767,19 +774,15 @@ The interchange format can be linked to an information model that defines the en
    owl:annotatedSource <http://cor.esipfed.org/ont/earthcube/ECRRO_0000209> ;
    owl:annotatedProperty <http://purl.org/vocab/vann/usageNote> ;
    owl:annotatedTarget "In EarthCube, a repository is often a storage system in which objects may be stored for subsequent access or retrieval."@en ;
-   dc:source "Kahn and Wilensky, 1995, http://www.cnri.reston.va.us/k-w.html"
+   <http://purl.org/dc/elements/1.1/source> "Kahn and Wilensky, 1995, http://www.cnri.reston.va.us/k-w.html"
  ] .
 
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000210
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000210> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://cor.esipfed.org/ont/earthcube/ECRRO_0000201> ,
-                                                                     <http://schema.org/SoftwareSourceCode> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://schema.org/additionalType> ;
-                                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <http://cor.esipfed.org/ont/earthcube/srt_0000009>
-                                                                     ] ;
+                                                                     <http://org.semanticweb.owlapi/error#Error5> ,
+                                                                     <http://schema.org/SoftwareSourceCode> ;
                                                      <http://purl.obolibrary.org/obo/IAO_0000115> "A specification of concepts, and optionally relationships representing a conceptualization of some domain of discourse."@en ;
                                                      <http://purl.org/vocab/vann/usageNote> """Includes a spectrum of resources including controlled vocabulary, thesaurus, information model, taxonomy, glossary, vocabulary....). 
 
@@ -834,15 +837,11 @@ Implicitly there is also a stewardship/policy component determining management o
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000213
 <http://cor.esipfed.org/ont/earthcube/ECRRO_0000213> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://schema.org/CreativeWork> ,
+                                                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
+                                                                     <http://schema.org/CreativeWork> ,
                                                                      <http://www.w3.org/ns/dcat#CatalogRecord> ,
                                                                      [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://schema.org/description> ;
-                                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <http://schema.org/Text>
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty dcterms:title ;
+                                                                       owl:onProperty <http://purl.org/dc/terms/title> ;
                                                                        owl:cardinality "1"^^xsd:nonNegativeInteger
                                                                      ] ,
                                                                      [ rdf:type owl:Restriction ;
@@ -942,6 +941,26 @@ Implicitly there is also a stewardship/policy component determining management o
                                         rdfs:label "License"@en-us .
 
 
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000027
 <http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class ;
                                              rdfs:label "data item"@en .
@@ -956,15 +975,69 @@ Implicitly there is also a stewardship/policy component determining management o
 
 
 ###  http://purl.org/dc/terms/LicenseDocument
-dcterms:LicenseDocument rdf:type owl:Class .
+<http://purl.org/dc/terms/LicenseDocument> rdf:type owl:Class .
+
+
+###  http://schema.org/Audience
+<http://schema.org/Audience> rdf:type owl:Class .
 
 
 ###  http://schema.org/CreativeWork
-<http://schema.org/CreativeWork> rdfs:subClassOf <http://schema.org/Intangible> .
+<http://schema.org/CreativeWork> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://schema.org/Intangible> .
 
 
 ###  http://schema.org/Dataset
-<http://schema.org/Dataset> <http://purl.obolibrary.org/obo/IAO_0000115> "An ECResource that is a catalog of other resources.  By definition catalogs are datasets."@en .
+<http://schema.org/Dataset> rdf:type owl:Class ;
+                            <http://purl.obolibrary.org/obo/IAO_0000115> "An ECResource that is a catalog of other resources.  By definition catalogs are datasets."@en .
+
+
+###  http://schema.org/DefinedTerm
+<http://schema.org/DefinedTerm> rdf:type owl:Class .
+
+
+###  http://schema.org/Intangible
+<http://schema.org/Intangible> rdf:type owl:Class .
+
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class .
+
+
+###  http://schema.org/Project
+<http://schema.org/Project> rdf:type owl:Class .
+
+
+###  http://schema.org/ResearchProject
+<http://schema.org/ResearchProject> rdf:type owl:Class .
+
+
+###  http://schema.org/Service
+<http://schema.org/Service> rdf:type owl:Class .
+
+
+###  http://schema.org/SoftwareApplication
+<http://schema.org/SoftwareApplication> rdf:type owl:Class .
+
+
+###  http://schema.org/SoftwareSourceCode
+<http://schema.org/SoftwareSourceCode> rdf:type owl:Class .
+
+
+###  http://schema.org/TechArticle
+<http://schema.org/TechArticle> rdf:type owl:Class .
+
+
+###  http://schema.org/Text
+<http://schema.org/Text> rdf:type owl:Class .
+
+
+###  http://schema.org/Thing
+<http://schema.org/Thing> rdf:type owl:Class .
+
+
+###  http://schema.org/URL
+<http://schema.org/URL> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2000/10/swap/pim/contact#Person
@@ -2240,18 +2313,33 @@ dcterms:LicenseDocument rdf:type owl:Class .
 [ owl:unionOf [ ]
 ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 #################################################################
 #    Annotations
 #################################################################
 
-<http://creativecommons.org/ns#Attribution> rdfs:label "Attribution"@en-us ;
-                                             rdfs:comment """credit be given to
-		    copyright holder and/or author"""@en-us .
+<http://creativecommons.org/ns#Attribution> rdfs:comment """credit be given to
+		    copyright holder and/or author"""@en-us ;
+                                             rdfs:label "Attribution"@en-us .
 
 
-<http://creativecommons.org/ns#CommercialUse> rdfs:label "Commercial Use"@en-us ;
-                                              rdfs:comment """exercising rights for
-		    commercial purposes"""@en-us .
+<http://creativecommons.org/ns#CommercialUse> rdfs:comment """exercising rights for
+		    commercial purposes"""@en-us ;
+                                              rdfs:label "Commercial Use"@en-us .
 
 
 <http://creativecommons.org/ns#Copyleft> rdfs:comment """derivative and
@@ -2261,14 +2349,14 @@ dcterms:LicenseDocument rdf:type owl:Class .
                                          rdfs:label "Copyleft"@en-us .
 
 
-<http://creativecommons.org/ns#DerivativeWorks> rdfs:label "Derivative Works"@en-us ;
-                                                rdfs:comment """distribution of
-		    derivative works"""@en-us .
+<http://creativecommons.org/ns#DerivativeWorks> rdfs:comment """distribution of
+		    derivative works"""@en-us ;
+                                                rdfs:label "Derivative Works"@en-us .
 
 
-<http://creativecommons.org/ns#Distribution> rdfs:label "Distribution"@en-us ;
-                                             rdfs:comment """distribution, public
-		    display, and publicly performance"""@en-us .
+<http://creativecommons.org/ns#Distribution> rdfs:comment """distribution, public
+		    display, and publicly performance"""@en-us ;
+                                             rdfs:label "Distribution"@en-us .
 
 
 <http://creativecommons.org/ns#HighIncomeNationUse> rdfs:comment """use in a
@@ -2276,12 +2364,12 @@ dcterms:LicenseDocument rdf:type owl:Class .
                                                     rdfs:label "High Income Nation Use"@en-us .
 
 
-<http://creativecommons.org/ns#LesserCopyleft> rdfs:label "Lesser Copyleft"@en-us ;
-                                               rdfs:comment """derivative works must
+<http://creativecommons.org/ns#LesserCopyleft> rdfs:comment """derivative works must
 		    be licensed under specified terms, with at least
 		    the same conditions as the original work;
 		    combinations with the work may be licensed under
-		    different terms"""@en-us .
+		    different terms"""@en-us ;
+                                               rdfs:label "Lesser Copyleft"@en-us .
 
 
 <http://creativecommons.org/ns#Notice> rdfs:comment """copyright and license
@@ -2289,15 +2377,15 @@ dcterms:LicenseDocument rdf:type owl:Class .
                                        rdfs:label "Notice"@en-us .
 
 
-<http://creativecommons.org/ns#Reproduction> rdfs:label "Reproduction"@en-us ;
-                                             rdfs:comment """making multiple
-		    copies"""@en-us .
+<http://creativecommons.org/ns#Reproduction> rdfs:comment """making multiple
+		    copies"""@en-us ;
+                                             rdfs:label "Reproduction"@en-us .
 
 
-<http://creativecommons.org/ns#ShareAlike> rdfs:label "Share Alike"@en-us ;
-                                           rdfs:comment """derivative works be
+<http://creativecommons.org/ns#ShareAlike> rdfs:comment """derivative works be
 		    licensed under the same terms or compatible terms
-		    as the original work"""@en-us .
+		    as the original work"""@en-us ;
+                                           rdfs:label "Share Alike"@en-us .
 
 
 <http://creativecommons.org/ns#Sharing> rdfs:comment """permits commercial
@@ -2306,11 +2394,11 @@ dcterms:LicenseDocument rdf:type owl:Class .
                                         rdfs:label "Sharing"@en-us .
 
 
-<http://creativecommons.org/ns#SourceCode> rdfs:label "Source Code"@en-us ;
-                                           rdfs:comment """source code (the
+<http://creativecommons.org/ns#SourceCode> rdfs:comment """source code (the
 		    preferred form for making modifications) must be
 		    provided when exercising some rights granted by
-		    the license."""@en-us .
+		    the license."""@en-us ;
+                                           rdfs:label "Source Code"@en-us .
 
 
 <http://creativecommons.org/ns#license> rdfs:label """has
@@ -2321,18 +2409,18 @@ dcterms:LicenseDocument rdf:type owl:Class .
                                              rdfs:label "BFO OWL specification label"@en .
 
 
-<http://purl.obolibrary.org/obo/BFO_0000180> rdfs:label "BFO CLIF specification label"@en ;
-                                             rdfs:comment "curator note: Really of interest to developers only"@en ,
-                                                          "Relates an entity in the ontology to the term that is used to represent it in the the Common Logic Interchange Format (CLIF) specification of BFO2"@en ;
-                                             dc:source "definition source: Person:Alan Ruttenberg"@en .
+<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.org/dc/elements/1.1/source> "definition source: Person:Alan Ruttenberg"@en ;
+                                             rdfs:comment "Relates an entity in the ontology to the term that is used to represent it in the the Common Logic Interchange Format (CLIF) specification of BFO2"@en ,
+                                                          "curator note: Really of interest to developers only"@en ;
+                                             rdfs:label "BFO CLIF specification label"@en .
 
 
-<http://purl.obolibrary.org/obo/IAO_0000111> rdfs:label "editor preferred term"@en ;
-                                             rdfs:comment "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en .
+<http://purl.obolibrary.org/obo/IAO_0000111> rdfs:comment "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en ;
+                                             rdfs:label "editor preferred term"@en .
 
 
-<http://purl.obolibrary.org/obo/IAO_0000112> rdfs:label "example of usage"@en ;
-                                             rdfs:comment "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en .
+<http://purl.obolibrary.org/obo/IAO_0000112> rdfs:comment "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
+                                             rdfs:label "example of usage"@en .
 
 
 <http://purl.obolibrary.org/obo/IAO_0000114> rdfs:label "has curation status"@en .
@@ -2360,8 +2448,8 @@ Annotations"""@en ;
                                              rdfs:label "ontology term requester"@en .
 
 
-<http://purl.obolibrary.org/obo/IAO_0000412> rdfs:label "imported from"@en ;
-                                             rdfs:comment "For external terms/classes, the ontology from which the term was imported"@en .
+<http://purl.obolibrary.org/obo/IAO_0000412> rdfs:comment "For external terms/classes, the ontology from which the term was imported"@en ;
+                                             rdfs:label "imported from"@en .
 
 
 <http://purl.obolibrary.org/obo/IAO_0000426> rdfs:label "first order logic expression" .
@@ -2370,19 +2458,22 @@ Annotations"""@en ;
 <http://purl.obolibrary.org/obo/IAO_0000600> rdfs:label "elucidation"@en .
 
 
-<http://purl.obolibrary.org/obo/IAO_0000601> rdfs:label "has associated axiom(nl)"@en ;
-                                             rdfs:comment "An axiom associated with a term expressed using natural language"@en .
+<http://purl.obolibrary.org/obo/IAO_0000601> rdfs:comment "An axiom associated with a term expressed using natural language"@en ;
+                                             rdfs:label "has associated axiom(nl)"@en .
 
 
-<http://purl.obolibrary.org/obo/IAO_0000602> rdfs:label "has associated axiom(fol)"@en ;
-                                             rdfs:comment "An axiom expressed in first order logic using CLIF syntax"@en .
+<http://purl.obolibrary.org/obo/IAO_0000602> rdfs:comment "An axiom expressed in first order logic using CLIF syntax"@en ;
+                                             rdfs:label "has associated axiom(fol)"@en .
 
 
-<http://purl.obolibrary.org/obo/IAO_0010000> rdfs:label "has axiom label"@en ;
-                                             rdfs:comment "A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI"@en .
+<http://purl.obolibrary.org/obo/IAO_0010000> rdfs:comment "A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI"@en ;
+                                             rdfs:label "has axiom label"@en .
+
+
+<http://schema.org/name> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.org/dc/terms/title> .
 
 
 <http://www.geneontology.org/formats/oboInOwl#consider> rdfs:label "consider"@en .
 
 
-###  Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

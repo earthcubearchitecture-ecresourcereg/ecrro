@@ -1,0 +1,3572 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cor.esipfed.org/ont/earthcube/ecrro#"
+     xml:base="http://cor.esipfed.org/ont/earthcube/ecrro"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl1="owl:"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:rdfs2="rdfs:"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ontology="http://omv.ontoware.org/2005/05/ontology#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:ontologyMetadata="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/">
+    <owl:Ontology rdf:about="http://cor.esipfed.org/ont/earthcube/ecrro">
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/ADO"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/AUT"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/CMPR"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/ELT"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/MTU"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/RTE"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/UBA"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/cclo"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/dlo"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/fundcv"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/mola"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/sfo"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/spkt"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/srt"/>
+        <owl:imports rdf:resource="http://cor.esipfed.org/ont/earthcube/swl"/>
+        <owl:imports rdf:resource="http://schema.org/"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <dc:creator rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <dc:description xml:lang="en">This application level ontology is intended to provide the framework for answering questions like:
+
+1. &quot;How can EarthCube help me?&quot; (Science Engagement), 
+2. &quot;If I had an EarthCube Workbench, what capabilities could I access through it?&quot; (Workbench) and 
+3. “What EarthCube software components can I use to get my application working?” (Developers). 
+
+It extends the idea of an EarthCube Registry beyond data sets, to a generalized Registry of software components, semantic resources, tools, etc., with descriptive information to facilitate evaluation for reuse.</dc:description>
+        <dc:title>Earth Cube Resource Registry Ontology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/share-your-work/public-domain/cc0/"/>
+        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date xml:lang="en">2019-03-06T00:50:17Z</oboInOwl:creation_date>
+        <rdfs:comment xml:lang="en">This mini-ontology contains instances for each version of the licenses and public domain entities maintained by the Creative Commons (creativecommons.org).</rdfs:comment>
+        <rdfs:label xml:lang="en">Creative Commons Licenses Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license">
+        <rdfs:range rdf:resource="http://creativecommons.org/ns#License"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#morePermissions -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#morePermissions">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#useGuidelines -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#useGuidelines">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/relation"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000002 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/type"/>
+        <obo:IAO_0000115 xml:lang="en">An ECResourceType is a list of the type of resources in the EC Resource Registry.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-06T21:46:03Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">ECResourceType</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">An ECResourceType is a list of the type of resources in the EC Resource Registry.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000017 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000017">
+        <rdfs:range rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">For EC resources, has usage indicates what communities (if known) know about and potentially use the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:05:21Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">has usage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000128 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000128">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000115 xml:lang="en">Relates a field of study (i.e., domain or discipline) to an entity.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T20:12:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>has topic</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">has domain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000138 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000138">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:range rdf:resource="http://schema.org/DefinedTerm"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T21:30:57Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">has maturity state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000139 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000139">
+        <obo:IAO_0000115 xml:lang="en">The name of the agent that is maintaining this resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:05:12Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>stewardship</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">curated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000218 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000218">
+        <rdfs:domain rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/Organization"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <obo:IAO_0000115 xml:lang="en">Agent (i.e., individual, individuals, organization, or a position/role) that is responsible for operation, availability, and maintainence of the resource</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-19T19:23:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">stewarded by</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000218"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Agent (i.e., individual, individuals, organization, or a position/role) that is responsible for operation, availability, and maintainence of the resource</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000219 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000219">
+        <rdfs:domain rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:range rdf:resource="http://cor.esipfed.org/ont/earthcube/ELT_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">Qualitative specification of how long the resource is expected to remain accessible, valid and usable for intended function</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-19T19:59:31Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">expectedLifetime</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000219"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Qualitative specification of how long the resource is expected to remain accessible, valid and usable for intended function</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000500 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000500">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-28T22:53:50Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">stewardship type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000501 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000501">
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000204"/>
+                    <rdf:Description rdf:about="http://schema.org/Text"/>
+                    <rdf:Description rdf:about="http://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T04:03:22Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">profileOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000502 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000502">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T04:17:49Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">communicationProtocol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000503 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000503">
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000207"/>
+                    <rdf:Description rdf:about="http://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T04:32:16Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">interface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000504 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000504">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T05:04:21Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">applicationInterface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO__0000600 -->
+
+
+    <owl:ObjectProperty rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO__0000600">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://schema.org/CreativeWork"/>
+        <obo:IAO_0000115>Identifier for publication that specifies the component, e.g. DOI or a standard academic citation.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-29T19:48:50Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">primaryPublication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#deprecatedOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#deprecatedOn">
+        <rdfs:domain rdf:resource="http://creativecommons.org/ns#License"/>
+        <rdfs:label xml:lang="en-us">deprecated
+		  on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#jurisdiction -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#jurisdiction">
+        <rdfs:domain rdf:resource="http://creativecommons.org/ns#License"/>
+        <rdfs:label xml:lang="en-us">jurisdiction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#legalcode -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#legalcode">
+        <rdfs:domain rdf:resource="http://creativecommons.org/ns#License"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#license">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/license"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#permits -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#permits">
+        <rdfs:domain rdf:resource="http://creativecommons.org/ns#License"/>
+        <rdfs:label xml:lang="en-us">permits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#prohibits -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#prohibits">
+        <rdfs:domain rdf:resource="http://creativecommons.org/ns#License"/>
+        <rdfs:label xml:lang="en-us">prohibits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#requires -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#requires">
+        <rdfs:domain rdf:resource="http://creativecommons.org/ns#License"/>
+        <rdfs:label xml:lang="en-us">requires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label>is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
+        <rdfs:domain rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+                    <rdf:Description rdf:about="http://schema.org/Text"/>
+                    <rdf:Description rdf:about="http://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>depends on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/conformsTo">
+        <rdfs:domain rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000204"/>
+                    <rdf:Description rdf:about="http://schema.org/Text"/>
+                    <rdf:Description rdf:about="http://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/type"/>
+    
+
+
+    <!-- http://schema.org/about -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/about"/>
+    
+
+
+    <!-- http://schema.org/applicationCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/applicationCategory"/>
+    
+
+
+    <!-- http://schema.org/audience -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/audience"/>
+    
+
+
+    <!-- http://schema.org/dateCreated -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/dateCreated"/>
+    
+
+
+    <!-- http://schema.org/dateModified -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/dateModified"/>
+    
+
+
+    <!-- http://schema.org/datePublished -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/datePublished"/>
+    
+
+
+    <!-- http://schema.org/description -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/description"/>
+    
+
+
+    <!-- http://schema.org/expires -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/expires"/>
+    
+
+
+    <!-- http://schema.org/license -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/license">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#unionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#unionOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#attributionName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://creativecommons.org/ns#attributionName">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000001 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000001">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T23:53:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Attribution (CC BY)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000002 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000002">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T23:54:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Attribution ShareAlike (CC BY-SA)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000003 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000003">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T23:54:48Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Attribution-NoDerivatives 1.0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000004 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000004">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T23:55:24Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Attribution-NonCommercial (CC BY-NC)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000005 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000005">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T23:56:08Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000007 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000007">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:42:02Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000008 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000008">
+        <rdfs:subClassOf rdf:resource="http://creativecommons.org/ns#License"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:46:13Z</oboInOwl:creation_date>
+        <rdfs:comment>Licenses created and maintained by the Creative Commons (creativecommons.org)</rdfs:comment>
+        <rdfs:label xml:lang="en">Creative Commons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/CCL_0000011 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/CCL_0000011">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000008"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:50:10Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Public Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/DLO_0000001 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/DLO_0000001">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/license"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://cor.esipfed.org/ont/DLO_0000001"/>
+                            <rdf:Description rdf:about="http://cor.esipfed.org/ont/SWL_0000012"/>
+                            <rdf:Description rdf:about="http://creativecommons.org/ns#License"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/SWL_0000012 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/SWL_0000012">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/AUT_0000011 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/AUT_0000011">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/CMPR_0000010 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/CMPR_0000010">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000046 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+        <obo:IAO_0000115 xml:lang="en">EarthCube resource usage is data that indicates how well used the resource is by the CS and Geo branches of the EarthCube community.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-11T00:05:40Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC resource usage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">EarthCube resource usage is data that indicates how well used the resource is by the CS and Geo branches of the EarthCube community.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000047 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000046"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000219"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cor.esipfed.org/ont/earthcube/ELT_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The EC general usage field is data about EC resource usage that is not specific to a particular user category though it does indicate which categories are in use (if any).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:09:39Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC general usage</rdfs:label>
+        <skos:editorialNote xml:lang="en">Curation of these fields is necessary to validate the content!</skos:editorialNote>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The EC general usage field is data about EC resource usage that is not specific to a particular user category though it does indicate which categories are in use (if any).</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000140 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140">
+        <obo:IAO_0000115 xml:lang="en">ISO role codes are the CI_Responsible parties as used within the ISO 19115 family of specifications.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:05:41Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">ISO role codes</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">ISO role codes are the CI_Responsible parties as used within the ISO 19115 family of specifications.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000164 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Audience"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:37:43Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">ECAudience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000201 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/about"/>
+                <owl:someValuesFrom rdf:resource="http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/audience"/>
+                <owl:someValuesFrom rdf:resource="http://cor.esipfed.org/ont/earthcube/AUT_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/description"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Text"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000017"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000017"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cor.esipfed.org/ont/earthcube/UBA_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000138"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cor.esipfed.org/ont/earthcube/MTU_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/bibliographicCitation"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A catalogued resource that is in the EarthCube Registry.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T21:32:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">ECResource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000202 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000202">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <obo:IAO_0000115 xml:lang="en">A software entity on one side of an interface that executes some kind of processing  in response to a request made by an agent on the other side of the interface.</obo:IAO_0000115>
+        <vann:usageNote xml:lang="en">The service presents a set of offerings, each of which entails a resource and one or more operations on that resource. 
+
+Each offering also specifies the interchange format for input and output, and the syntax for invoking the operations, including any parameters in the operation signature.</vann:usageNote>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T21:33:16Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Service Instance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000204 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000204">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/TechArticle"/>
+        <obo:IAO_0000115 xml:lang="en">A document that describes the technical characteristics of an artifact or practice, possibly including a description of what it should do, or an explicit set of requirements that it must satisfy.</obo:IAO_0000115>
+        <vann:usageNote xml:lang="en">All resources may have a conformsTo property that should be a link to a specification.  
+
+Specifications may be hierarchical, e.g. a profile specification might inherit provisions from a parent specification, and add additional constraints to further restrict usage of the artifact or practice.</vann:usageNote>
+        <resource:example xml:lang="en">interoperability agreement, identifier scheme</resource:example>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T21:37:35Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000204"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A document that describes the technical characteristics of an artifact or practice, possibly including a description of what it should do, or an explicit set of requirements that it must satisfy.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Specification"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000205 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000205">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <obo:IAO_0000115 xml:lang="en">A specification of a scenario for a work item with some specific context and goal.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T21:52:54Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Use Case</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000205"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A specification of a scenario for a work item with some specific context and goal.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000206 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000206">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareApplication"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareSourceCode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/applicationCategory"/>
+                <owl:someValuesFrom rdf:resource="http://cor.esipfed.org/ont/earthcube/SFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Software represented in the EC registry</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:00:30Z</oboInOwl:creation_date>
+        <rdfs:comment>A packaged set of instructions that can be executed by a machine to perform one or more functions. Distribution might be as source code, an executable file, an installer package, or as a web application that can be invoked via URL.</rdfs:comment>
+        <rdfs:label xml:lang="en">EC Software</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000206"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>A packaged set of instructions that can be executed by a machine to perform one or more functions. Distribution might be as source code, an executable file, an installer package, or as a web application that can be invoked via URL.</owl:annotatedTarget>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000207 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000207">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/applicationCategory"/>
+                <owl:someValuesFrom rdf:resource="http://cor.esipfed.org/ont/earthcube/SFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000502"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cor.esipfed.org/ont/earthcube/CMPR_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A set of operations, messages used to invoke the operations, and inputs necessary to execute the operations, along with an expected output content and format.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:12:26Z</oboInOwl:creation_date>
+        <rdfs:comment xml:lang="en">An Interface/API should have an associated specification document.</rdfs:comment>
+        <rdfs:label xml:lang="en">EC Interface_API</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000207"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A set of operations, messages used to invoke the operations, and inputs necessary to execute the operations, along with an expected output content and format.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000208 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000208">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <obo:IAO_0000115 xml:lang="en">A serialization scheme (data format) for communication between agents.</obo:IAO_0000115>
+        <vann:usageNote xml:lang="en">Most general types are generic formats specified by typical MIME types, but this resource type includes much more granular identification of schemes/Data Types/Data Specification that are specific to particular applications. These generally implement some underlying information model (schema and vocabulary) that enables semantic as well as syntactic interoperability.  
+
+An Interchange Format SHOULD have an associated specification that documents its provisions and usage. 
+
+Registered interchange formats are intended to provide identifiers for data serialization formats that work with specific applications. Links to registered formats would be via URI values for the inputFormat and outputFormat properties on an Interface/API, Software, or Service resource.
+
+In situations where no specification resource is available to document the format, it is sufficient to simply identify the format as an application specific format. This is the case for various commercial applications that use proprietary formats, as well as for scientific model input and output formats. 
+
+The interchange format can be linked to an information model that defines the entities and properties represented using the format.</vann:usageNote>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:15:19Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Interchange Format</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000208"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A serialization scheme (data format) for communication between agents.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000209 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000209">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/ResearchProject"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Service"/>
+        <obo:IAO_0000115 xml:lang="en">An ECResource record for a repository - a place where things may be put for safekeeping.</obo:IAO_0000115>
+        <vann:usageNote xml:lang="en">In EarthCube, a repository is often a storage system in which objects may be stored for subsequent access or retrieval.</vann:usageNote>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:16:27Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Repository</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000209"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/vocab/vann/usageNote"/>
+        <owl:annotatedTarget xml:lang="en">In EarthCube, a repository is often a storage system in which objects may be stored for subsequent access or retrieval.</owl:annotatedTarget>
+        <dc:source>Kahn and Wilensky, 1995, http://www.cnri.reston.va.us/k-w.html</dc:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000210 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000210">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error5"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareSourceCode"/>
+        <obo:IAO_0000115 xml:lang="en">A specification of concepts, and optionally relationships representing a conceptualization of some domain of discourse.</obo:IAO_0000115>
+        <vann:usageNote xml:lang="en">Includes a spectrum of resources including controlled vocabulary, thesaurus, information model, taxonomy, glossary, vocabulary....). 
+
+For linked data purposes, it is useful to specify the entities and properties of the entities represented by the model using URI references to widely used ontologies. 
+
+For discovery purposes in the registry, the entities and properties should be described in English language terms.</vann:usageNote>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:37:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Semantic Resource</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000210"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A specification of concepts, and optionally relationships representing a conceptualization of some domain of discourse.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000211 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000211">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/applicationCategory"/>
+                <owl:someValuesFrom rdf:resource="http://cor.esipfed.org/ont/earthcube/SFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An entry in the EC Resource Registry representing a composite software entity that enables execution of a variety of tools e.g. MatLab, ArcGIS.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:41:39Z</oboInOwl:creation_date>
+        <rdfs:comment xml:lang="en">The key defining feature is extensibility - with plugin architecture and API-based interaction between components to enable reconfiguration/extension for new problems.</rdfs:comment>
+        <rdfs:label xml:lang="en">EC Platform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000212 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000212">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Dataset"/>
+        <obo:IAO_0000115 xml:lang="en">A curated collection of descriptions of resources, accessible through one or more interfaces.</obo:IAO_0000115>
+        <vann:usageNote xml:lang="en">Technically a catalog should be a dcat bundled dataset (the metadata collection) and one or more sdo:Services (i.e., the access interfaces). 
+
+Implicitly there is also a stewardship/policy component determining management of the catalog.</vann:usageNote>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-06T22:46:23Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC CatalogRegistry</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000212"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A curated collection of descriptions of resources, accessible through one or more interfaces.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000213 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000213">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-07T02:23:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Catalog Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000222 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000222">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Project"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-19T21:58:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">originatingProject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ELT_0000006 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ELT_0000006">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/MOLA_0000005 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/MOLA_0000005">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/MTU_0000012 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/MTU_0000012">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/RTE_000100 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/RTE_000100">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/SFO_0000001 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/SFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/SFO_0000004 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/SFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/SFO_0000075 -->
+
+
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/SFO_0000075">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000201"/>
+        <obo:IAO_0000119 xml:lang="en">A composite resource that is a collection of other resources assembled into a package for some purpose, and accessible as a single Unit.</obo:IAO_0000119>
+        <resource:example xml:lang="en">Docker containers; Bagit, Data on the Web, or ORE packages with heterogeneous content.</resource:example>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-23T23:32:21Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC Bundled Object</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/SFO_0000075"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <owl:annotatedTarget xml:lang="en">A composite resource that is a collection of other resources assembled into a package for some purpose, and accessible as a single Unit.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/SPKT_0000014 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/SPKT_0000014">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/UBA_0000006 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/UBA_0000006">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000046"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/fundcv_0000001 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/fundcv_0000001">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/srt_0000009 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/srt_0000009">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001 -->
+
+
+    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://core.esipfed.org/ont/SWL_0000014 -->
+
+
+    <owl:Class rdf:about="http://core.esipfed.org/ont/SWL_0000014">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000011"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:53:19Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">PDM &quot;No Known Copyright&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://creativecommons.org/ns#License -->
+
+
+    <owl:Class rdf:about="http://creativecommons.org/ns#License">
+        <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
+        <rdfs:comment xml:lang="en-us">a set of
+		    requests/permissions to users of a Work, e.g. a
+		    copyright license, the public domain, information
+		    for distributors</rdfs:comment>
+        <rdfs:label xml:lang="en-us">License</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error3 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error4 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error5 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error5"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcam/VocabularyEncodingScheme -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Service -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Service"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LicenseDocument"/>
+    
+
+
+    <!-- http://schema.org/Audience -->
+
+
+    <owl:Class rdf:about="http://schema.org/Audience"/>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Dataset -->
+
+
+    <owl:Class rdf:about="http://schema.org/Dataset">
+        <obo:IAO_0000115 xml:lang="en">An ECResource that is a catalog of other resources.  By definition catalogs are datasets.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/DefinedTerm -->
+
+
+    <owl:Class rdf:about="http://schema.org/DefinedTerm"/>
+    
+
+
+    <!-- http://schema.org/Intangible -->
+
+
+    <owl:Class rdf:about="http://schema.org/Intangible"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Project -->
+
+
+    <owl:Class rdf:about="http://schema.org/Project"/>
+    
+
+
+    <!-- http://schema.org/ResearchProject -->
+
+
+    <owl:Class rdf:about="http://schema.org/ResearchProject"/>
+    
+
+
+    <!-- http://schema.org/Service -->
+
+
+    <owl:Class rdf:about="http://schema.org/Service"/>
+    
+
+
+    <!-- http://schema.org/SoftwareApplication -->
+
+
+    <owl:Class rdf:about="http://schema.org/SoftwareApplication"/>
+    
+
+
+    <!-- http://schema.org/SoftwareSourceCode -->
+
+
+    <owl:Class rdf:about="http://schema.org/SoftwareSourceCode"/>
+    
+
+
+    <!-- http://schema.org/TechArticle -->
+
+
+    <owl:Class rdf:about="http://schema.org/TechArticle"/>
+    
+
+
+    <!-- http://schema.org/Text -->
+
+
+    <owl:Class rdf:about="http://schema.org/Text"/>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+
+    <owl:Class rdf:about="http://schema.org/Thing"/>
+    
+
+
+    <!-- http://schema.org/URL -->
+
+
+    <owl:Class rdf:about="http://schema.org/URL"/>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Catalog"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#CatalogRecord -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#CatalogRecord"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DataService -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource">
+        <obo:IAO_0000115>Resource published or curated by a single agent.</obo:IAO_0000115>
+        <vann:usageNote>The class of all cataloged resources, the super-class of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all cataloged resources, including datasets and data services. It is strongly recommended to use a more specific sub-class when available.</vann:usageNote>
+        <vann:usageNote>dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional sub-classes may be defined in a DCAT profile or other DCAT application for catalogs of other kinds of resources</vann:usageNote>
+        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/vocab-dcat-2/#Class:Resource"/>
+        <rdfs:label>Cataloged Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://creativecommons.org/share-your-work/public-domain/cc0/ -->
+
+
+    <owl:Class rdf:about="https://creativecommons.org/share-your-work/public-domain/cc0/">
+        <rdfs:subClassOf rdf:resource="http://cor.esipfed.org/ont/CCL_0000011"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:55:44Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC0 “No Rights Reserved”</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000003">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-06T21:54:33Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">ECResourceTypes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000005 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000005">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-06T22:47:07Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Use Case</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000013 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000013">
+        <obo:IAO_0000115 xml:lang="en">A researcher is a user who is interested in discovering items in the EarthCube Resource Registry (e.g., tools, data sets, etc.) that they can use in persuing their research.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T21:43:59Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">researcher</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A researcher is a user who is interested in discovering items in the EarthCube Resource Registry (e.g., tools, data sets, etc.) that they can use in persuing their research.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000014 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000014">
+        <obo:IAO_0000115 xml:lang="en">In the context of the EarthCube Registry developers are users who wish to find software components that they can integrate into software they are building.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T21:44:25Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">developer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000015 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000015">
+        <obo:IAO_0000115 xml:lang="en">A funder is a type of user interested in understanding what elements of the EarthCube Registry they have funded.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T21:44:37Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">funder</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A funder is a type of user interested in understanding what elements of the EarthCube Registry they have funded.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000016 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000016">
+        <obo:IAO_0000115 xml:lang="en">A repository user is one who is interested in what components in the EarthCube Registry may be relevant to integrate or use in serving their user community.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T21:45:14Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">repository</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A repository user is one who is interested in what components in the EarthCube Registry may be relevant to integrate or use in serving their user community.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000018 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000018">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:10:02Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">all sections</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000020 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000020">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:11:50Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Atmospheric &amp; Space Electricity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000021 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000021">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:12:16Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Atmospheric Sciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000022 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000022">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:12:30Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Biogeosciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000023 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000023">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:12:49Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Cyrosphere Sciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000024 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000024">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:13:15Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Earth and Planetary Surface Processes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000025 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000025">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:13:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Earth and Space Science Informatics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000026 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000026">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:14:04Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Education</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000027 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000027">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:14:18Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Geodesy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000028 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000028">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:14:31Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Geohealth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000029 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000029">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:14:59Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Geomagnetism, Paleomagnetism and Electromagnetism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000030 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000030">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:15:14Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Global Environmental Change</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000031 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000031">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:15:27Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Hydrology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000032 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000032">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:15:45Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Mineral and Rock Physics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000033 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000033">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:15:58Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Natural Hazards</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000034 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000034">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:16:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Near-Surface Geophysics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000035 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000035">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:16:25Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Nonlinear Geophysics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000036 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000036">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:16:38Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Ocean Sciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000037 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000037">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:17:02Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Paleoceanography and Paleoclimatology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000038 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000038">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:17:31Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Planetary Sciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000039 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000039">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:17:42Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Seismology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000040 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000040">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:17:57Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Social Impacts and Policy Sciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000041 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000041">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:18:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Space Physics and Aeronomy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000042 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000042">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:18:30Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Study of the Earth&apos;s Deep Interior</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000043 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000043">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:18:43Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Tectonophysics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000044 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000044">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-10T22:19:03Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Volcanology, Geochemistry, and Petrology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000049 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000049">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">It is not known how much, if any, usage there is of this resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:27:21Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">unknown</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000049"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">It is not known how much, if any, usage there is of this resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000050 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000050">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">A resource with low usage, may be new and so has not yet built up a user community, possibly not widely known (more advertising needed), or it may indicate a resource that has missed its mark.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:27:43Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">usage low</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A resource with low usage, may be new and so has not yet built up a user community, possibly not widely known (more advertising needed), or it may indicate a resource that has missed its mark.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://orcid.org/0000-0003-4808-4736</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000051 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000051">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">This EC resource is in use withint the cyberinfrastructure/programming community as characterized by EC CS usage.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:28:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">used by programmers</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000051"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">This EC resource is in use withint the cyberinfrastructure/programming community as characterized by EC CS usage.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000052 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000052">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">This EC resource is in use within the geoscience community as characterized by  EC Geo usage.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:28:41Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">used by geoscientists</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000052"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">This EC resource is in use within the geoscience community as characterized by  EC Geo usage.</owl:annotatedTarget>
+        <rdfs:comment rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000053 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000053">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">Both the geoscience and the software and cyberinfrastructure/development communities use this resource as characterized by EC CS usage and EC Geo usage.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:29:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">used by both</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000053"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Both the geoscience and the software and cyberinfrastructure/development communities use this resource as characterized by EC CS usage and EC Geo usage.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000055 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000055">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:46:02Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">&gt;10 adopters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000056 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000056">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:46:50Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Widely used &gt; 1 yr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000057 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000057">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-13T22:47:09Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Widely used &gt; 5 yr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000095 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000095">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-22T19:44:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC record created</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000096 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000096">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-22T19:44:29Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC record updated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000097 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000097">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-22T19:44:44Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">EC record retired</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000130 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000130">
+        <obo:IAO_0000115 xml:lang="en">Information about the maturity of an entity for which development is planned but is not yet underway (e.g., book contract not yet signed, development project not yet started).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:23:24Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">planning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000131 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000131">
+        <obo:IAO_0000115 xml:lang="en">Maturity information about an entity that is currently being developed but which is not expected to be available for more than another year.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:23:56Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">in development &gt;1 year out</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000131"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Maturity information about an entity that is currently being developed but which is not expected to be available for more than another year.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000132 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000132">
+        <obo:IAO_0000115 xml:lang="en">Maturity information about an entity that is in development and is expected to be complete in less than another year.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:24:10Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">in development &lt;1 yr out</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000132"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Maturity information about an entity that is in development and is expected to be complete in less than another year.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://orcid.org/0000-0003-4808-4736</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000133 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000133">
+        <obo:IAO_0000115 xml:lang="en">Maturity information about an entity that is available but only in draft form or as an alpha release. The entity may not be complete (e.g. specifications, documentation) or thoroughly tested (e.g., software).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:24:58Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">alpha or rough draft</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000133"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Maturity information about an entity that is available but only in draft form or as an alpha release. The entity may not be complete (e.g. specifications, documentation) or thoroughly tested (e.g., software).</owl:annotatedTarget>
+        <obo:IAO_0000119>https://orcid.org/0000-0003-4808-4736</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000134 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000134">
+        <obo:IAO_0000115 xml:lang="en">Maturity information about an entity that is complete and available but has not yet been fully vetted (e.g., may contain bugs if software or has not completed editorial or other review if documentation, etc.).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:25:35Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">beta or complete draft</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000135 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000135">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:26:05Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">production ready</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000136 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000136">
+        <obo:IAO_0000115 xml:lang="en">Maturity information about an entity that fully developed, tested, etc. and in production (e.g., a major version or edition has been released).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:26:18Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">in production</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000136"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Maturity information about an entity that fully developed, tested, etc. and in production (e.g., a major version or edition has been released).</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000137 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000137">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-23T22:27:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">used in multiple places</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000141 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000141">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization whose name should appear first in the citation for the resource (for names that come after the first use co-author). While it is possible to have an author and principle investigator be the same individual or organization, author is not the same as nor synonymous with principle investigator.  Applicable mainly to documents, reports, memos, etc.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:08:18Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">author</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000141"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization whose name should appear first in the citation for the resource (for names that come after the first use co-author). While it is possible to have an author and principle investigator be the same individual or organization, author is not the same as nor synonymous with principle investigator.  Applicable mainly to documents, reports, memos, etc.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000142 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000142">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization that has accountability and responsibility for the data and ensures appropriate care and maintenance of the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:08:49Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">custodian</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000142"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization that has accountability and responsibility for the data and ensures appropriate care and maintenance of the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000143 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000143">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The organization that is responsible for providing the PARR required access to the data.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:10:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">distributor</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000143"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The organization that is responsible for providing the PARR required access to the data.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000145 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000145">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The name of the individual or organization who is responsible for the data at the point when the data was first created. Applicable for data sets that are an aggregation of two or more data sets or if the data set is the first instance of the signal having been converted into data.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:17:27Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">originator</rdfs:label>
+        <skos:editorialNote xml:lang="en">In the EarthCube (EC) context, data includes any and all EarthCube resources irrespective of form (e.g., software, documentation, etc. all count as does traditional numeric data).</skos:editorialNote>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000145"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The name of the individual or organization who is responsible for the data at the point when the data was first created. Applicable for data sets that are an aggregation of two or more data sets or if the data set is the first instance of the signal having been converted into data.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000146 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000146">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization that has ownership of the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:19:56Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">owner</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000146"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization that has ownership of the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000147 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000147">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization who is responsible for the initial triage of and answering questions related to the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:20:46Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">pointOfContact</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000147"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization who is responsible for the initial triage of and answering questions related to the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000148 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000148">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or individuals who are the lead researchers for a grant (i.e. head of the laboratory, research group leader, etc.). If there are co-principal investigators then this field will repeat for each principle investigator. While it is possible to have a principal investigator and author be the same individual or organization, principal investigator is not the same nor synonymous with author.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:21:42Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">principalInvestigator</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000148"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or individuals who are the lead researchers for a grant (i.e. head of the laboratory, research group leader, etc.). If there are co-principal investigators then this field will repeat for each principle investigator. While it is possible to have a principal investigator and author be the same individual or organization, principal investigator is not the same nor synonymous with author.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000149 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000149">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The name of the individual or organization who has processed the data in a manner such that the resource has been modified.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:23:15Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">processor</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000149"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The name of the individual or organization who has processed the data in a manner such that the resource has been modified.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000150 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000150">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization who prepares and issues the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:23:57Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">publisher</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization who prepares and issues the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000151 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000151">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization that supplies or allocates the resource for another entity.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:24:45Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">resourceProvider</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000152 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000152">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization who is providing sponsorship for the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:25:27Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">sponsor</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000152"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization who is providing sponsorship for the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000153 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000153">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individuals or organizations who are the intended consumers of the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:26:51Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">user</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individuals or organizations who are the intended consumers of the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000154 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000154">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual(s) or organization(s) who name(s) should appear after the first name in a citation for the resource (use author to denote the first name in the citation). While it is possible to have a co-author and principal investigator/collaborator be the same individual or organization, co-author is no the same as nor synonymous with principle investigator or collaborator</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:27:31Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">coAuthor</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual(s) or organization(s) who name(s) should appear after the first name in a citation for the resource (use author to denote the first name in the citation). While it is possible to have a co-author and principal investigator/collaborator be the same individual or organization, co-author is no the same as nor synonymous with principle investigator or collaborator</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000155 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000155">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">Party who assists with the generation of the resource other than the principal investigator</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:29:40Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">collaborator</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000155"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Party who assists with the generation of the resource other than the principal investigator</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000156 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000156">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individuals or organizations whose contributions deserve recognition in the citation. Contributor is mutually exclusive from author, co-author, principal investigator, and collaborator. Use ISO MD_Identification credit field to identify individual or organizations that should be given acknowledgement only.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:32:06Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">contributor</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000156"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individuals or organizations whose contributions deserve recognition in the citation. Contributor is mutually exclusive from author, co-author, principal investigator, and collaborator. Use ISO MD_Identification credit field to identify individual or organizations that should be given acknowledgement only.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000157 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000157">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual who has made a corrective or editorial change to the resource as part of a systematic revision process.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:33:04Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">editor</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000157"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual who has made a corrective or editorial change to the resource as part of a systematic revision process.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000158 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000158">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization which has provided all or part of the finances associated with the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:33:58Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">funder</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000158"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization which has provided all or part of the finances associated with the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000159 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000159">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">A class of entity that mediates access to the resource and for whom the resource is intended or useful.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:34:45Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">mediator</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000159"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A class of entity that mediates access to the resource and for whom the resource is intended or useful.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000160 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000160">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">The individual or organization who has ownership of the legal right to the resource.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T22:36:03Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">rightsHolder</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000160"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">The individual or organization who has ownership of the legal right to the resource.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://geo-ide.noaa.gov/wiki/index.php?title=ISO_19115_and_19115-2_CodeList_Dictionaries#CI_RoleCode"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000162 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000162">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-24T23:01:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">stewardship</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000165 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000165">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:38:19Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">data producers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000166 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000166">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:38:35Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">data users</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000167 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000167">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:39:00Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">data producers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000168 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000168">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:39:32Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">data facilities &amp; repositories</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000169 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000169">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:39:48Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">technologists</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000170 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000170">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:39:58Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">developers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000171 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000171">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:40:06Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">scientists</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000172 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000172">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:40:17Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">informaticists</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000173 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000173">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:40:40Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">members of the public</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000174 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000174">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:40:47Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">all</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000175 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000175">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000164"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-08-30T22:41:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">data managers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000301 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000301">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-26T21:43:26Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">&gt;5 years</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000302 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000302">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-26T21:43:42Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">&gt;1 year</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000303 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000303">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-26T21:44:39Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">long term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cor.esipfed.org/ont/earthcube/ECRRO_0000305 -->
+
+
+    <owl:NamedIndividual rdf:about="http://cor.esipfed.org/ont/earthcube/ECRRO_0000305">
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-26T22:02:19Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">data intermediary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:NamedIndividual rdf:about="http://creativecommons.org/ns#license">
+        <owl:sameAs rdf:resource="http://www.w3.org/1999/xhtml/vocab#license"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ECRRO_0000300 -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ECRRO_0000300">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/earthcube/ECRRO_0000047"/>
+        <obo:IAO_0000115 xml:lang="en">Resource is not available for use, typically because it is still in development.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">not applicable</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ECRRO_0000300"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Resource is not available for use, typically because it is still in development.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0001-6041-5302"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/1999/xhtml/vocab#license -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/1999/xhtml/vocab#license"/>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-nd/1.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-nd/1.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000007"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:42:11Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-ND-NC 1.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-nd/2.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-nd/2.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000007"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:40:32Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC-ND 2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-nd/3.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-nd/3.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000007"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:39:21Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC-ND 3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-nd/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000007"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:38:05Z</oboInOwl:creation_date>
+        <rdfs:label>CC BY-NC-ND 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-sa/1.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-sa/1.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000005"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:34:23Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC-SA 1.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-sa/2.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-sa/2.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000005"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:33:38Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC-SA 2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-sa/3.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000005"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:32:40Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC-SA 3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc-sa/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000005"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:31:34Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC-SA 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc/1.0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc/1.0">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000004"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:46:04Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC 1.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc/2.0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc/2.0">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000004"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:45:09Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC 2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc/3.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc/3.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000004"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:44:20Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC 3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nc/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nc/4.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000004"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T22:43:41Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-NC 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nd/1.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nd/1.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000003"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:21:33Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-ND 1.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nd/2.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nd/2.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000003"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:20:44Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-ND 2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nd/3.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nd/3.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000003"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:20:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-ND 3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-nd/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-nd/4.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000003"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:17:38Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-ND 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-sa/1.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-sa/1.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000002"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:16:37Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-SA 1.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-sa/2.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-sa/2.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000002"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:15:44Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-SA 2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-sa/3.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-sa/3.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000002"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:14:59Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-SA 3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by-sa/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by-sa/4.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000002"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:14:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY-SA 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by/1.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/1.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000001"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:11:55Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY 1.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by/2.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/2.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000001"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:11:12Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY 2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/3.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000001"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:10:40Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY 3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/CCL_0000001"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-02T00:06:34Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC BY 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/publicdomain/zero/1.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/publicdomain/zero/1.0/">
+        <rdf:type rdf:resource="https://creativecommons.org/share-your-work/public-domain/cc0/"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:57:48Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/share-your-work/public-domain/pdm -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/share-your-work/public-domain/pdm">
+        <rdf:type rdf:resource="http://core.esipfed.org/ont/SWL_0000014"/>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-03T04:52:56Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">Public Domain Mark</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <ns:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:unionOf>
+            <rdf:Description/>
+        </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://creativecommons.org/ns#Attribution">
+        <rdfs:comment xml:lang="en-us">credit be given to
+		    copyright holder and/or author</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Attribution</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#CommercialUse">
+        <rdfs:comment xml:lang="en-us">exercising rights for
+		    commercial purposes</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Commercial Use</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#Copyleft">
+        <rdfs:comment xml:lang="en-us">derivative and
+		    combined works must be licensed under specified
+		    terms, similar to those on the original
+		    work</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Copyleft</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#DerivativeWorks">
+        <rdfs:comment xml:lang="en-us">distribution of
+		    derivative works</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Derivative Works</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#Distribution">
+        <rdfs:comment xml:lang="en-us">distribution, public
+		    display, and publicly performance</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Distribution</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#HighIncomeNationUse">
+        <rdfs:comment xml:lang="en-us">use in a
+		    non-developing country</rdfs:comment>
+        <rdfs:label xml:lang="en-us">High Income Nation Use</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#LesserCopyleft">
+        <rdfs:comment xml:lang="en-us">derivative works must
+		    be licensed under specified terms, with at least
+		    the same conditions as the original work;
+		    combinations with the work may be licensed under
+		    different terms</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Lesser Copyleft</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#Notice">
+        <rdfs:comment xml:lang="en-us">copyright and license
+		    notices be kept intact</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Notice</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#Reproduction">
+        <rdfs:comment xml:lang="en-us">making multiple
+		    copies</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Reproduction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#ShareAlike">
+        <rdfs:comment xml:lang="en-us">derivative works be
+		    licensed under the same terms or compatible terms
+		    as the original work</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Share Alike</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#Sharing">
+        <rdfs:comment xml:lang="en-us">permits commercial
+		    derivatives, but only non-commercial
+		    distribution</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Sharing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#SourceCode">
+        <rdfs:comment xml:lang="en-us">source code (the
+		    preferred form for making modifications) must be
+		    provided when exercising some rights granted by
+		    the license.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Source Code</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://creativecommons.org/ns#license">
+        <rdfs:label xml:lang="en-us">has
+		  license</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <rdfs:comment xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</rdfs:comment>
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <dc:source xml:lang="en">definition source: Person:Alan Ruttenberg</dc:source>
+        <rdfs:comment xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the Common Logic Interchange Format (CLIF) specification of BFO2</rdfs:comment>
+        <rdfs:comment xml:lang="en">curator note: Really of interest to developers only</rdfs:comment>
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:comment xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</rdfs:comment>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:comment xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</rdfs:comment>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:comment xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:comment xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</rdfs:comment>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:comment xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)
+Annotations</rdfs:comment>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <skos:editorialNote xml:lang="en">Use skos:altLabel</skos:editorialNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:comment xml:lang="en">An administrative note of use for a curator but of no use for a user</rdfs:comment>
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000234">
+        <rdfs:comment xml:lang="en">The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition.</rdfs:comment>
+        <rdfs:label xml:lang="en">ontology term requester</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:comment xml:lang="en">For external terms/classes, the ontology from which the term was imported</rdfs:comment>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000426">
+        <rdfs:label>first order logic expression</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:comment xml:lang="en">An axiom associated with a term expressed using natural language</rdfs:comment>
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <rdfs:comment xml:lang="en">An axiom expressed in first order logic using CLIF syntax</rdfs:comment>
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
+        <rdfs:comment xml:lang="en">A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI</rdfs:comment>
+        <rdfs:label xml:lang="en">has axiom label</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/name">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/title"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
+        <rdfs:label xml:lang="en">consider</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
