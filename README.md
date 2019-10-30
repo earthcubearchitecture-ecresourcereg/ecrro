@@ -7,12 +7,11 @@ This ontology defines classes for description of information resources documente
 
 See https://www.earthcube.org/resource_registry for project information
 
-TBD More information can be found (in the future...) at http://obofoundry.org/ontology/ecrro
+Ontology documentation provided by Widico at https://earthcubearchitecture-ecresourcereg.github.io/ecrro/index-en.html
 
 ## Example instances
 Test instances are in the 
 [Information Model GitHub repository Examples folder](https://github.com/earthcubearchitecture-ecresourcereg/infomodel/tree/master/examples)
-
 
 ## Versions
 
@@ -21,8 +20,6 @@ Test instances are in the
 The latest version of the ontology can always be found at:
 
 http://purl.obolibrary.org/obo/ecrro.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
