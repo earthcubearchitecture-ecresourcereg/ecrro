@@ -37,9 +37,7 @@ It extends the idea of an EarthCube Registry beyond data sets, to a generalized 
                                               dc:title "Earth Cube Resource Registry Ontology" ;
                                               dcterms:license <https://creativecommons.org/share-your-work/public-domain/cc0/> ;
                                               <http://www.geneontology.org/formats/oboInOwl#created_by> <https://orcid.org/0000-0003-4808-4736> ;
-                                              <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-03-06T00:50:17Z"@en ;
-                                              rdfs:comment "This mini-ontology contains instances for each version of the licenses and public domain entities maintained by the Creative Commons (creativecommons.org)."@en ;
-                                              rdfs:label "Creative Commons Licenses Ontology"@en .
+                                              <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-03-06T00:50:17Z"@en .
 
 #################################################################
 #    Annotation properties
@@ -500,6 +498,10 @@ dcterms:modified rdf:type owl:DatatypeProperty .
 <http://cor.esipfed.org/ont/SWL_0000012> rdfs:subClassOf <http://schema.org/DefinedTerm> .
 
 
+###  http://cor.esipfed.org/ont/earthcube/ADO_0000001
+<http://cor.esipfed.org/ont/earthcube/ADO_0000001> rdfs:subClassOf <http://schema.org/DefinedTerm> .
+
+
 ###  http://cor.esipfed.org/ont/earthcube/AUT_0000011
 <http://cor.esipfed.org/ont/earthcube/AUT_0000011> rdfs:subClassOf <http://schema.org/DefinedTerm> .
 
@@ -577,7 +579,7 @@ dcterms:modified rdf:type owl:DatatypeProperty .
                                                                      <http://www.w3.org/ns/dcat#Resource> ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://schema.org/about> ;
-                                                                       owl:someValuesFrom <http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001>
+                                                                       owl:someValuesFrom <http://cor.esipfed.org/ont/earthcube/ADO_0000001>
                                                                      ] ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://schema.org/audience> ;
@@ -918,10 +920,6 @@ Implicitly there is also a stewardship/policy component determining management o
 
 ###  http://cor.esipfed.org/ont/earthcube/srt_0000009
 <http://cor.esipfed.org/ont/earthcube/srt_0000009> rdfs:subClassOf <http://schema.org/DefinedTerm> .
-
-
-###  http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001
-<http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001> rdfs:subClassOf <http://schema.org/DefinedTerm> .
 
 
 ###  http://core.esipfed.org/ont/SWL_0000014
@@ -2117,7 +2115,7 @@ dcterms:LicenseDocument rdf:type owl:Class .
                                                                 rdfs:label "Public Domain Mark"@en .
 
 
-[ <http://creativecommons.org/ns#license> <https://creativecommons.org/publicdomain/zero/1.0/>
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
 ] .
 
 [ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
@@ -2141,7 +2139,7 @@ dcterms:LicenseDocument rdf:type owl:Class .
 [ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
  ] .
 
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+[ <http://creativecommons.org/ns#license> <https://creativecommons.org/publicdomain/zero/1.0/>
  ] .
 
 [ owl:unionOf [ ]
