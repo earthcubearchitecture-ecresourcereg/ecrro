@@ -920,7 +920,8 @@ Implicitly there is also a stewardship/policy component determining management o
 
 
 ###  http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001
-<http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001> rdfs:subClassOf <http://schema.org/DefinedTerm> .
+<http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://schema.org/DefinedTerm> .
 
 
 ###  http://core.esipfed.org/ont/SWL_0000014
@@ -2190,31 +2191,31 @@ Implicitly there is also a stewardship/policy component determining management o
                                                                 rdfs:label "Public Domain Mark"@en .
 
 
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
+[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
+ ] .
+
 [ <http://creativecommons.org/ns#license> <https://creativecommons.org/publicdomain/zero/1.0/>
-] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
- ] .
-
-[ <http://purl.obolibrary.org/obo/IAO_0000119> <https://orcid.org/0000-0003-4808-4736>
  ] .
 
 [ owl:unionOf [ ]
@@ -2312,20 +2313,20 @@ Implicitly there is also a stewardship/policy component determining management o
 
 [ owl:unionOf [ ]
 ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################

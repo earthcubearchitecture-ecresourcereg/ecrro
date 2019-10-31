@@ -178,7 +178,7 @@
   } ]
 }, {
   "@id" : "_:genid157",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -202,7 +202,7 @@
   } ]
 }, {
   "@id" : "_:genid161",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -1138,8 +1138,8 @@
   } ]
 }, {
   "@id" : "_:genid84",
-  "http://creativecommons.org/ns#license" : [ {
-    "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@id" : "https://orcid.org/0000-0003-4808-4736"
   } ]
 }, {
   "@id" : "_:genid85",
@@ -1178,8 +1178,8 @@
   } ]
 }, {
   "@id" : "_:genid92",
-  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
-    "@id" : "https://orcid.org/0000-0003-4808-4736"
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
   } ]
 }, {
   "@id" : "_:genid93",
@@ -1354,6 +1354,7 @@
   } ]
 }, {
   "@id" : "http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/DefinedTerm"
   } ]

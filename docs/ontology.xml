@@ -1396,9 +1396,9 @@ Implicitly there is also a stewardship/policy component determining management o
     <!-- http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001 -->
 
 
-    <rdf:Description rdf:about="http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001">
+    <owl:Class rdf:about="http://cor.esipfed.org/ont/earthcube/ADO/ADO__0000001">
         <rdfs:subClassOf rdf:resource="http://schema.org/DefinedTerm"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3206,33 +3206,33 @@ Implicitly there is also a stewardship/policy component determining management o
         <rdfs:label xml:lang="en">Public Domain Mark</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </rdf:Description>
+    <rdf:Description>
         <ns:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000119 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-    </rdf:Description>
-    <rdf:Description>
         <owl:unionOf>
             <rdf:Description/>
         </owl:unionOf>
@@ -3391,21 +3391,21 @@ Implicitly there is also a stewardship/policy component determining management o
         <owl:unionOf>
             <rdf:Description/>
         </owl:unionOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     
 
