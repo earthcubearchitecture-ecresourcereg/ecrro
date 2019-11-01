@@ -271,12 +271,18 @@ dcterms:relation rdf:type owl:AnnotationProperty .
                                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2019-10-29T19:48:50Z"^^xsd:dateTime ;
                                                       rdfs:label "primaryPublication"@en .
 
+											
+###  http://cor.esipfed.org/ont/earthcube/ECRRO_0001301
+<http://cor.esipfed.org/ont/earthcube/ECRRO_0001301> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://schema.org/CreativeWork> ;
+                                            rdfs:range <http://cor.esipfed.org/ont/earthcube/ECRRO_0000213>  ;
+                                            rdfs:label "registrationMetadata"@en-us .
+
 
 ###  http://creativecommons.org/ns#deprecatedOn
 <http://creativecommons.org/ns#deprecatedOn> rdf:type owl:ObjectProperty ;
                                              rdfs:domain <http://creativecommons.org/ns#License> ;
-                                             rdfs:label """deprecated
-		  on"""@en-us .
+                                             rdfs:label """deprecated on"""@en-us .
 
 
 ###  http://creativecommons.org/ns#jurisdiction
