@@ -604,8 +604,7 @@ ecb:ECRRO_0000164 rdf:type owl:Class ;
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000201
 ecb:ECRRO_0000201 rdf:type owl:Class ;
-                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
-                                  <http://schema.org/CreativeWork> ,
+                  rdfs:subClassOf <http://schema.org/CreativeWork> ,
                                   <http://schema.org/Intangible> ,
                                   <http://www.w3.org/ns/dcat#Resource> ,
                                   [ rdf:type owl:Restriction ;
@@ -661,7 +660,6 @@ Each offering also specifies the interchange format for input and output, and th
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000204
 ecb:ECRRO_0000204 rdf:type owl:Class ;
                   rdfs:subClassOf ecb:ECRRO_0000201 ,
-                                  <http://org.semanticweb.owlapi/error#Error2> ,
                                   <http://schema.org/TechArticle> ;
                   obo:IAO_0000115 "A document that describes the technical characteristics of an artifact or practice, possibly including a description of what it should do, or an explicit set of requirements that it must satisfy."@en ;
                   <http://purl.org/vocab/vann/usageNote> """All resources may have a conformsTo property that should be a link to a specification.  
@@ -699,7 +697,6 @@ ecb:ECRRO_0000205 rdf:type owl:Class ;
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000206
 ecb:ECRRO_0000206 rdf:type owl:Class ;
                   rdfs:subClassOf ecb:ECRRO_0000201 ,
-                                  <http://org.semanticweb.owlapi/error#Error1> ,
                                   <http://schema.org/SoftwareApplication> ,
                                   <http://schema.org/SoftwareSourceCode> ,
                                   [ rdf:type owl:Restriction ;
@@ -794,7 +791,6 @@ ecb:ECRRO_0000209 rdf:type owl:Class ;
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000210
 ecb:ECRRO_0000210 rdf:type owl:Class ;
                   rdfs:subClassOf ecb:ECRRO_0000201 ,
-                                  <http://org.semanticweb.owlapi/error#Error5> ,
                                   <http://schema.org/SoftwareSourceCode> ;
                   obo:IAO_0000115 "A specification of concepts, and optionally relationships representing a conceptualization of some domain of discourse."@en ;
                   <http://purl.org/vocab/vann/usageNote> """Includes a spectrum of resources including controlled vocabulary, thesaurus, information model, taxonomy, glossary, vocabulary....). 
@@ -850,8 +846,7 @@ Implicitly there is also a stewardship/policy component determining management o
 
 ###  http://cor.esipfed.org/ont/earthcube/ECRRO_0000213
 ecb:ECRRO_0000213 rdf:type owl:Class ;
-                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
-                                  <http://schema.org/CreativeWork> ,
+                  rdfs:subClassOf <http://schema.org/CreativeWork> ,
                                   <http://www.w3.org/ns/dcat#CatalogRecord> ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty dcterms:title ;
@@ -948,26 +943,6 @@ cc:License rdf:type owl:Class ;
 		    copyright license, the public domain, information
 		    for distributors"""@en-us ;
            rdfs:label "License"@en-us .
-
-
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error5
-<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000027
@@ -2381,9 +2356,9 @@ cc:LesserCopyleft rdfs:label "Lesser Copyleft"@en-us ;
 		    different terms"""@en-us .
 
 
-cc:Notice rdfs:comment """copyright and license
-		    notices be kept intact"""@en-us ;
-          rdfs:label "Notice"@en-us .
+cc:Notice rdfs:label "Notice"@en-us ;
+          rdfs:comment """copyright and license
+		    notices be kept intact"""@en-us .
 
 
 cc:Reproduction rdfs:comment """making multiple
@@ -2428,8 +2403,8 @@ obo:IAO_0000111 rdfs:label "editor preferred term"@en ;
                 rdfs:comment "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en .
 
 
-obo:IAO_0000112 rdfs:comment "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
-                rdfs:label "example of usage"@en .
+obo:IAO_0000112 rdfs:label "example of usage"@en ;
+                rdfs:comment "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en .
 
 
 obo:IAO_0000114 rdfs:label "has curation status"@en .
