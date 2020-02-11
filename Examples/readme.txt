@@ -1,0 +1,1 @@
+These examples have been copied from the earthcubearchitecture-ecresourcereg/infomodel/examples GitHub repository to be packaged in the first ecrr ontology release
