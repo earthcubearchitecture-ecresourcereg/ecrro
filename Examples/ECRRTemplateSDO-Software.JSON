@@ -1,0 +1,164 @@
+{
+	"@context": {
+		"@vocab": "http://schema.org/",
+		"datacite": "http://purl.org/spar/datacite/",
+		"earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+		"geolink": "http://schema.geolink.org/1.0/base/main#",
+		"vivo": "http://vivoweb.org/ontology/core#",
+		"dcat": "http://www.w3.org/ns/dcat#",
+		"ecrro": "http://purl.obolibrary.org/obo/ECRRO_"
+	},
+	"@id": "ID for this metadata record",
+	"@type": [
+		"CreativeWork",
+		"Product",
+		"softwareSourceCode"
+	],
+	"additionalType": [
+		"ecrro:****type***** have to sort out abbreviations and context lookups for opaque ecrro URIs"
+	],
+	"name": "text",
+	"description": "Put description of the resource here, and remove this note. This resource type is not restricted only to source code, but the sdo type is included to use properties on the sdo:softwareSourceCode type",
+	"creator": {
+		"@Type": "[Organization or Person]",
+		"name": "Text"
+	},
+	"datePublished": "[A date value in ISO 8601 date format]",
+	"keywords": [
+		"text"
+	],
+	"additionalProperty": {
+		"@type": "PropertyValue",
+		"name": "obo:depends on",
+		"propertyID": "http://purl.obolibrary.org/obo/RO_0002502",
+		"value": [
+			"array of dependency statements"
+		]
+	},
+	"funder": {
+		"@type": "[Person or Organization]",
+		"name": "text"
+	},
+	"license": {
+		"@type": "[sdo:CreativeWork or sdo:URL]",
+		"name": "use if creativeWork",
+		"url": "use if CreativeWork or URL; if use url, the value is a string"
+	},
+	"additionalProperty": [
+		{
+			"@type": "PropertyValue",
+			"propertyID": "dcat:qualifiedRelation",
+			"value": [
+				{
+					"@type": "dcat:Relation",
+					"dct:relation": "(URI for related resource)",
+					"dcat:hadRole": "(URI for relationship type)"
+				}
+			]
+		},
+		{
+			"isRelatedTo": [
+				{
+					"@type": "Product",
+					"name": "relationship label here [this is an alternate way to represent related resources with some relationship semantics",
+					"url": "URI for related resource"
+				}
+			]
+		}
+	],
+	"ecrro:0000009 (citation)": "text",
+	"additionalProperty": {
+		"@type": "PropertyValue",
+		"propertyID": "dct:conformsTo",
+		"value": "Specification--ideally a URI"
+	},
+	"about": [
+		"science domain/community term"
+	],
+	"identifier": {
+		"@type": "sdo:PropertyValue,  or sdo:Text, or sdo:URL",
+		"eg @type": "PropertyValue",
+		"propertyID": "http://purl.org/spar/datacite/orcid",
+		"value": "0000-0003-2591-5293"
+	},
+	"ecrro:0000129 (EC resource maturity)": "text",
+	"additionalProperty": {
+		"@type": "PropertyValue",
+		"propertyID": "ecrro:primaryPublication",
+		"value": "URI identifying the publication, or foaf:Document?"
+	},
+	"additionalProperty": {
+		"@type": "PropertyValue",
+		"propertyID": "ecrro:registryContributor",
+		"name": "Metadata contributor",
+		"value": {
+			"@type": "ContactPoint",
+			"name": "",
+			"identifier": ""
+		}
+	},
+	"provider": {
+		"@type": "[Person or Oganization]",
+		"name": "Free text"
+	},
+	"additionalProperty": {
+		"@type": "PropertyValue",
+		"propertyID": "ecrro:timeToLive",
+		"value": "text"
+	},
+	"url": "URLstring",
+	"additionalProperty": {
+		"@type": "PropertyValue",
+		"propertyID": "ecrro:usage",
+		"name": "usage",
+		"value": "free text"
+	},
+	"sourceOrganization": {
+		"@type": "Organization",
+		"description": "originatingProject description"
+	},
+	"audience": {
+		"@type": "Audience",
+		"description": "describe audience in text"
+	},
+	"featureList": {
+		"@type": "CreativeWork",
+		"description": "list of functions implemented by the software; use function categories from SoftwareFunction in SWO or SoftwareFunctionCategory TopLevel or SoftwareFunction Subcategories in the ECRR workgroup draft information model google workbook https://docs.google.com/spreadsheets/d/1jFGjp2_QRT1z2YR4DJZwA-OTaj41zpdkUiX_JxBoISU/edit#gid=1171223126",
+		"name": [
+			"array",
+			"of",
+			"function",
+			"labels"
+		]
+	},
+	"eccro:inputConformsTo": [
+		"list of mime types or ecrr sourceProfile tokens"
+	],
+	"eccro:algorithm": [
+		"list of identifiers for algorithm implemented by software application"
+	],
+	"eccro:outputConformsTo": [
+		"list of mime types or ecrr sourceProfile tokens"
+	],
+	"runtimePlatform": [
+		"list of execution environments, e.g. operating system, hardware"
+	],
+	"programmingLanguage": [
+		"list of programming languages used for software implementation"
+	],
+	"codeRepository": "URL for repository where source code is managed",
+	"eccro:applicationInterface": [
+		"list of interface identifiers from ecrr that are used to interact with the application"
+	],
+	"dcat:qualifiedRelation": {
+		"@type": "dcat:Relationship",
+		"dct:relation": "(URI for test data resource)",
+		"dcat:hadRole": "Test Data"
+	},
+	"installURL": [
+		"url for installer package, or to web resource with links to installer packages"
+	],
+	"hasPart": [
+		"list of sdo:Text or sdo:URL; or sdo:CreativeWork"
+	]
+}
