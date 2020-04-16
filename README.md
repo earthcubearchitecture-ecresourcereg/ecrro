@@ -2,6 +2,8 @@
 
 This repository contains files for development and maintenance of an ontology for describing EarthCube information resources documented in the EarthCube Resource Registry, extending the work done for dataset description. The project team started ontology development using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit), which implements conventions used by the [Open Biological and Biomedical Ontology (OBO) Foundry](http://obofoundry.org/). Strict adherence to the conventions there became problematic and was not always followed. The [Ontology, and associated property vocabularies](http://cor.esipfed.org/ont#/so/eccro) are registered in the [ESIP Community Ontology Registry](http://cor.esipfed.org/ont#/) (COR). 
 
+[Ontology visualization](https://earthcubearchitecture-ecresourcereg.github.io/ecrro/index-en.html) for browsing
+
 RDF vocabularies used in instance documents:
 - schema.org: "http://schema.org/"
 - geolink earthcube project: "http://schema.geolink.org/1.0/base/main#"
