@@ -22,25 +22,26 @@ See https://www.earthcube.org/resource_registry for additional project informati
 
 ## What's in this repository
 
-the repository rood contains 
+the repository root contains 
  - README.md -- this file  
  - project.yaml -- OBO foundary project configuration file
  - issue_template.md -- a template to be used by GitHUB for generating new issue reports
  - CONTRIBUTING.md -- instructions for submitting contributions to the project, from the OBO foundry framework package
  - CODE_OF_CONDUCT.md -- statement of conduct expectations for project participants, 
 
-This is the directory structure for the repository
 
-## docs
+### Directory structure for the repository
+
+#### docs
 [Ontology documentation provided by Widico](https://earthcubearchitecture-ecresourcereg.github.io/ecrro/index-en.html) is maintained in this directory. The content is from the Widico project and in general will not need to be modified.
 
-## Documentation
+#### Documentation
 Some schema diagrams for the ontology information model, using UML, and a powerpoint slide outlining the workflow using the resource registry to link from data discovery to applications using the data.
 
-## src 
-Source code for the ontology.  Most of the content here is imported from the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit); files dated 4/30/2019 are from that original repository set up, and for the most part ar not used. The critical content is in the **src** directory. The ontology is in the file **ecrro-edit.ttl**. 
+#### src 
+Source code for the ontology.  Most of the content here is imported from the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit); files dated 4/30/2019 are from that original repository set up, and for the most part ar not used. The critical content is in the **src** directory. The ontology is in the file **src/ecrro-edit.ttl**. 
 
-## Examples 
+#### Examples 
 Test instances are in the 
 [Information Model GitHub repository Examples folder](https://github.com/earthcubearchitecture-ecresourcereg/infomodel/tree/master/examples). This were constructed manually to test the ontology framework 
 
@@ -55,7 +56,7 @@ This project is an open project, and contributions are welcome from any individu
 
 ### Tips for Contributing
 
-Guidance for contributing is provided in [the 'CONTRIBUTING' document](CONTRIBUTING.md) Issues and bug reports are always welcome, using the issue tracker. You will need a GitHub account to post new issues.  Code clean-up, and feature additions can be proposed through pull requests, either via branches from project members, or from [project forks](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) for others.
+Guidance for contributing is provided in [the 'CONTRIBUTING' document](CONTRIBUTING.md). Issues and bug reports are always welcome, using the issue tracker. You will need a GitHub account to post new issues.  Code clean-up, and feature additions can be proposed through pull requests, either via branches from project members, or from [project forks](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) for others.
 
 All EarthCube products must have a clear and explicit statement of license terms. 
 
