@@ -1,29 +1,3 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.bco-dmo.org/dataset/472032</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/InterchangeFormat-MiniSeed-SDO.JSON</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/Repository-EarthChemLibrary-SDO.JSON</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/ECRR-contextDoc.json</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/Service-IRIS-fsdnEvent-JSON.json</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/Software-ERDDAP-SDO.JSON</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/Specification-COARDS-SDO.JSON</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/Registry-XDomes-SDO.json</loc>
-    </url>
-    <url>
-        <loc>https://raw.githubusercontent.com/earthcubearchitecture-ecresourcereg/infomodel/master/examples/DcatExampleEPOS.json</loc>
-    </url>
+    <!-- this sitemap only includes examples that are not present in the ECRR form responses spreadsheet at https://docs.google.com/spreadsheets/d/1rCtWCCy51PLlpFkcG9oOVQZnIB75RwMK9nZxbZIYXIU/edit#gid=595512146 -->
 </urlset>
